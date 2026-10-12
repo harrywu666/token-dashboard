@@ -1170,16 +1170,21 @@
     },
     "x": {
       "followers": {
-        "usehotbot": 5482,
-        "elijahintek": 25748,
+        "usehotbot": 5515,
+        "elijahintek": 25750,
         "0xWhoismax": 4644,
-        "clawpumptech": 13346
+        "clawpumptech": 13350
       },
       "mentions_1h": 96,
       "latest_post": null,
-      "cached_from": 1791821081
+      "cached_from": 1791828149
     },
-    "conclusion": [],
+    "conclusion": [
+      "持币地址 6061，比上期多 131，这一小时买单反超卖单（链上买 218 / 卖 144），新面孔买家 130，和持币增量对得上，不像拆小号",
+      "前 20 真人有 1 个清仓：GyfR…2yfs 原来持有约 1.70%，已用 Helius 核实余额归零；前 20 合计占比降到 30.66%（-0.71 个百分点）",
+      "同时 6451…K6Fj 加仓约 50 万枚，98zi…Po4r 新进前 20（约 0.94%），大户内部有换手，但还谈不上集中出货",
+      "冒充号 HotBotOfSol 还在刷，近 1h 提及 100 条里约 71 条跟它有关；官推和联创这一小时都没发帖"
+    ],
     "sources": {
       "holders": {
         "source": "GMGN",
