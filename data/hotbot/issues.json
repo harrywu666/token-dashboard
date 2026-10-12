@@ -1,0 +1,403 @@
+[
+  {
+    "ts": "2026-10-12T20:34+08:00",
+    "holders": 5943,
+    "holders_delta": null,
+    "mcap_usd": 4229394,
+    "liquidity_usd": 269901,
+    "top20": [
+      {
+        "addr": "2E1g7f7AYSJkUkzMbkwP3QkuawHWDqWbU6Lx39agKsPs",
+        "short": "2E1g…KsPs",
+        "pct": 3.1157,
+        "change": null,
+        "delta_pct": null
+      },
+      {
+        "addr": "42eDBVXEbYxJfaKx5znWi1rwTFWBV69pQ7tCDLLr9ogx",
+        "short": "42eD…9ogx",
+        "pct": 3.058,
+        "change": null,
+        "delta_pct": null
+      },
+      {
+        "addr": "jssugBCDGaNW5yRRiZ5A2EQ4z12ntGAx4LyPY57nZ2b",
+        "short": "jssu…nZ2b",
+        "pct": 2.7295,
+        "change": null,
+        "delta_pct": null
+      },
+      {
+        "addr": "kHfajAXALAgbBup22egPEjgP135Le4yzM7LZd6oXbtF",
+        "short": "kHfa…XbtF",
+        "pct": 2.0975,
+        "change": null,
+        "delta_pct": null
+      },
+      {
+        "addr": "9CNyLECt2j8tnDhqxtjYk5HUhZ2b8Nwnyb7sfYN7vND2",
+        "short": "9CNy…vND2",
+        "pct": 1.9929,
+        "change": null,
+        "delta_pct": null
+      },
+      {
+        "addr": "GyfRNiLmjz6WbtNLHG5632N9hu59xnsEbU43yyty2yfs",
+        "short": "GyfR…2yfs",
+        "pct": 1.7548,
+        "change": null,
+        "delta_pct": null
+      },
+      {
+        "addr": "AnCMde5PQzP7hVQmh5TeeCiUgGAqTY8kK9d9o91nEs3Q",
+        "short": "AnCM…Es3Q",
+        "pct": 1.6896,
+        "change": null,
+        "delta_pct": null
+      },
+      {
+        "addr": "8k1BPp8pCxq7RJxxBz3BUxvBjsfjhkHKnhr2WSQABGM9",
+        "short": "8k1B…BGM9",
+        "pct": 1.5583,
+        "change": null,
+        "delta_pct": null
+      },
+      {
+        "addr": "CUsUzbVnmoVcNRW6XDcP6KeZDjfdmMKyyMMLeBh1Rcks",
+        "short": "CUsU…Rcks",
+        "pct": 1.4475,
+        "change": null,
+        "delta_pct": null
+      },
+      {
+        "addr": "5Uuw6GMbUrA5p5XgGEVYeFk4jTWuSMt95Xuf5gL45xK7",
+        "short": "5Uuw…5xK7",
+        "pct": 1.3563,
+        "change": null,
+        "delta_pct": null
+      },
+      {
+        "addr": "6iUvUvsznZ3t2Dpd1qVRitfRLui12TEZveJ49w9TELM4",
+        "short": "6iUv…ELM4",
+        "pct": 1.2545,
+        "change": null,
+        "delta_pct": null
+      },
+      {
+        "addr": "DwJjRmVfANGUdZdBiGBj1QrY1MK5ZYs4DsCt7A8o6xc3",
+        "short": "DwJj…6xc3",
+        "pct": 1.1274,
+        "change": null,
+        "delta_pct": null
+      },
+      {
+        "addr": "7YpvTvSt7QDBU3aYDV6PGgsh4JGyHFfwtwngWCjz8NLx",
+        "short": "7Ypv…8NLx",
+        "pct": 1.0976,
+        "change": null,
+        "delta_pct": null
+      },
+      {
+        "addr": "6451zSoUiy4GZeq2vEUHb73LcDJ8eeCHXEaGSqL8K6Fj",
+        "short": "6451…K6Fj",
+        "pct": 1.0623,
+        "change": null,
+        "delta_pct": null
+      },
+      {
+        "addr": "GdSmhYHGFjb1QRDJ3dtpbA9TYNJaqEJsZHuUxpksEKNN",
+        "short": "GdSm…EKNN",
+        "pct": 1.0386,
+        "change": null,
+        "delta_pct": null
+      },
+      {
+        "addr": "8LBxhvbNNSBnBdQdRG3dW8wndoSaGLGaKZDPcKEhfT42",
+        "short": "8LBx…fT42",
+        "pct": 1.0386,
+        "change": null,
+        "delta_pct": null
+      },
+      {
+        "addr": "YW6bofTJXBLxQuyLdZ654M9Ji2zPvZRP4zYT8ojKjPR",
+        "short": "YW6b…KjPR",
+        "pct": 1.0163,
+        "change": null,
+        "delta_pct": null
+      },
+      {
+        "addr": "858mUYBxTJcFxGjCzo4Tt3pkaJfYBXRyXsuykj2C1LsZ",
+        "short": "858m…1LsZ",
+        "pct": 1.007,
+        "change": null,
+        "delta_pct": null
+      },
+      {
+        "addr": "HYZv2JeSHn5NDe5Ev2Nnc2rTNEaC6F9QVrcMLH5v6GYt",
+        "short": "HYZv…6GYt",
+        "pct": 0.9963,
+        "change": null,
+        "delta_pct": null
+      },
+      {
+        "addr": "3Wm6BiKcEkG95zeRWT3HtBi3qp7tXiRXBCbg7RydcQj2",
+        "short": "3Wm6…cQj2",
+        "pct": 0.9487,
+        "change": null,
+        "delta_pct": null
+      }
+    ],
+    "top20_total_pct": 31.3874,
+    "excluded": [
+      {
+        "addr": "GLL3CzybpSCLZdoACf8QUM5YrKVwyA65kQ2RcTsJxxzV",
+        "reason": "pool/ex:pump_amm"
+      },
+      {
+        "addr": "21GML1ieck3tVVM1J5N6GsXh51rTrzVF55tbgdcvPAex",
+        "reason": "creator"
+      },
+      {
+        "addr": "6D4EWF22HfQamimKhX47tqiu9DVCkcxDMrmhnSvewKAo",
+        "reason": "pool/ex:meteora_dlmm"
+      }
+    ],
+    "onchain_heat": null,
+    "x": {
+      "followers": {
+        "usehotbot": null,
+        "elijahintek": null,
+        "0xWhoismax": null,
+        "clawpumptech": null
+      },
+      "mentions_1h": null,
+      "latest_post": null,
+      "cached_from": null
+    },
+    "conclusion": [],
+    "sources": {
+      "holders": {
+        "source": "GMGN",
+        "fetched_at": "2026-10-12T20:34+08:00"
+      },
+      "mcap_usd": {
+        "source": "GMGN",
+        "fetched_at": "2026-10-12T20:34+08:00"
+      },
+      "liquidity_usd": {
+        "source": "GMGN",
+        "fetched_at": "2026-10-12T20:34+08:00"
+      },
+      "top20": {
+        "source": "GMGN",
+        "fetched_at": "2026-10-12T20:34+08:00"
+      }
+    }
+  },
+  {
+    "ts": "2026-10-12T21:23+08:00",
+    "holders": 5935,
+    "holders_delta": -8,
+    "mcap_usd": 4075062,
+    "liquidity_usd": 251525.7,
+    "top20": [
+      {
+        "addr": "2E1g7f7AYSJkUkzMbkwP3QkuawHWDqWbU6Lx39agKsPs",
+        "short": "2E1g…KsPs",
+        "pct": 3.1157,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "42eDBVXEbYxJfaKx5znWi1rwTFWBV69pQ7tCDLLr9ogx",
+        "short": "42eD…9ogx",
+        "pct": 3.058,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "jssugBCDGaNW5yRRiZ5A2EQ4z12ntGAx4LyPY57nZ2b",
+        "short": "jssu…nZ2b",
+        "pct": 2.7295,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "kHfajAXALAgbBup22egPEjgP135Le4yzM7LZd6oXbtF",
+        "short": "kHfa…XbtF",
+        "pct": 2.0975,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "9CNyLECt2j8tnDhqxtjYk5HUhZ2b8Nwnyb7sfYN7vND2",
+        "short": "9CNy…vND2",
+        "pct": 1.9929,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "GyfRNiLmjz6WbtNLHG5632N9hu59xnsEbU43yyty2yfs",
+        "short": "GyfR…2yfs",
+        "pct": 1.7548,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "AnCMde5PQzP7hVQmh5TeeCiUgGAqTY8kK9d9o91nEs3Q",
+        "short": "AnCM…Es3Q",
+        "pct": 1.6896,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "8k1BPp8pCxq7RJxxBz3BUxvBjsfjhkHKnhr2WSQABGM9",
+        "short": "8k1B…BGM9",
+        "pct": 1.5583,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "CUsUzbVnmoVcNRW6XDcP6KeZDjfdmMKyyMMLeBh1Rcks",
+        "short": "CUsU…Rcks",
+        "pct": 1.4475,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "5Uuw6GMbUrA5p5XgGEVYeFk4jTWuSMt95Xuf5gL45xK7",
+        "short": "5Uuw…5xK7",
+        "pct": 1.3563,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "6iUvUvsznZ3t2Dpd1qVRitfRLui12TEZveJ49w9TELM4",
+        "short": "6iUv…ELM4",
+        "pct": 1.2545,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "DwJjRmVfANGUdZdBiGBj1QrY1MK5ZYs4DsCt7A8o6xc3",
+        "short": "DwJj…6xc3",
+        "pct": 1.1274,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "7YpvTvSt7QDBU3aYDV6PGgsh4JGyHFfwtwngWCjz8NLx",
+        "short": "7Ypv…8NLx",
+        "pct": 1.0976,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "6451zSoUiy4GZeq2vEUHb73LcDJ8eeCHXEaGSqL8K6Fj",
+        "short": "6451…K6Fj",
+        "pct": 1.0623,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "GdSmhYHGFjb1QRDJ3dtpbA9TYNJaqEJsZHuUxpksEKNN",
+        "short": "GdSm…EKNN",
+        "pct": 1.0386,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "8LBxhvbNNSBnBdQdRG3dW8wndoSaGLGaKZDPcKEhfT42",
+        "short": "8LBx…fT42",
+        "pct": 1.0386,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "YW6bofTJXBLxQuyLdZ654M9Ji2zPvZRP4zYT8ojKjPR",
+        "short": "YW6b…KjPR",
+        "pct": 1.0163,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "858mUYBxTJcFxGjCzo4Tt3pkaJfYBXRyXsuykj2C1LsZ",
+        "short": "858m…1LsZ",
+        "pct": 1.007,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "HYZv2JeSHn5NDe5Ev2Nnc2rTNEaC6F9QVrcMLH5v6GYt",
+        "short": "HYZv…6GYt",
+        "pct": 0.9963,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "3Wm6BiKcEkG95zeRWT3HtBi3qp7tXiRXBCbg7RydcQj2",
+        "short": "3Wm6…cQj2",
+        "pct": 0.9487,
+        "delta_pct": 0.0,
+        "change": "same"
+      }
+    ],
+    "top20_total_pct": 31.3874,
+    "excluded": [
+      {
+        "addr": "GLL3CzybpSCLZdoACf8QUM5YrKVwyA65kQ2RcTsJxxzV",
+        "reason": "pump_amm"
+      },
+      {
+        "addr": "21GML1ieck3tVVM1J5N6GsXh51rTrzVF55tbgdcvPAex",
+        "reason": "creator/other"
+      },
+      {
+        "addr": "6D4EWF22HfQamimKhX47tqiu9DVCkcxDMrmhnSvewKAo",
+        "reason": "meteora_dlmm"
+      }
+    ],
+    "onchain_heat": {
+      "buys": 26,
+      "sells": 41,
+      "unique_wallets": 61,
+      "net_flow": -895622.63,
+      "first_time_buyers": null,
+      "window_hours": 1.0
+    },
+    "x": {
+      "followers": {
+        "usehotbot": null,
+        "elijahintek": null,
+        "0xWhoismax": null,
+        "clawpumptech": null
+      },
+      "mentions_1h": null,
+      "latest_post": null,
+      "cached_from": null
+    },
+    "conclusion": [],
+    "sources": {
+      "holders": {
+        "source": "GMGN",
+        "fetched_at": "2026-10-12T21:23+08:00"
+      },
+      "mcap_usd": {
+        "source": "GMGN",
+        "fetched_at": "2026-10-12T21:23+08:00"
+      },
+      "liquidity_usd": {
+        "source": "GMGN",
+        "fetched_at": "2026-10-12T21:23+08:00"
+      },
+      "top20": {
+        "source": "GMGN",
+        "fetched_at": "2026-10-12T21:23+08:00"
+      },
+      "onchain_heat": {
+        "source": "Helius",
+        "fetched_at": "2026-10-12T21:39+08:00"
+      }
+    }
+  }
+]
