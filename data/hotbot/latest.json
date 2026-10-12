@@ -1,9 +1,9 @@
 {
-  "ts": "2026-10-13T04:00+08:00",
-  "holders": 5968,
-  "holders_delta": -93,
-  "mcap_usd": 3249589,
-  "liquidity_usd": 321000.96,
+  "ts": "2026-10-13T06:00+08:00",
+  "holders": 5909,
+  "holders_delta": -59,
+  "mcap_usd": 3537057,
+  "liquidity_usd": 325198.28,
   "top20": [
     {
       "addr": "2E1g7f7AYSJkUkzMbkwP3QkuawHWDqWbU6Lx39agKsPs",
@@ -76,16 +76,16 @@
       "change": "same"
     },
     {
+      "addr": "6451zSoUiy4GZeq2vEUHb73LcDJ8eeCHXEaGSqL8K6Fj",
+      "short": "6451…K6Fj",
+      "pct": 1.164,
+      "delta_pct": 0.0497,
+      "change": "added"
+    },
+    {
       "addr": "DwJjRmVfANGUdZdBiGBj1QrY1MK5ZYs4DsCt7A8o6xc3",
       "short": "DwJj…6xc3",
       "pct": 1.1278,
-      "delta_pct": 0.0004,
-      "change": "same"
-    },
-    {
-      "addr": "6451zSoUiy4GZeq2vEUHb73LcDJ8eeCHXEaGSqL8K6Fj",
-      "short": "6451…K6Fj",
-      "pct": 1.1143,
       "delta_pct": 0.0,
       "change": "same"
     },
@@ -100,8 +100,8 @@
       "addr": "YW6bofTJXBLxQuyLdZ654M9Ji2zPvZRP4zYT8ojKjPR",
       "short": "YW6b…KjPR",
       "pct": 1.0735,
-      "delta_pct": 0.0572,
-      "change": "added"
+      "delta_pct": 0.0,
+      "change": "same"
     },
     {
       "addr": "GdSmhYHGFjb1QRDJ3dtpbA9TYNJaqEJsZHuUxpksEKNN",
@@ -146,19 +146,19 @@
       "change": "same"
     }
   ],
-  "top20_total_pct": 30.7184,
+  "top20_total_pct": 30.7681,
   "excluded": [
     {
       "addr": "GLL3CzybpSCLZdoACf8QUM5YrKVwyA65kQ2RcTsJxxzV",
       "reason": "exchange:pump_amm"
     },
     {
-      "addr": "6D4EWF22HfQamimKhX47tqiu9DVCkcxDMrmhnSvewKAo",
-      "reason": "exchange:meteora_dlmm"
-    },
-    {
       "addr": "21GML1ieck3tVVM1J5N6GsXh51rTrzVF55tbgdcvPAex",
       "reason": "creator/other"
+    },
+    {
+      "addr": "6D4EWF22HfQamimKhX47tqiu9DVCkcxDMrmhnSvewKAo",
+      "reason": "exchange:meteora_dlmm"
     }
   ],
   "onchain_heat": null,
@@ -173,27 +173,23 @@
     "latest_post": null,
     "cached_from": 1791834917
   },
-  "conclusion": [
-    "持币地址 5968，比上期少 93；链上卖单明显多于买单（买 37 / 卖 116），和持币回落对得上",
-    "前 20 真人名单没变，合计占比 30.72%（+0.06 个百分点）；只有 YW6b…KjPR 明显加仓约 55 万枚，没有集中出货或吸筹",
-    "冒充号 HotBotOfSol 还在刷，近 1h 提及 82 条里约 72 条跟它有关；官推和联创这一小时都没发帖，社区在官推下追问产品上线时间"
-  ],
+  "conclusion": [],
   "sources": {
     "holders": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T04:00+08:00"
+      "fetched_at": "2026-10-13T06:00+08:00"
     },
     "mcap_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T04:00+08:00"
+      "fetched_at": "2026-10-13T06:00+08:00"
     },
     "liquidity_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T04:00+08:00"
+      "fetched_at": "2026-10-13T06:00+08:00"
     },
     "top20": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T04:00+08:00"
+      "fetched_at": "2026-10-13T06:00+08:00"
     }
   }
 }
