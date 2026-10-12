@@ -203,11 +203,11 @@
     },
     "x": {
       "followers": {
-        "Torchpaddotfun": null
+        "Torchpaddotfun": 3252
       },
       "mentions_1h": null,
       "latest_post": null,
-      "cached_from": null
+      "cached_from": 1791818048
     },
     "conclusion": [],
     "sources": {
@@ -448,11 +448,11 @@
     },
     "x": {
       "followers": {
-        "Torchpaddotfun": null
+        "Torchpaddotfun": 3252
       },
       "mentions_1h": null,
       "latest_post": null,
-      "cached_from": null
+      "cached_from": 1791818048
     },
     "conclusion": [],
     "sources": {
@@ -666,7 +666,12 @@
       }
     ],
     "onchain_heat": null,
-    "burns": null,
+    "burns": {
+      "window_hours": 1.0,
+      "count": 3,
+      "amount": 30550.46,
+      "last_1h": null
+    },
     "platform_volume": {
       "window_hours": 1.0,
       "new_launches": 0,
@@ -677,13 +682,18 @@
     },
     "x": {
       "followers": {
-        "Torchpaddotfun": null
+        "Torchpaddotfun": 3247
       },
       "mentions_1h": null,
-      "latest_post": null,
+      "latest_post": "2109643689618219502",
       "cached_from": null
     },
-    "conclusion": [],
+    "conclusion": [
+      "持币数 1137，和 21:03 持平，本小时没有新增持有人，热度横盘。",
+      "前 20 真人钱包本小时没有动作，合计占比 27.59% 不变，没有集中出货或吸筹信号。",
+      "本小时自动销毁 3 笔，约 3.06 万枚，还在正常运行。",
+      "feeRouter 代理近 1 小时没有升级或更换管理员事件，税的去向规则没变。"
+    ],
     "sources": {
       "holders": {
         "source": "GMGN",
@@ -708,6 +718,14 @@
       "platform_volume": {
         "source": "RPC",
         "fetched_at": "2026-10-12T22:03+08:00"
+      },
+      "burns": {
+        "source": "RPC",
+        "fetched_at": "2026-10-12T22:01+08:00"
+      },
+      "x": {
+        "source": "x MCP",
+        "fetched_at": "2026-10-12T22:01+08:00"
       }
     }
   },
@@ -895,7 +913,12 @@
       }
     ],
     "onchain_heat": null,
-    "burns": null,
+    "burns": {
+      "window_hours": 1,
+      "count": 3,
+      "amount": 28964.52,
+      "last_1h": null
+    },
     "platform_volume": {
       "window_hours": 1.0,
       "new_launches": 1,
@@ -906,13 +929,18 @@
     },
     "x": {
       "followers": {
-        "Torchpaddotfun": null
+        "Torchpaddotfun": 3252
       },
       "mentions_1h": null,
-      "latest_post": null,
+      "latest_post": "2109656346329030945",
       "cached_from": null
     },
-    "conclusion": [],
+    "conclusion": [
+      "持币数 1143，较上期 +6，本小时有新增持有人，热度略回暖。",
+      "前 20 真人合计占比 27.64%（+0.05 个百分点），仅 0x33d3…c102 加仓约 52 万枚，其余前 20 基本没动。",
+      "平台本小时活跃：新发射 1 个，结算 19 笔、约 38.65 ETH（下限），国库约 10.7 万枚 TORCH。",
+      "feeRouter 代理近 1 小时没有升级或更换管理员事件，税的去向规则没变。"
+    ],
     "sources": {
       "holders": {
         "source": "GMGN",
@@ -936,6 +964,14 @@
       },
       "platform_volume": {
         "source": "RPC",
+        "fetched_at": "2026-10-12T23:10+08:00"
+      },
+      "burns": {
+        "source": "RPC",
+        "fetched_at": "2026-10-12T23:10+08:00"
+      },
+      "x": {
+        "source": "x MCP",
         "fetched_at": "2026-10-12T23:10+08:00"
       }
     }

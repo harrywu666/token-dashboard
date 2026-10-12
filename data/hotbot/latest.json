@@ -171,16 +171,21 @@
   },
   "x": {
     "followers": {
-      "usehotbot": null,
-      "elijahintek": null,
-      "0xWhoismax": null,
-      "clawpumptech": null
+      "usehotbot": 5463,
+      "elijahintek": 25747,
+      "0xWhoismax": 4643,
+      "clawpumptech": 13345
     },
-    "mentions_1h": null,
+    "mentions_1h": 96,
     "latest_post": null,
-    "cached_from": null
+    "cached_from": 1791818002
   },
-  "conclusion": [],
+  "conclusion": [
+    "持币数 5956，比上期多 8 个，小幅增长，没有猛增，不像拆小号。",
+    "前 20 大真人合计占比 31.37%（较上期 −0.02 个百分点），1 个小幅加仓、2 个小幅减仓，无清仓/新进，没有集中出货或吸筹迹象。",
+    "链上近 1 小时买卖接近打平（买 88 / 卖 92），独立钱包 134，新面孔买家 57，热度仍在。",
+    "官推本小时无新帖；粉丝正常小增（官推 +22），未见刷粉。冒充号 HotBotOfSol 仍在刷假「allocation」帖，提及总数里有不少噪声。"
+  ],
   "sources": {
     "holders": {
       "source": "GMGN",
