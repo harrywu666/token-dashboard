@@ -1,15 +1,15 @@
 {
-  "ts": "2026-10-13T02:00+08:00",
-  "holders": 1194,
-  "holders_delta": 12,
-  "mcap_usd": 2951672,
-  "liquidity_usd": 594668.27,
+  "ts": "2026-10-13T04:00+08:00",
+  "holders": 1214,
+  "holders_delta": 20,
+  "mcap_usd": 3276313,
+  "liquidity_usd": 636956.28,
   "top20": [
     {
       "addr": "0xf1882812aacac1df9a58195dbbd2f97fe48f81f2",
       "short": "0xf1…81f2",
-      "pct": 3.4602,
-      "delta_pct": 0.16,
+      "pct": 3.6164,
+      "delta_pct": 0.1562,
       "change": "added"
     },
     {
@@ -37,8 +37,8 @@
       "addr": "0xabc0a4a9f6bf386e725aecb8037e40b77ab685cf",
       "short": "0xab…85cf",
       "pct": 1.8139,
-      "delta_pct": 0.0742,
-      "change": "added"
+      "delta_pct": 0.0,
+      "change": "same"
     },
     {
       "addr": "0x1e15bf63f281c7b77894c76a376aa917945d40af",
@@ -55,13 +55,6 @@
       "change": "same"
     },
     {
-      "addr": "0xb856d6db35a8bbddca68467f10728433e376a3cc",
-      "short": "0xb8…a3cc",
-      "pct": 1.4226,
-      "delta_pct": 0.0,
-      "change": "same"
-    },
-    {
       "addr": "0x33d35d84372a97da6bbd32d101bdcc48074cc102",
       "short": "0x33…c102",
       "pct": 1.3746,
@@ -72,8 +65,15 @@
       "addr": "0x92109c168c827ba8a010ecd3b55285a10bb2e4f0",
       "short": "0x92…e4f0",
       "pct": 1.3475,
-      "delta_pct": 0.0348,
-      "change": "added"
+      "delta_pct": 0.0,
+      "change": "same"
+    },
+    {
+      "addr": "0xb856d6db35a8bbddca68467f10728433e376a3cc",
+      "short": "0xb8…a3cc",
+      "pct": 1.3373,
+      "delta_pct": -0.0853,
+      "change": "reduced"
     },
     {
       "addr": "0x10fc84de7c23208a81ceec886d283a863b3d7e3a",
@@ -146,7 +146,7 @@
       "change": "same"
     }
   ],
-  "top20_total_pct": 28.5479,
+  "top20_total_pct": 28.6188,
   "excluded": [
     {
       "addr": "0x340278a0ef7c7e83418771504871619453bd0fa6",
@@ -184,64 +184,64 @@
   "onchain_heat": null,
   "burns": {
     "window_hours": 2.0,
-    "count": 10,
-    "amount": 579533.28,
+    "count": 7,
+    "amount": 113753.17,
     "last_1h": null
   },
   "platform_volume": {
     "window_hours": 2.0,
-    "new_launches": 0,
-    "settled_events": 47,
-    "settled_eth_out": 0.2454862409673551,
-    "treasury_torch": 110541.69660331916,
+    "new_launches": 2,
+    "settled_events": 34,
+    "settled_eth_out": 0.15054381550108384,
+    "treasury_torch": 116928.78172532677,
     "lower_bound": true
   },
   "x": {
     "followers": {
-      "Torchpaddotfun": 3276
+      "Torchpaddotfun": 3291
     },
     "mentions_1h": null,
-    "latest_post": "2109684580668297264",
+    "latest_post": "2109733947320238257",
     "cached_from": null
   },
   "conclusion": [
-    "持币地址 1194，比上期多 12 个，增速比上期那波（+39）放缓，但仍在稳步增加；前 20 真人 3 个加仓、没人减仓或清仓，合计占比 28.55%（+0.27 个百分点）",
-    "近 2 小时销毁 10 笔约 58.0 万 TORCH，比上期明显放大：两个销毁执行钱包都有动作，其中 0x0695…9a07 单笔烧掉约 39.4 万",
-    "平台近 2 小时无新发币，ETH 报价结算 47 笔约 0.25 ETH（下限），无 TORCH 报价结算；国库约 11.1 万枚",
+    "持币地址 1214，比上期多 20 个，增速比 2:00 那期（+12）又加快一点；前 20 真人一加一减，合计占比 28.62%（+0.07 个百分点），没有集中出货",
+    "近 2 小时销毁 7 笔约 11.4 万 TORCH，节奏从上期约 58 万回落；只有 0x6d93…a6ce 在烧，上期单笔大额的 0x0695…9a07 本窗口没有继续",
+    "平台近 2 小时新发 2 个币（1 个 ETH 报价、1 个 TORCH 报价）；ETH 结算 34 笔约 0.15 ETH，TORCH 结算 9 笔约 8846 TORCH（下限）；国库约 11.7 万枚",
     "feeRouter 代理近 2 小时没有升级、没有换管理员；10/25 持币人分红未见公开进展"
   ],
   "sources": {
     "holders": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T02:00+08:00"
+      "fetched_at": "2026-10-13T04:00+08:00"
     },
     "mcap_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T02:00+08:00"
+      "fetched_at": "2026-10-13T04:00+08:00"
     },
     "liquidity_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T02:00+08:00"
+      "fetched_at": "2026-10-13T04:00+08:00"
     },
     "top20": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T02:00+08:00"
+      "fetched_at": "2026-10-13T04:00+08:00"
     },
     "top20_filter": {
       "source": "RPC",
-      "fetched_at": "2026-10-13T02:00+08:00"
+      "fetched_at": "2026-10-13T04:00+08:00"
     },
     "platform_volume": {
       "source": "RPC",
-      "fetched_at": "2026-10-13T02:00+08:00"
+      "fetched_at": "2026-10-13T04:00+08:00"
     },
     "burns": {
       "source": "RPC",
-      "fetched_at": "2026-10-13T02:00+08:00"
+      "fetched_at": "2026-10-13T04:00+08:00"
     },
     "x": {
       "source": "user-X--harry + x.get_users_posts",
-      "fetched_at": "2026-10-13T02:00+08:00"
+      "fetched_at": "2026-10-13T04:00+08:00"
     }
   }
 }
