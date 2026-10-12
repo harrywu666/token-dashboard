@@ -1,9 +1,9 @@
 {
-  "ts": "2026-10-13T06:00+08:00",
-  "holders": 5909,
-  "holders_delta": -59,
-  "mcap_usd": 3537057,
-  "liquidity_usd": 325198.28,
+  "ts": "2026-10-13T08:00+08:00",
+  "holders": 5873,
+  "holders_delta": -36,
+  "mcap_usd": 3522184,
+  "liquidity_usd": 298122.46,
   "top20": [
     {
       "addr": "2E1g7f7AYSJkUkzMbkwP3QkuawHWDqWbU6Lx39agKsPs",
@@ -15,9 +15,9 @@
     {
       "addr": "42eDBVXEbYxJfaKx5znWi1rwTFWBV69pQ7tCDLLr9ogx",
       "short": "42eD…9ogx",
-      "pct": 3.0117,
-      "delta_pct": 0.0,
-      "change": "same"
+      "pct": 2.9541,
+      "delta_pct": -0.0576,
+      "change": "reduced"
     },
     {
       "addr": "jssugBCDGaNW5yRRiZ5A2EQ4z12ntGAx4LyPY57nZ2b",
@@ -79,14 +79,14 @@
       "addr": "6451zSoUiy4GZeq2vEUHb73LcDJ8eeCHXEaGSqL8K6Fj",
       "short": "6451…K6Fj",
       "pct": 1.164,
-      "delta_pct": 0.0497,
-      "change": "added"
+      "delta_pct": 0.0,
+      "change": "same"
     },
     {
       "addr": "DwJjRmVfANGUdZdBiGBj1QrY1MK5ZYs4DsCt7A8o6xc3",
       "short": "DwJj…6xc3",
-      "pct": 1.1278,
-      "delta_pct": 0.0,
+      "pct": 1.128,
+      "delta_pct": 0.0002,
       "change": "same"
     },
     {
@@ -146,7 +146,7 @@
       "change": "same"
     }
   ],
-  "top20_total_pct": 30.7681,
+  "top20_total_pct": 30.7107,
   "excluded": [
     {
       "addr": "GLL3CzybpSCLZdoACf8QUM5YrKVwyA65kQ2RcTsJxxzV",
@@ -164,37 +164,37 @@
   "onchain_heat": null,
   "x": {
     "followers": {
-      "usehotbot": 5549,
-      "elijahintek": 25750,
-      "0xWhoismax": 4645,
-      "clawpumptech": 13364
+      "usehotbot": 5562,
+      "elijahintek": 25749,
+      "0xWhoismax": 4647,
+      "clawpumptech": 13370
     },
     "mentions_1h": 96,
     "latest_post": null,
-    "cached_from": 1791841970
+    "cached_from": 1791848864
   },
   "conclusion": [
-    "持币地址 5909，比上期少 59；链上卖仍多于买（买 71 / 卖 159），和持币回落对得上，没有拆小号迹象",
-    "前 20 真人名单没变，合计占比 30.77%（+0.05 个百分点）；只有 6451…K6Fj 加仓约 48 万枚，没有集中出货或吸筹",
-    "联创 @elijahintek 这一小时在回复社区问题，官推也有几条互动；ClawPump 发了 Community Bounties 产品更新",
-    "冒充号 HotBotOfSol 还在刷，近 1h 提及 59 条里约 40 条跟它有关，别点它的链接"
+    "持币地址 5873，比上期少 36；链上卖仍多于买（买 27 / 卖 56），节奏偏冷，和持币小幅回落对得上",
+    "前 20 真人名单没变，合计占比 30.71%（-0.06 个百分点）；42eD…9ogx 减仓约 55 万枚，单笔不算集中出货",
+    "冒充号 HotBotOfSol 这一小时几乎没动静；官推下有一批模板式 @ @grok 刷回复，质量不高",
+    "@0xWhoismax 转发并互动了一条介绍 HotBot 的内容；官推和 Elijah、ClawPump 这一小时没发新帖"
   ],
   "sources": {
     "holders": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T06:00+08:00"
+      "fetched_at": "2026-10-13T08:00+08:00"
     },
     "mcap_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T06:00+08:00"
+      "fetched_at": "2026-10-13T08:00+08:00"
     },
     "liquidity_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T06:00+08:00"
+      "fetched_at": "2026-10-13T08:00+08:00"
     },
     "top20": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T06:00+08:00"
+      "fetched_at": "2026-10-13T08:00+08:00"
     }
   }
 }
