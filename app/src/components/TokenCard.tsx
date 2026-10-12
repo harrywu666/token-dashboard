@@ -53,10 +53,10 @@ export function TokenCard({
               const cur = valueAt(periods, n, k)
               const d = mkDelta(cur, valueAt(periods, n - 1, k), kind)
               return (
-                <div key={k} className="rounded-lg bg-secondary/40 p-2.5">
-                  <div className="text-[11px] text-muted-foreground">{label}</div>
+                <div key={k} className="min-w-0 overflow-hidden rounded-lg bg-secondary/40 p-2.5">
+                  <div className="text-xs text-muted-foreground">{label}</div>
                   <div className="mt-0.5 font-mono text-lg font-semibold tabular-nums tracking-tight">{fmtVal(cur, kind)}</div>
-                  <div className={cn('font-mono text-[11px] font-medium', TONE_CLS[d.tone])}>
+                  <div className={cn('font-mono text-xs font-medium', TONE_CLS[d.tone])}>
                     {d.text}
                     {d.tone !== 'none' && <span className="block font-sans font-normal text-muted-foreground">{hourly ? '较上一小时' : '较上期'}</span>}
                   </div>

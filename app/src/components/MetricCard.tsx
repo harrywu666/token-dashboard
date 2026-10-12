@@ -26,7 +26,7 @@ export function MetricCard({
     <Card className={cn(muted && 'opacity-80')}>
       <CardContent className="flex h-full flex-col p-4">
         <div className="text-sm font-medium">{meta.label}</div>
-        <div className="mt-0.5 min-h-[2rem] text-[11px] leading-snug text-muted-foreground">{meta.desc}</div>
+        <div className="mt-0.5 min-h-[2rem] text-xs leading-snug text-muted-foreground">{meta.desc}</div>
         <div className="mt-2 flex items-end justify-between gap-2">
           <div className="font-mono text-2xl font-semibold tabular-nums tracking-tight">{fmtVal(cur, meta.kind)}</div>
           <div className="w-20 shrink-0">

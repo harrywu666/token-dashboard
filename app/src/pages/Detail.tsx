@@ -98,7 +98,7 @@ export function Detail({ id }: { id: string }) {
           <h1 className="text-2xl font-bold tracking-tight">{token.name}</h1>
           <p className="text-sm text-muted-foreground">{token.chain} · {token.group_name}</p>
         </div>
-        <div className="w-56">
+        <div className="w-full sm:w-56">
           <div className="mb-1 text-xs text-muted-foreground">期次</div>
           <Select value={String(idx)} onValueChange={(v) => setIdx(+v)}>
             <SelectTrigger>
@@ -139,7 +139,7 @@ export function Detail({ id }: { id: string }) {
         return (
           <div key={sec.title}>
             <h2 className="mb-3 text-sm font-semibold tracking-wider text-muted-foreground">{sec.title}</h2>
-            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
               {keys.map((k) => (
                 <MetricCard
                   key={k}

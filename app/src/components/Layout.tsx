@@ -14,7 +14,7 @@ export function Layout({
   return (
     <div className="min-h-screen">
       <header className="sticky top-0 z-30 border-b border-border/80 bg-background/80 backdrop-blur-md">
-        <div className="mx-auto flex h-14 max-w-6xl items-center gap-6 px-5">
+        <div className="mx-auto flex h-14 max-w-6xl items-center gap-3 px-4 sm:gap-6 sm:px-5">
           <a
             href="#/"
             className="flex items-center gap-2.5 font-semibold text-foreground no-underline hover:no-underline"
@@ -37,11 +37,11 @@ export function Layout({
           </nav>
           <div className="ml-auto flex items-center gap-2 text-xs text-muted-foreground">
             <Activity className="h-3.5 w-3.5 text-up" />
-            <span>{clock || '—'}</span>
+            <span className="hidden sm:inline">{clock || '—'}</span>
           </div>
         </div>
       </header>
-      <main className="mx-auto max-w-6xl px-5 py-8">{children}</main>
+      <main className="mx-auto max-w-6xl px-4 py-6 sm:px-5 sm:py-8">{children}</main>
     </div>
   )
 }
