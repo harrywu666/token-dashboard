@@ -1,68 +1,16 @@
-<!doctype html><html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>代币调查看板</title><script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
-<style>
-:root{--bg:#07090d;--panel:#0f141b;--panel2:#141b24;--line:#1f2a36;--txt:#e8eef5;--mut:#7d8a99;--up:#16c784;--down:#ea3943;--acc:#7c5cff}
-*{box-sizing:border-box}body{margin:0;background:radial-gradient(1200px 600px at 10% -10%,#1a1440 0,transparent 60%),var(--bg);color:var(--txt);font:14px/1.55 -apple-system,"PingFang SC","Microsoft YaHei",system-ui;min-height:100vh}
-header{position:sticky;top:0;z-index:5;display:flex;align-items:center;gap:12px;padding:14px 28px;background:rgba(7,9,13,.8);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-header a{color:var(--txt);text-decoration:none;font-weight:700;font-size:17px;display:flex;align-items:center;gap:10px}
-header a:before{content:"";width:22px;height:22px;border-radius:6px;background:linear-gradient(135deg,var(--acc),#16c784)}
-#upd{margin-left:auto}
-main{padding:28px;max-width:1180px;margin:auto}
-h2{font-size:26px;margin:0 0 6px}h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);margin:30px 0 12px;font-weight:600}
-.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
-.card{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:14px;padding:18px;transition:.18s}
-.card[onclick]{cursor:pointer}.card[onclick]:hover{border-color:var(--acc);transform:translateY(-2px);box-shadow:0 10px 30px rgba(124,92,255,.15)}
-.card b{font-size:18px}.big{font-family:"JetBrains Mono",monospace;font-size:28px;font-weight:700;margin:8px 0 2px}
-.up{color:var(--up)}.down{color:var(--down)}.src{color:var(--mut);font-size:12px}
-.card .src:first-child{font-size:12px}
-ul{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 16px 16px 34px;margin:0}li{margin:4px 0}
-canvas{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px}
-table{width:100%;border-collapse:separate;border-spacing:0;background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden;font-family:"JetBrains Mono",monospace;font-size:13px}
-th{background:var(--panel2);color:var(--mut);font-weight:600;font-family:inherit}td,th{padding:10px 14px;border-bottom:1px solid var(--line);text-align:left}tr:last-child td{border-bottom:0}
-tr.add td:last-child{color:var(--up)}tr.reduce td:last-child{color:#f0a020}tr.exit td:last-child{color:var(--down)}tr.new td:last-child{color:#4da3ff}
-tr.add{box-shadow:inset 3px 0 var(--up)}tr.reduce{box-shadow:inset 3px 0 #f0a020}tr.exit{box-shadow:inset 3px 0 var(--down)}tr.new{box-shadow:inset 3px 0 #4da3ff}
-a{color:#8fb4ff}pre{white-space:pre-wrap;background:var(--panel);border:1px solid var(--line);padding:16px;border-radius:14px;font-size:13px}
-select{background:var(--panel2);color:var(--txt);border:1px solid var(--line);padding:6px 10px;border-radius:8px;font-family:inherit}
-</style></head><body>
-<header><a href="#" onclick="home();return false">代币调查看板</a><span class="src" id="upd"></span></header><main id="app">加载中…</main>
-<script>
-const LBL={new_buyers_1h:'1h首次买家',new_launches:'新发币',holders:'持币地址',mcap_usd:'市值',liq_usd:'流动性',top20_pct:'前20真人占比%',followers:'官推粉丝',buys_1h:'1h买入笔数',sells_1h:'1h卖出笔数',traders_1h:'1h独立交易钱包',burns_24h:'24h销毁',platform_eth:'平台税ETH(下限)'};
-const CH={add:'加仓',reduce:'减仓',exit:'清仓',new:'新进',hold:'未动'};
-const j=u=>fetch(u+'?t='+Date.now()).then(r=>r.ok?r.json():null);
-const fmt=v=>v==null?'—':(typeof v=='number'&&Math.abs(v)>=1e4?v.toLocaleString('en'):v);
-const src=m=>m?`<div class="src">${m.source||''} · ${(m.fetched_at||'').slice(5,16)}${m.cached?' · 沿用缓存':''}</div>`:'';
-
-function norm(x,chain){if(!x)return null;const S=x.sources||{},m={};
- const put=(k,v,sk)=>{const so=S[sk||k]||{};m[k]={value:v,source:so.source||'',fetched_at:so.fetched_at||x.ts,cached:!!(x.x&&x.x.cached_from&&sk==='x')}};
- put('holders',x.holders);put('mcap_usd',x.mcap_usd);put('liq_usd',x.liquidity_usd,'liquidity_usd');put('top20_pct',x.top20_total_pct,'top20');
- const h=x.onchain_heat;if(h){put('buys_1h',h.buys,'onchain_heat');put('sells_1h',h.sells,'onchain_heat');put('traders_1h',h.unique_wallets,'onchain_heat');put('new_buyers_1h',h.first_time_buyers,'onchain_heat')}
- const pv=x.platform_volume;if(pv){put('platform_eth',pv.settled_eth_out,'platform_volume');put('new_launches',pv.new_launches,'platform_volume')}
- const f=(x.x||{}).followers||{};for(const[k,v]of Object.entries(f))put('@'+k,v,'x');
- const ex=chain==='solana'?a=>`https://gmgn.ai/sol/address/${a}`:a=>`https://robinhoodchain.blockscout.com/address/${a}`;
- const cm={same:'hold'};
- return{ts:x.ts,conclusion:x.conclusion||[],metrics:m,holders_delta:x.holders_delta,
-  top20:(x.top20||[]).map(w=>({addr:w.addr,pct:w.pct==null?null:+(+w.pct).toFixed(2),change:cm[w.change]||w.change,delta_pct:w.delta_pct,link:ex(w.addr)})),
-  excluded:x.excluded||[],report_text:x.report_text||''}}
-const TOK={};async function load(id){const ts=await j('data/tokens.json')||[];ts.forEach(t=>TOK[t.id]=t);
- const raw=await j(`data/${id}/issues.json`)||[];return raw.map(r=>norm(r,(TOK[id]||{}).chain))}
-async function home(){const ts=await j('data/tokens.json')||[];let h='<div class="cards">';
- for(const t of ts){TOK[t.id]=t;const p=await load(t.id);const a=p.at(-1),b=p.at(-2);
-  const v=a?.metrics?.holders?.value,pv=b?.metrics?.holders?.value,d=(v!=null&&pv!=null)?v-pv:null;
-  h+=`<div class="card" onclick="detail('${t.id}')"><b>${t.name}</b> <span class="src">${t.chain}</span><div class="big">${fmt(v)}</div>
-  <div>${d==null?'':`<span class="${d>=0?'up':'down'}">${d>=0?'+':''}${d}</span> 较上期`}</div>${src(a?.metrics?.holders)}
-  <div style="margin-top:8px">${(a?.conclusion||[]).slice(0,2).join('<br>')}</div><div class="src">${a?.ts||'暂无数据'}</div></div>`}
- document.getElementById('app').innerHTML=h+'</div>';}
-async function detail(id,idx){const p=await load(id);if(!p.length){document.getElementById('app').innerHTML='暂无数据';return}idx=idx??p.length-1;const a=p[idx];
- const keys=[...new Set(p.flatMap(x=>Object.keys(x.metrics||{})))];
- let h=`<h2>${id.toUpperCase()}</h2>期次 <select onchange="detail('${id}',+this.value)">${p.map((x,i)=>`<option value=${i} ${i==idx?'selected':''}>${x.ts}</option>`).join('')}</select>
- <h3>结论</h3><ul>${(a.conclusion||[]).length?(a.conclusion).map(c=>`<li>${c}</li>`).join(''):'<li>—</li>'}</ul><h3>数据</h3><div class="cards">`;
- for(const k of keys){const m=a.metrics?.[k];h+=`<div class="card"><div class="src">${LBL[k]||k}</div><div class="big">${fmt(m?.value)}</div>${src(m)}</div>`}
- h+='</div><h3>走势</h3><canvas id="c" height="110"></canvas>';
- h+=`<h3>前 20 真人钱包</h3><table><tr><th>地址</th><th>占比%</th><th>变化</th></tr>${(a.top20||[]).map(w=>`<tr class="${w.change}"><td><a href="${w.link||'#'}" target=_blank>${w.addr.slice(0,4)}…${w.addr.slice(-4)}</a></td><td>${w.pct}</td><td>${CH[w.change]||''} ${w.delta_pct?w.delta_pct+'%':''}</td></tr>`).join('')}</table>`;
- h+=`<h3>已剔除地址</h3><table>${(a.excluded||[]).map(e=>`<tr><td>${e.addr.slice(0,4)}…${e.addr.slice(-4)}</td><td>${e.reason}</td></tr>`).join('')}</table><h3>本期简报原文</h3><pre>${(a.report_text||'').replace(/</g,'&lt;')}</pre>`;
- document.getElementById('app').innerHTML=h;
- const ds=['holders','top20_pct','followers'].filter(k=>keys.includes(k)).map((k,i)=>({label:LBL[k],data:p.map(x=>x.metrics?.[k]?.value??null),yAxisID:i?'y'+i:'y',spanGaps:true}));
- Chart.defaults.color='#7d8a99';Chart.defaults.borderColor='#1f2a36';ds.forEach((d,i)=>{d.borderColor=['#7c5cff','#16c784','#f0a020'][i];d.backgroundColor='transparent';d.tension=.3;d.pointRadius=2});new Chart(document.getElementById('c'),{type:'line',data:{labels:p.map(x=>x.ts.slice(5,16)),datasets:ds},options:{scales:{y:{position:'left'},y1:{position:'right',grid:{display:false}},y2:{display:false}}}});}
-home();setInterval(()=>{document.getElementById('upd').textContent='自动刷新 '+new Date().toLocaleTimeString()},1000);
-</script></body></html>
+<!doctype html>
+<html lang="zh-CN" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>代币调查看板</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
+    <script type="module" crossorigin src="/token-dashboard/assets/index-Djj_zdlF.js"></script>
+    <link rel="stylesheet" crossorigin href="/token-dashboard/assets/index-vPdVvRA5.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

@@ -11,4 +11,4 @@ data/<id>/periods.json: 按时间升序的数组，每期一条:
 }
 
 
-> 实际数据以分析师 export.py 产出的 issues.json/latest.json 为准；页面在 index.html 内做字段适配。
+> 实际数据以分析师 export.py 产出的 issues.json/latest.json 为准；页面在 React 应用（app/）内通过 norm() 做字段适配；运行时仍读 data/<id>/issues.json。
