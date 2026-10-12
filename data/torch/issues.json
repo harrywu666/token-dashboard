@@ -481,5 +481,239 @@
         "fetched_at": "2026-10-12T21:03+08:00"
       }
     }
+  },
+  {
+    "ts": "2026-10-12T22:01+08:00",
+    "holders": 1137,
+    "holders_delta": 0,
+    "mcap_usd": 2342465,
+    "liquidity_usd": 514656.47,
+    "top20": [
+      {
+        "addr": "0xf1882812aacac1df9a58195dbbd2f97fe48f81f2",
+        "short": "0xf1…81f2",
+        "pct": 2.8312,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "0x913637b4e3c635c027497ef63b255d30958ab022",
+        "short": "0x91…b022",
+        "pct": 1.9356,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "0x54e208854482b2227d74f853de98bed80649ed90",
+        "short": "0x54…ed90",
+        "pct": 1.9292,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "0x6a6fbeadd851b42a7572f95bf90c6d34f30cf97c",
+        "short": "0x6a…f97c",
+        "pct": 1.908,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "0x1e15bf63f281c7b77894c76a376aa917945d40af",
+        "short": "0x1e…40af",
+        "pct": 1.6236,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "0xabc0a4a9f6bf386e725aecb8037e40b77ab685cf",
+        "short": "0xab…85cf",
+        "pct": 1.5924,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "0xfd92059c672644e02c7f0203422b8f92c2dc0068",
+        "short": "0xfd…0068",
+        "pct": 1.5188,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "0xb856d6db35a8bbddca68467f10728433e376a3cc",
+        "short": "0xb8…a3cc",
+        "pct": 1.4226,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "0x33d35d84372a97da6bbd32d101bdcc48074cc102",
+        "short": "0x33…c102",
+        "pct": 1.3223,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "0x92109c168c827ba8a010ecd3b55285a10bb2e4f0",
+        "short": "0x92…e4f0",
+        "pct": 1.3127,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "0x10fc84de7c23208a81ceec886d283a863b3d7e3a",
+        "short": "0x10…7e3a",
+        "pct": 1.1656,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "0x592d6d868c061e32302c1748263b3a6ae52a921c",
+        "short": "0x59…921c",
+        "pct": 1.09,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "0x066ef18ded4ac0abe4033652ec6ca17169268de3",
+        "short": "0x06…8de3",
+        "pct": 1.0814,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "0x64d03160c75928d07474972da8405fd6d7d38a5e",
+        "short": "0x64…8a5e",
+        "pct": 1.0383,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "0xbeb98f382ad6e6e61c9a8f3be909478a48aba82c",
+        "short": "0xbe…a82c",
+        "pct": 1.0326,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "0xc01cdb59a8698189eabae68644d8bf1609288e7d",
+        "short": "0xc0…8e7d",
+        "pct": 1.0092,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "0xc5363a2dc862976fc9608a52a60a297853b07512",
+        "short": "0xc5…7512",
+        "pct": 1.0,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "0x1684df10974d9fecd36a0ac515a03146aceaa1f0",
+        "short": "0x16…a1f0",
+        "pct": 0.9947,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "0xcacaa031f34187e3b529d06cda7a9adb5631ee20",
+        "short": "0xca…ee20",
+        "pct": 0.8907,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "0xbd5334e7825917d8a3b793d27ecd760687815fd5",
+        "short": "0xbd…5fd5",
+        "pct": 0.8884,
+        "delta_pct": 0.0,
+        "change": "same"
+      }
+    ],
+    "top20_total_pct": 27.5873,
+    "excluded": [
+      {
+        "addr": "0x340278a0ef7c7e83418771504871619453bd0fa6",
+        "reason": "project/feeRouter (config exclude list)"
+      },
+      {
+        "addr": "0x3fdc552eb37c9514be56530f0b7fac7aeaeab312",
+        "reason": "project/treasury (config exclude list)"
+      },
+      {
+        "addr": "0xd1d302ae96671ae6260f8184de984b3eace284af",
+        "reason": "project/buyback_sink (config exclude list)"
+      },
+      {
+        "addr": "0x3062405d33171f59e60dca22330a8785155eda7f",
+        "reason": "project/rewards (config exclude list)"
+      },
+      {
+        "addr": "0x94e4a9b18935f0dd9b8ea0a0caced47cd7d0552b",
+        "reason": "project/admin (config exclude list)"
+      },
+      {
+        "addr": "0x000000000000000000000000000000000000dead",
+        "reason": "project/dead (config exclude list)"
+      },
+      {
+        "addr": "0x6d9354c0184ac66da766dfb8a0de4a2dd0f7a6ce",
+        "reason": "project/burn_executor (config exclude list)"
+      },
+      {
+        "addr": "0x06954e88ee0fd77c61fe016974523ff7b28c9a07",
+        "reason": "project/burn_executor (config exclude list)"
+      }
+    ],
+    "onchain_heat": null,
+    "burns": null,
+    "platform_volume": {
+      "window_hours": 1.0,
+      "new_launches": 0,
+      "settled_events": 9,
+      "settled_eth_out": 0.02800782758894134,
+      "treasury_torch": 103507.31497711496,
+      "lower_bound": true
+    },
+    "x": {
+      "followers": {
+        "Torchpaddotfun": null
+      },
+      "mentions_1h": null,
+      "latest_post": null,
+      "cached_from": null
+    },
+    "conclusion": [
+      "持币数 1137，和 21:03 持平，本小时没有新增持有人，热度横盘。",
+      "前 20 真人钱包本小时没有动作，合计占比 27.59% 不变，没有集中出货或吸筹信号。",
+      "本小时自动销毁 3 笔，约 3.06 万枚，还在正常运行。",
+      "feeRouter 代理近 1 小时没有升级或更换管理员事件，税的去向规则没变。"
+    ],
+    "sources": {
+      "holders": {
+        "source": "GMGN",
+        "fetched_at": "2026-10-12T22:01+08:00"
+      },
+      "mcap_usd": {
+        "source": "GMGN",
+        "fetched_at": "2026-10-12T22:01+08:00"
+      },
+      "liquidity_usd": {
+        "source": "GMGN",
+        "fetched_at": "2026-10-12T22:01+08:00"
+      },
+      "top20": {
+        "source": "GMGN",
+        "fetched_at": "2026-10-12T22:01+08:00"
+      },
+      "top20_filter": {
+        "source": "RPC",
+        "fetched_at": "2026-10-12T22:01+08:00"
+      },
+      "platform_volume": {
+        "source": "RPC",
+        "fetched_at": "2026-10-12T22:03+08:00"
+      }
+    }
   }
 ]

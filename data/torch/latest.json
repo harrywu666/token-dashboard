@@ -1,9 +1,9 @@
 {
-  "ts": "2026-10-12T21:03+08:00",
+  "ts": "2026-10-12T22:01+08:00",
   "holders": 1137,
   "holders_delta": 0,
-  "mcap_usd": 2211178,
-  "liquidity_usd": 491851.76,
+  "mcap_usd": 2342465,
+  "liquidity_usd": 514656.47,
   "top20": [
     {
       "addr": "0xf1882812aacac1df9a58195dbbd2f97fe48f81f2",
@@ -23,8 +23,8 @@
       "addr": "0x54e208854482b2227d74f853de98bed80649ed90",
       "short": "0x54…ed90",
       "pct": 1.9292,
-      "change": "new",
-      "delta_pct": null
+      "delta_pct": 0.0,
+      "change": "same"
     },
     {
       "addr": "0x6a6fbeadd851b42a7572f95bf90c6d34f30cf97c",
@@ -144,26 +144,10 @@
       "pct": 0.8884,
       "delta_pct": 0.0,
       "change": "same"
-    },
-    {
-      "addr": "0xfaa5e1644187b7ea067284468e01232fb10b79dc",
-      "short": "0xfa…79dc",
-      "pct": null,
-      "change": "exited",
-      "delta_pct": null,
-      "prev_pct": 1.4469
     }
   ],
   "top20_total_pct": 27.5873,
   "excluded": [
-    {
-      "addr": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
-      "reason": "pool (uniswap_v4)"
-    },
-    {
-      "addr": "0x000000000000000000000000000000000000dead",
-      "reason": "dead/burn"
-    },
     {
       "addr": "0x340278a0ef7c7e83418771504871619453bd0fa6",
       "reason": "project/feeRouter (config exclude list)"
@@ -185,6 +169,10 @@
       "reason": "project/admin (config exclude list)"
     },
     {
+      "addr": "0x000000000000000000000000000000000000dead",
+      "reason": "project/dead (config exclude list)"
+    },
+    {
       "addr": "0x6d9354c0184ac66da766dfb8a0de4a2dd0f7a6ce",
       "reason": "project/burn_executor (config exclude list)"
     },
@@ -197,10 +185,10 @@
   "burns": null,
   "platform_volume": {
     "window_hours": 1.0,
-    "new_launches": 1,
-    "settled_events": 11,
-    "settled_eth_out": 0.012825450099236304,
-    "treasury_torch": 103364.16074968498,
+    "new_launches": 0,
+    "settled_events": 9,
+    "settled_eth_out": 0.02800782758894134,
+    "treasury_torch": 103507.31497711496,
     "lower_bound": true
   },
   "x": {
@@ -211,31 +199,36 @@
     "latest_post": null,
     "cached_from": null
   },
-  "conclusion": [],
+  "conclusion": [
+    "持币数 1137，和 21:03 持平，本小时没有新增持有人，热度横盘。",
+    "前 20 真人钱包本小时没有动作，合计占比 27.59% 不变，没有集中出货或吸筹信号。",
+    "本小时自动销毁 3 笔，约 3.06 万枚，还在正常运行。",
+    "feeRouter 代理近 1 小时没有升级或更换管理员事件，税的去向规则没变。"
+  ],
   "sources": {
     "holders": {
       "source": "GMGN",
-      "fetched_at": "2026-10-12T21:03+08:00"
+      "fetched_at": "2026-10-12T22:01+08:00"
     },
     "mcap_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-12T21:03+08:00"
+      "fetched_at": "2026-10-12T22:01+08:00"
     },
     "liquidity_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-12T21:03+08:00"
+      "fetched_at": "2026-10-12T22:01+08:00"
     },
     "top20": {
       "source": "GMGN",
-      "fetched_at": "2026-10-12T21:03+08:00"
+      "fetched_at": "2026-10-12T22:01+08:00"
     },
     "top20_filter": {
       "source": "RPC",
-      "fetched_at": "2026-10-12T21:03+08:00"
+      "fetched_at": "2026-10-12T22:01+08:00"
     },
     "platform_volume": {
       "source": "RPC",
-      "fetched_at": "2026-10-12T21:03+08:00"
+      "fetched_at": "2026-10-12T22:03+08:00"
     }
   }
 }

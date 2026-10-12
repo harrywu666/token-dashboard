@@ -1,9 +1,9 @@
 {
-  "ts": "2026-10-12T21:23+08:00",
-  "holders": 5935,
-  "holders_delta": -8,
-  "mcap_usd": 4075062,
-  "liquidity_usd": 251525.7,
+  "ts": "2026-10-12T22:01+08:00",
+  "holders": 5948,
+  "holders_delta": 13,
+  "mcap_usd": 4952556,
+  "liquidity_usd": 268912.27,
   "top20": [
     {
       "addr": "2E1g7f7AYSJkUkzMbkwP3QkuawHWDqWbU6Lx39agKsPs",
@@ -162,45 +162,50 @@
     }
   ],
   "onchain_heat": {
-    "buys": 26,
-    "sells": 41,
-    "unique_wallets": 61,
-    "net_flow": -895622.63,
-    "first_time_buyers": null,
+    "buys": 73,
+    "sells": 102,
+    "unique_wallets": 130,
+    "net_flow": 2677114.5,
+    "first_time_buyers": 33,
     "window_hours": 1.0
   },
   "x": {
     "followers": {
-      "usehotbot": null,
-      "elijahintek": null,
-      "0xWhoismax": null,
-      "clawpumptech": null
+      "usehotbot": 5441.0,
+      "elijahintek": 25744.0,
+      "0xWhoismax": 4642.0,
+      "clawpumptech": 13340.0
     },
     "mentions_1h": null,
     "latest_post": null,
-    "cached_from": null
+    "cached_from": 1791813754
   },
-  "conclusion": [],
+  "conclusion": [
+    "持币数 5948，比 21:23 多 13 个，小幅增长，没有猛增，不像拆小号。",
+    "前 20 大真人钱包一个都没动，合计占比仍是 31.39%，没有集中出货或吸筹迹象。",
+    "链上最近 1 小时卖单（102 笔）多于买单（73 笔），但代币净流入为正，说明买方单笔更大；新面孔买家 33 个。",
+    "X 恢复正常拉取：官推 21:30 发了新视频，评论和转发正常，没有刷粉迹象。"
+  ],
   "sources": {
     "holders": {
       "source": "GMGN",
-      "fetched_at": "2026-10-12T21:23+08:00"
+      "fetched_at": "2026-10-12T22:01+08:00"
     },
     "mcap_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-12T21:23+08:00"
+      "fetched_at": "2026-10-12T22:01+08:00"
     },
     "liquidity_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-12T21:23+08:00"
+      "fetched_at": "2026-10-12T22:01+08:00"
     },
     "top20": {
       "source": "GMGN",
-      "fetched_at": "2026-10-12T21:23+08:00"
+      "fetched_at": "2026-10-12T22:01+08:00"
     },
     "onchain_heat": {
       "source": "Helius",
-      "fetched_at": "2026-10-12T21:39+08:00"
+      "fetched_at": "2026-10-12T22:02+08:00"
     }
   }
 }
