@@ -164,16 +164,21 @@
   "onchain_heat": null,
   "x": {
     "followers": {
-      "usehotbot": 5528,
+      "usehotbot": 5549,
       "elijahintek": 25750,
       "0xWhoismax": 4645,
-      "clawpumptech": 13356
+      "clawpumptech": 13364
     },
     "mentions_1h": 96,
     "latest_post": null,
-    "cached_from": 1791834917
+    "cached_from": 1791841970
   },
-  "conclusion": [],
+  "conclusion": [
+    "持币地址 5909，比上期少 59；链上卖仍多于买（买 71 / 卖 159），和持币回落对得上，没有拆小号迹象",
+    "前 20 真人名单没变，合计占比 30.77%（+0.05 个百分点）；只有 6451…K6Fj 加仓约 48 万枚，没有集中出货或吸筹",
+    "联创 @elijahintek 这一小时在回复社区问题，官推也有几条互动；ClawPump 发了 Community Bounties 产品更新",
+    "冒充号 HotBotOfSol 还在刷，近 1h 提及 59 条里约 40 条跟它有关，别点它的链接"
+  ],
   "sources": {
     "holders": {
       "source": "GMGN",
