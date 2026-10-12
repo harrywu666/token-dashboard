@@ -65,7 +65,9 @@ export const CH_VARIANT: Record<string, 'up' | 'down' | 'warn' | 'new' | 'muted'
 
 const j = async <T>(u: string): Promise<T | null> => {
   try {
-    const r = await fetch(u + '?t=' + Date.now())
+    const r = await fetch(u + (u.includes('?') ? '&' : '?') + 't=' + Date.now(), {
+      cache: 'no-store',
+    })
     if (!r.ok) return null
     return (await r.json()) as T
   } catch {

@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Layout } from '@/components/Layout'
 import { Detail } from '@/pages/Detail'
 import { Home } from '@/pages/Home'
+import { startVersionWatch } from '@/lib/version'
 
 type Route = { page: 'home' } | { page: 'detail'; id: string }
 
@@ -20,6 +21,10 @@ export default function App() {
     const onHash = () => setRoute(parseHash())
     window.addEventListener('hashchange', onHash)
     return () => window.removeEventListener('hashchange', onHash)
+  }, [])
+
+  useEffect(() => {
+    startVersionWatch()
   }, [])
 
   useEffect(() => {

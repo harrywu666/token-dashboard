@@ -36,6 +36,7 @@ export function Layout({
             </a>
           </nav>
           <div className="ml-auto flex items-center gap-2 text-xs text-muted-foreground">
+            <span className="hidden text-[11px] sm:inline">有新版本会自动刷新</span>
             <Activity className="h-3.5 w-3.5 text-up" />
             <span className="hidden sm:inline">{clock || '—'}</span>
           </div>

@@ -17,3 +17,8 @@ mkdir -p /tmp/tdash/token-dashboard && cp -r index.html assets data .nojekyll /t
 cd /tmp/tdash && python3 -m http.server 8787
 # 打开 http://127.0.0.1:8787/token-dashboard/
 ```
+
+## 缓存说明
+- 数据请求使用 `cache: 'no-store'` + `?t=` 时间戳，普通刷新即可看到最新 `data/`。
+- 每次 `./build.sh` 会写根目录 `version.json`；客户端在加载/切回前台时比对版本，变化则自动 `reload`（首次只记录，不循环刷新）。
+- `index.html` 带有 Cache-Control meta；**GitHub Pages 可能仍忽略 HTTP 缓存头**，版本检测是主要兜底。
