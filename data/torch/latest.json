@@ -1,28 +1,28 @@
 {
-  "ts": "2026-10-12T23:10+08:00",
-  "holders": 1143,
-  "holders_delta": 6,
-  "mcap_usd": 2388272,
-  "liquidity_usd": 517877.75,
+  "ts": "2026-10-13T00:02+08:00",
+  "holders": 1182,
+  "holders_delta": 39,
+  "mcap_usd": 2835076,
+  "liquidity_usd": 580904.12,
   "top20": [
     {
       "addr": "0xf1882812aacac1df9a58195dbbd2f97fe48f81f2",
       "short": "0xf1…81f2",
-      "pct": 2.8312,
-      "delta_pct": 0.0,
-      "change": "same"
+      "pct": 3.3002,
+      "delta_pct": 0.469,
+      "change": "added"
+    },
+    {
+      "addr": "0x54e208854482b2227d74f853de98bed80649ed90",
+      "short": "0x54…ed90",
+      "pct": 1.9522,
+      "delta_pct": 0.023,
+      "change": "added"
     },
     {
       "addr": "0x913637b4e3c635c027497ef63b255d30958ab022",
       "short": "0x91…b022",
       "pct": 1.9356,
-      "delta_pct": 0.0,
-      "change": "same"
-    },
-    {
-      "addr": "0x54e208854482b2227d74f853de98bed80649ed90",
-      "short": "0x54…ed90",
-      "pct": 1.9292,
       "delta_pct": 0.0,
       "change": "same"
     },
@@ -34,16 +34,16 @@
       "change": "same"
     },
     {
+      "addr": "0xabc0a4a9f6bf386e725aecb8037e40b77ab685cf",
+      "short": "0xab…85cf",
+      "pct": 1.7397,
+      "delta_pct": 0.1473,
+      "change": "added"
+    },
+    {
       "addr": "0x1e15bf63f281c7b77894c76a376aa917945d40af",
       "short": "0x1e…40af",
       "pct": 1.6236,
-      "delta_pct": 0.0,
-      "change": "same"
-    },
-    {
-      "addr": "0xabc0a4a9f6bf386e725aecb8037e40b77ab685cf",
-      "short": "0xab…85cf",
-      "pct": 1.5924,
       "delta_pct": 0.0,
       "change": "same"
     },
@@ -65,8 +65,8 @@
       "addr": "0x33d35d84372a97da6bbd32d101bdcc48074cc102",
       "short": "0x33…c102",
       "pct": 1.3746,
-      "delta_pct": 0.0523,
-      "change": "added"
+      "delta_pct": 0.0,
+      "change": "same"
     },
     {
       "addr": "0x92109c168c827ba8a010ecd3b55285a10bb2e4f0",
@@ -146,7 +146,7 @@
       "change": "same"
     }
   ],
-  "top20_total_pct": 27.6396,
+  "top20_total_pct": 28.2789,
   "excluded": [
     {
       "addr": "0x340278a0ef7c7e83418771504871619453bd0fa6",
@@ -183,65 +183,65 @@
   ],
   "onchain_heat": null,
   "burns": {
-    "window_hours": 1,
-    "count": 3,
-    "amount": 28964.52,
+    "window_hours": 2,
+    "count": 8,
+    "amount": 187093.45,
     "last_1h": null
   },
   "platform_volume": {
-    "window_hours": 1.0,
+    "window_hours": 2.0,
     "new_launches": 1,
-    "settled_events": 19,
-    "settled_eth_out": 38.64864591529265,
-    "treasury_torch": 106598.20520849348,
+    "settled_events": 38,
+    "settled_eth_out": 0.20229085837399197,
+    "treasury_torch": 106954.60344036092,
     "lower_bound": true
   },
   "x": {
     "followers": {
-      "Torchpaddotfun": 3252
+      "Torchpaddotfun": 3262
     },
     "mentions_1h": null,
     "latest_post": "2109656346329030945",
     "cached_from": null
   },
   "conclusion": [
-    "持币数 1143，较上期 +6，本小时有新增持有人，热度略回暖。",
-    "前 20 真人合计占比 27.64%（+0.05 个百分点），仅 0x33d3…c102 加仓约 52 万枚，其余前 20 基本没动。",
-    "平台本小时活跃：新发射 1 个，结算 19 笔、约 38.65 ETH（下限），国库约 10.7 万枚 TORCH。",
-    "feeRouter 代理近 1 小时没有升级或更换管理员事件，税的去向规则没变。"
+    "持币地址 1182，比上期多 39 个，是开跟以来最快的一次增长；前 20 真人里 3 个加仓、没人减仓或清仓，合计占比升到 28.28%",
+    "近 2 小时销毁 8 笔约 18.7 万 TORCH，都是同一个销毁执行钱包发起，节奏比之前快",
+    "上期 38.65 ETH 结算已核实是算错了：其中 1 笔 38.61 是新币用 TORCH 报价、换回的是 TORCH 不是 ETH，脚本把两种单位加在了一起。剔除后近 2 小时真实结算约 0.20 ETH，上期实际也只有约 0.04 ETH",
+    "feeRouter 代理近 2 小时没有升级、没有换管理员"
   ],
   "sources": {
     "holders": {
       "source": "GMGN",
-      "fetched_at": "2026-10-12T23:10+08:00"
+      "fetched_at": "2026-10-13T00:02+08:00"
     },
     "mcap_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-12T23:10+08:00"
+      "fetched_at": "2026-10-13T00:02+08:00"
     },
     "liquidity_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-12T23:10+08:00"
+      "fetched_at": "2026-10-13T00:02+08:00"
     },
     "top20": {
       "source": "GMGN",
-      "fetched_at": "2026-10-12T23:10+08:00"
+      "fetched_at": "2026-10-13T00:02+08:00"
     },
     "top20_filter": {
       "source": "RPC",
-      "fetched_at": "2026-10-12T23:10+08:00"
+      "fetched_at": "2026-10-13T00:02+08:00"
     },
     "platform_volume": {
       "source": "RPC",
-      "fetched_at": "2026-10-12T23:10+08:00"
+      "fetched_at": "2026-10-13T00:02+08:00"
     },
     "burns": {
       "source": "RPC",
-      "fetched_at": "2026-10-12T23:10+08:00"
+      "fetched_at": "2026-10-13T00:02+08:00"
     },
     "x": {
-      "source": "x MCP",
-      "fetched_at": "2026-10-12T23:10+08:00"
+      "source": "user-X--harry",
+      "fetched_at": "2026-10-13T00:02+08:00"
     }
   }
 }
