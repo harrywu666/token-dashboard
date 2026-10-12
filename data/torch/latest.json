@@ -1,9 +1,9 @@
 {
-  "ts": "2026-10-12T22:01+08:00",
-  "holders": 1137,
-  "holders_delta": 0,
-  "mcap_usd": 2342465,
-  "liquidity_usd": 514656.47,
+  "ts": "2026-10-12T23:10+08:00",
+  "holders": 1143,
+  "holders_delta": 6,
+  "mcap_usd": 2388272,
+  "liquidity_usd": 517877.75,
   "top20": [
     {
       "addr": "0xf1882812aacac1df9a58195dbbd2f97fe48f81f2",
@@ -64,9 +64,9 @@
     {
       "addr": "0x33d35d84372a97da6bbd32d101bdcc48074cc102",
       "short": "0x33…c102",
-      "pct": 1.3223,
-      "delta_pct": 0.0,
-      "change": "same"
+      "pct": 1.3746,
+      "delta_pct": 0.0523,
+      "change": "added"
     },
     {
       "addr": "0x92109c168c827ba8a010ecd3b55285a10bb2e4f0",
@@ -146,7 +146,7 @@
       "change": "same"
     }
   ],
-  "top20_total_pct": 27.5873,
+  "top20_total_pct": 27.6396,
   "excluded": [
     {
       "addr": "0x340278a0ef7c7e83418771504871619453bd0fa6",
@@ -185,10 +185,10 @@
   "burns": null,
   "platform_volume": {
     "window_hours": 1.0,
-    "new_launches": 0,
-    "settled_events": 9,
-    "settled_eth_out": 0.02800782758894134,
-    "treasury_torch": 103507.31497711496,
+    "new_launches": 1,
+    "settled_events": 19,
+    "settled_eth_out": 38.64864591529265,
+    "treasury_torch": 106598.20520849348,
     "lower_bound": true
   },
   "x": {
@@ -199,36 +199,31 @@
     "latest_post": null,
     "cached_from": null
   },
-  "conclusion": [
-    "持币数 1137，和 21:03 持平，本小时没有新增持有人，热度横盘。",
-    "前 20 真人钱包本小时没有动作，合计占比 27.59% 不变，没有集中出货或吸筹信号。",
-    "本小时自动销毁 3 笔，约 3.06 万枚，还在正常运行。",
-    "feeRouter 代理近 1 小时没有升级或更换管理员事件，税的去向规则没变。"
-  ],
+  "conclusion": [],
   "sources": {
     "holders": {
       "source": "GMGN",
-      "fetched_at": "2026-10-12T22:01+08:00"
+      "fetched_at": "2026-10-12T23:10+08:00"
     },
     "mcap_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-12T22:01+08:00"
+      "fetched_at": "2026-10-12T23:10+08:00"
     },
     "liquidity_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-12T22:01+08:00"
+      "fetched_at": "2026-10-12T23:10+08:00"
     },
     "top20": {
       "source": "GMGN",
-      "fetched_at": "2026-10-12T22:01+08:00"
+      "fetched_at": "2026-10-12T23:10+08:00"
     },
     "top20_filter": {
       "source": "RPC",
-      "fetched_at": "2026-10-12T22:01+08:00"
+      "fetched_at": "2026-10-12T23:10+08:00"
     },
     "platform_volume": {
       "source": "RPC",
-      "fetched_at": "2026-10-12T22:03+08:00"
+      "fetched_at": "2026-10-12T23:10+08:00"
     }
   }
 }
