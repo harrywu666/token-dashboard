@@ -13,6 +13,8 @@ import {
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { TrendChart } from '@/components/TrendChart'
+import { MetricCard } from '@/components/MetricCard'
+import { SECTIONS, valueAt } from '@/lib/metrics'
 import {
   CH_LABEL,
   CH_VARIANT,
@@ -52,28 +54,10 @@ export function Detail({ id }: { id: string }) {
 
   const period = idx >= 0 ? periods[idx] : null
 
-  const metricKeys = useMemo(() => {
+  const allKeys = useMemo(() => {
     const keys = new Set<string>()
     for (const p of periods) Object.keys(p.metrics || {}).forEach((k) => keys.add(k))
-    // Primary first, mcap/liq last as secondary
-    const order = [
-      'holders',
-      'top20_pct',
-      'buys_1h',
-      'sells_1h',
-      'traders_1h',
-      'new_buyers_1h',
-      'platform_eth',
-      'new_launches',
-      'burns_24h',
-    ]
-    const primary = order.filter((k) => keys.has(k))
-    const followers = [...keys].filter((k) => k.startsWith('@'))
-    const secondary = ['mcap_usd', 'liq_usd'].filter((k) => keys.has(k))
-    const rest = [...keys].filter(
-      (k) => !primary.includes(k) && !secondary.includes(k) && !followers.includes(k),
-    )
-    return { primary: [...primary, ...followers, ...rest], secondary }
+    return [...keys]
   }, [periods])
 
   const chartSeries = useMemo(() => {
@@ -148,27 +132,29 @@ export function Detail({ id }: { id: string }) {
         </CardContent>
       </Card>
 
-      <div>
-        <h2 className="mb-3 text-sm font-semibold uppercase tracking-wider text-muted-foreground">核心指标</h2>
-        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-          {metricKeys.primary.map((k) => (
-            <MetricCard key={k} label={LBL[k] || k} metric={period.metrics[k]} />
-          ))}
-        </div>
-      </div>
-
-      {metricKeys.secondary.length > 0 && (
-        <div>
-          <h2 className="mb-3 text-sm font-semibold uppercase tracking-wider text-muted-foreground">
-            参考（市值 / 流动性）
-          </h2>
-          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-            {metricKeys.secondary.map((k) => (
-              <MetricCard key={k} label={LBL[k] || k} metric={period.metrics[k]} muted />
-            ))}
+      {SECTIONS.map((sec) => {
+        const keys = sec.keys(allKeys)
+        if (!keys.length) return null
+        const muted = sec.title.startsWith('参考')
+        return (
+          <div key={sec.title}>
+            <h2 className="mb-3 text-sm font-semibold tracking-wider text-muted-foreground">{sec.title}</h2>
+            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+              {keys.map((k) => (
+                <MetricCard
+                  key={k}
+                  k={k}
+                  metric={period.metrics[k]}
+                  cur={valueAt(periods, idx, k)}
+                  prev={valueAt(periods, idx - 1, k)}
+                  series={periods.slice(0, idx + 1).map((_, i) => valueAt(periods, i, k))}
+                  muted={muted}
+                />
+              ))}
+            </div>
           </div>
-        </div>
-      )}
+        )
+      })}
 
       <div>
         <h2 className="mb-3 text-sm font-semibold uppercase tracking-wider text-muted-foreground">走势</h2>
@@ -267,28 +253,3 @@ export function Detail({ id }: { id: string }) {
   )
 }
 
-function MetricCard({
-  label,
-  metric,
-  muted,
-}: {
-  label: string
-  metric?: { value: any; source: string; fetched_at: string; cached?: boolean }
-  muted?: boolean
-}) {
-  return (
-    <Card className={cn(muted && 'opacity-80')}>
-      <CardContent className="p-4">
-        <div className="text-xs text-muted-foreground">{label}</div>
-        <div className="mt-1 font-mono text-2xl font-semibold tabular-nums tracking-tight">
-          {fmt(metric?.value)}
-        </div>
-        <div className="mt-2 text-[11px] text-muted-foreground">
-          {metric?.source || '—'}
-          {metric?.fetched_at ? ` · ${fmtTs(metric.fetched_at).slice(5, 16)}` : ''}
-          {metric?.cached ? ' · 沿用缓存' : ''}
-        </div>
-      </CardContent>
-    </Card>
-  )
-}

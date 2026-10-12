@@ -3,7 +3,8 @@ import { Badge } from '@/components/ui/badge'
 import { Sparkline } from '@/components/Sparkline'
 import type { Period, TokenMeta } from '@/lib/data'
 import { metricSeries } from '@/lib/data'
-import { fmt, fmtDelta, fmtTs, cn } from '@/lib/utils'
+import { fmtTs, cn } from '@/lib/utils'
+import { TONE_CLS, delta as mkDelta, fmtVal, valueAt, type Kind } from '@/lib/metrics'
 
 export function TokenCard({
   token,
@@ -42,31 +43,27 @@ export function TokenCard({
         </CardHeader>
         <CardContent className="space-y-4">
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-            <MetricMini
-              label="持币地址"
-              value={fmt(holders)}
-              delta={delta}
-              spark={holdersSpark}
-              color="hsl(252 85% 68%)"
-            />
-            <MetricMini
-              label="前20真人占比"
-              value={top20 == null ? '—' : `${Number(top20).toFixed(2)}%`}
-              spark={top20Spark}
-              color="hsl(152 69% 43%)"
-            />
-            <MetricMini
-              label="1h买入"
-              value={fmt(buys)}
-              spark={buysSpark}
-              color="hsl(152 69% 43%)"
-            />
-            <MetricMini
-              label="1h卖出"
-              value={fmt(sells)}
-              spark={sellsSpark}
-              color="hsl(0 72% 55%)"
-            />
+            {([
+              ['holders', '持币地址', 'count', holdersSpark, 'hsl(252 85% 68%)', false],
+              ['top20_pct', '前20真人占比', 'pct', top20Spark, 'hsl(152 69% 43%)', false],
+              ['buys_1h', '1h买入', 'count', buysSpark, 'hsl(152 69% 43%)', true],
+              ['sells_1h', '1h卖出', 'count', sellsSpark, 'hsl(0 72% 55%)', true],
+            ] as [string, string, Kind, (number | null)[], string, boolean][]).map(([k, label, kind, spark, color, hourly]) => {
+              const n = periods.length - 1
+              const cur = valueAt(periods, n, k)
+              const d = mkDelta(cur, valueAt(periods, n - 1, k), kind)
+              return (
+                <div key={k} className="rounded-lg bg-secondary/40 p-2.5">
+                  <div className="text-[11px] text-muted-foreground">{label}</div>
+                  <div className="mt-0.5 font-mono text-lg font-semibold tabular-nums tracking-tight">{fmtVal(cur, kind)}</div>
+                  <div className={cn('font-mono text-[11px] font-medium', TONE_CLS[d.tone])}>
+                    {d.text}
+                    {d.tone !== 'none' && <span className="block font-sans font-normal text-muted-foreground">{hourly ? '较上一小时' : '较上期'}</span>}
+                  </div>
+                  <div className="mt-1"><Sparkline data={spark} color={color} height={32} /></div>
+                </div>
+              )
+            })}
           </div>
 
           {conclusions.length > 0 && (
@@ -98,36 +95,3 @@ export function TokenCard({
   )
 }
 
-function MetricMini({
-  label,
-  value,
-  delta,
-  spark,
-  color,
-}: {
-  label: string
-  value: string
-  delta?: number | null
-  spark: (number | null)[]
-  color: string
-}) {
-  return (
-    <div className="rounded-lg bg-secondary/40 p-2.5">
-      <div className="text-[11px] text-muted-foreground">{label}</div>
-      <div className="mt-0.5 font-mono text-lg font-semibold tabular-nums tracking-tight">{value}</div>
-      {delta != null && (
-        <div
-          className={cn(
-            'text-xs font-medium',
-            delta > 0 ? 'text-up' : delta < 0 ? 'text-down' : 'text-muted-foreground',
-          )}
-        >
-          {fmtDelta(delta)} 较上期
-        </div>
-      )}
-      <div className="mt-1">
-        <Sparkline data={spark} color={color} height={32} />
-      </div>
-    </div>
-  )
-}
