@@ -182,7 +182,12 @@
     }
   ],
   "onchain_heat": null,
-  "burns": null,
+  "burns": {
+    "window_hours": 2.0,
+    "count": 4,
+    "amount": 79964.66,
+    "last_1h": null
+  },
   "platform_volume": {
     "window_hours": 2.0,
     "new_launches": 1,
@@ -193,13 +198,18 @@
   },
   "x": {
     "followers": {
-      "Torchpaddotfun": 3252
+      "Torchpaddotfun": 3333
     },
     "mentions_1h": null,
     "latest_post": null,
-    "cached_from": 1791818048
+    "cached_from": null
   },
-  "conclusion": [],
+  "conclusion": [
+    "持币地址 1444，比上期再增 81 个，没有回落；增速较上期 +149 放缓，但仍偏快。本窗口有 1 个新发币、结算偏弱（约 0.11 ETH），持币续涨与平台量仍不完全匹配，拆小号疑虑未解除",
+    "前 20 真人 3 个加仓、没人减仓，合计占比 29.28%（+0.35 个百分点）；0xf188…81f2 与 0xabc0…85cf 继续加码，后者升到第 2",
+    "近 2 小时销毁 4 笔约 8.0 万 TORCH，节奏回落；仍只有 0x6d93…a6ce，0x0695…9a07 连续三期未动",
+    "feeRouter 代理近 2 小时没有升级、没有换管理员；10/25 持币人分红未见公开进展"
+  ],
   "sources": {
     "holders": {
       "source": "GMGN",
@@ -223,7 +233,15 @@
     },
     "platform_volume": {
       "source": "RPC",
-      "fetched_at": "2026-10-13T07:45+08:00"
+      "fetched_at": "2026-10-13T08:00+08:00"
+    },
+    "burns": {
+      "source": "RPC",
+      "fetched_at": "2026-10-13T08:00+08:00"
+    },
+    "x": {
+      "source": "user-X--harry + x.get_users_posts",
+      "fetched_at": "2026-10-13T08:00+08:00"
     }
   }
 }
