@@ -1,12 +1,31 @@
 <!doctype html><html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>代币调查看板</title><script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
-<style>body{font:14px system-ui;margin:0;background:#0d1117;color:#e6edf3}header{padding:14px 20px;border-bottom:1px solid #30363d}
-main{padding:20px;max-width:1100px;margin:auto}.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
-.card{background:#161b22;border:1px solid #30363d;border-radius:10px;padding:14px;cursor:pointer}.big{font-size:26px;font-weight:700}
-.up{color:#3fb950}.down{color:#f85149}.src{color:#8b949e;font-size:12px}table{width:100%;border-collapse:collapse}td,th{padding:6px;border-bottom:1px solid #30363d;text-align:left}
-.add{background:#12361f}.reduce{background:#3d2a12}.exit{background:#4a1515}.new{background:#132a4a}a{color:#58a6ff}pre{white-space:pre-wrap;background:#161b22;padding:10px;border-radius:8px}
-select{background:#161b22;color:#e6edf3;border:1px solid #30363d;padding:4px}</style></head><body>
-<header><a href="#" onclick="home();return false" style="color:#e6edf3;text-decoration:none"><b>代币调查看板</b></a> <span class="src" id="upd"></span></header><main id="app">加载中…</main>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07090d;--panel:#0f141b;--panel2:#141b24;--line:#1f2a36;--txt:#e8eef5;--mut:#7d8a99;--up:#16c784;--down:#ea3943;--acc:#7c5cff}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(1200px 600px at 10% -10%,#1a1440 0,transparent 60%),var(--bg);color:var(--txt);font:14px/1.55 -apple-system,"PingFang SC","Microsoft YaHei",system-ui;min-height:100vh}
+header{position:sticky;top:0;z-index:5;display:flex;align-items:center;gap:12px;padding:14px 28px;background:rgba(7,9,13,.8);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header a{color:var(--txt);text-decoration:none;font-weight:700;font-size:17px;display:flex;align-items:center;gap:10px}
+header a:before{content:"";width:22px;height:22px;border-radius:6px;background:linear-gradient(135deg,var(--acc),#16c784)}
+#upd{margin-left:auto}
+main{padding:28px;max-width:1180px;margin:auto}
+h2{font-size:26px;margin:0 0 6px}h3{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);margin:30px 0 12px;font-weight:600}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+.card{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:14px;padding:18px;transition:.18s}
+.card[onclick]{cursor:pointer}.card[onclick]:hover{border-color:var(--acc);transform:translateY(-2px);box-shadow:0 10px 30px rgba(124,92,255,.15)}
+.card b{font-size:18px}.big{font-family:"JetBrains Mono",monospace;font-size:28px;font-weight:700;margin:8px 0 2px}
+.up{color:var(--up)}.down{color:var(--down)}.src{color:var(--mut);font-size:12px}
+.card .src:first-child{font-size:12px}
+ul{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 16px 16px 34px;margin:0}li{margin:4px 0}
+canvas{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px}
+table{width:100%;border-collapse:separate;border-spacing:0;background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden;font-family:"JetBrains Mono",monospace;font-size:13px}
+th{background:var(--panel2);color:var(--mut);font-weight:600;font-family:inherit}td,th{padding:10px 14px;border-bottom:1px solid var(--line);text-align:left}tr:last-child td{border-bottom:0}
+tr.add td:last-child{color:var(--up)}tr.reduce td:last-child{color:#f0a020}tr.exit td:last-child{color:var(--down)}tr.new td:last-child{color:#4da3ff}
+tr.add{box-shadow:inset 3px 0 var(--up)}tr.reduce{box-shadow:inset 3px 0 #f0a020}tr.exit{box-shadow:inset 3px 0 var(--down)}tr.new{box-shadow:inset 3px 0 #4da3ff}
+a{color:#8fb4ff}pre{white-space:pre-wrap;background:var(--panel);border:1px solid var(--line);padding:16px;border-radius:14px;font-size:13px}
+select{background:var(--panel2);color:var(--txt);border:1px solid var(--line);padding:6px 10px;border-radius:8px;font-family:inherit}
+</style></head><body>
+<header><a href="#" onclick="home();return false">代币调查看板</a><span class="src" id="upd"></span></header><main id="app">加载中…</main>
 <script>
 const LBL={new_buyers_1h:'1h首次买家',new_launches:'新发币',holders:'持币地址',mcap_usd:'市值',liq_usd:'流动性',top20_pct:'前20真人占比%',followers:'官推粉丝',buys_1h:'1h买入笔数',sells_1h:'1h卖出笔数',traders_1h:'1h独立交易钱包',burns_24h:'24h销毁',platform_eth:'平台税ETH(下限)'};
 const CH={add:'加仓',reduce:'减仓',exit:'清仓',new:'新进',hold:'未动'};
@@ -44,6 +63,6 @@ async function detail(id,idx){const p=await load(id);if(!p.length){document.getE
  h+=`<h3>已剔除地址</h3><table>${(a.excluded||[]).map(e=>`<tr><td>${e.addr.slice(0,4)}…${e.addr.slice(-4)}</td><td>${e.reason}</td></tr>`).join('')}</table><h3>本期简报原文</h3><pre>${(a.report_text||'').replace(/</g,'&lt;')}</pre>`;
  document.getElementById('app').innerHTML=h;
  const ds=['holders','top20_pct','followers'].filter(k=>keys.includes(k)).map((k,i)=>({label:LBL[k],data:p.map(x=>x.metrics?.[k]?.value??null),yAxisID:i?'y'+i:'y',spanGaps:true}));
- new Chart(document.getElementById('c'),{type:'line',data:{labels:p.map(x=>x.ts.slice(5,16)),datasets:ds},options:{scales:{y:{position:'left'},y1:{position:'right',grid:{display:false}},y2:{display:false}}}});}
+ Chart.defaults.color='#7d8a99';Chart.defaults.borderColor='#1f2a36';ds.forEach((d,i)=>{d.borderColor=['#7c5cff','#16c784','#f0a020'][i];d.backgroundColor='transparent';d.tension=.3;d.pointRadius=2});new Chart(document.getElementById('c'),{type:'line',data:{labels:p.map(x=>x.ts.slice(5,16)),datasets:ds},options:{scales:{y:{position:'left'},y1:{position:'right',grid:{display:false}},y2:{display:false}}}});}
 home();setInterval(()=>{document.getElementById('upd').textContent='自动刷新 '+new Date().toLocaleTimeString()},1000);
 </script></body></html>
