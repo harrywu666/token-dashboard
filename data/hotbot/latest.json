@@ -1,9 +1,9 @@
 {
-  "ts": "2026-10-13T08:00+08:00",
-  "holders": 5873,
-  "holders_delta": -36,
-  "mcap_usd": 3522184,
-  "liquidity_usd": 298122.46,
+  "ts": "2026-10-13T09:00+08:00",
+  "holders": 5920,
+  "holders_delta": 47,
+  "mcap_usd": 3320872,
+  "liquidity_usd": 290751.93,
   "top20": [
     {
       "addr": "2E1g7f7AYSJkUkzMbkwP3QkuawHWDqWbU6Lx39agKsPs",
@@ -16,8 +16,8 @@
       "addr": "42eDBVXEbYxJfaKx5znWi1rwTFWBV69pQ7tCDLLr9ogx",
       "short": "42eD…9ogx",
       "pct": 2.9541,
-      "delta_pct": -0.0576,
-      "change": "reduced"
+      "delta_pct": 0.0,
+      "change": "same"
     },
     {
       "addr": "jssugBCDGaNW5yRRiZ5A2EQ4z12ntGAx4LyPY57nZ2b",
@@ -86,7 +86,7 @@
       "addr": "DwJjRmVfANGUdZdBiGBj1QrY1MK5ZYs4DsCt7A8o6xc3",
       "short": "DwJj…6xc3",
       "pct": 1.128,
-      "delta_pct": 0.0002,
+      "delta_pct": 0.0,
       "change": "same"
     },
     {
@@ -164,37 +164,37 @@
   "onchain_heat": null,
   "x": {
     "followers": {
-      "usehotbot": 5562,
-      "elijahintek": 25749,
+      "usehotbot": 5567,
+      "elijahintek": 25751,
       "0xWhoismax": 4647,
-      "clawpumptech": 13370
+      "clawpumptech": 13373
     },
     "mentions_1h": 96,
     "latest_post": null,
-    "cached_from": 1791848864
+    "cached_from": 1791852364
   },
   "conclusion": [
-    "持币地址 5873，比上期少 36；链上卖仍多于买（买 27 / 卖 56），节奏偏冷，和持币小幅回落对得上",
-    "前 20 真人名单没变，合计占比 30.71%（-0.06 个百分点）；42eD…9ogx 减仓约 55 万枚，单笔不算集中出货",
-    "冒充号 HotBotOfSol 这一小时几乎没动静；官推下有一批模板式 @ @grok 刷回复，质量不高",
-    "@0xWhoismax 转发并互动了一条介绍 HotBot 的内容；官推和 Elijah、ClawPump 这一小时没发新帖"
+    "持币地址 5920，比上期多 47；链上买单笔数反超卖单（买 95 / 卖 58），新面孔买家 24，和持币回升对得上",
+    "前 20 真人一个都没动，合计占比仍是 30.71%，没有集中出货或吸筹",
+    "联创 @elijahintek 发了《致  持有人的一封信》：讲产品称重、不是躺赚、staking/手续费/销毁细节还在定——偏叙事与情绪，不是已落地的分红",
+    "冒充号 HotBotOfSol 这一小时仍几乎没动静"
   ],
   "sources": {
     "holders": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T08:00+08:00"
+      "fetched_at": "2026-10-13T09:00+08:00"
     },
     "mcap_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T08:00+08:00"
+      "fetched_at": "2026-10-13T09:00+08:00"
     },
     "liquidity_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T08:00+08:00"
+      "fetched_at": "2026-10-13T09:00+08:00"
     },
     "top20": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T08:00+08:00"
+      "fetched_at": "2026-10-13T09:00+08:00"
     }
   }
 }
