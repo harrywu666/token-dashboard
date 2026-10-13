@@ -1,9 +1,9 @@
 {
-  "ts": "2026-10-13T20:00+08:00",
+  "ts": "2026-10-13T21:00+08:00",
   "holders": 5862,
-  "holders_delta": 7,
-  "mcap_usd": 3805401,
-  "liquidity_usd": 241894.06,
+  "holders_delta": 0,
+  "mcap_usd": 3955995.4,
+  "liquidity_usd": 240356.19,
   "top20": [
     {
       "addr": "2E1g7f7AYSJkUkzMbkwP3QkuawHWDqWbU6Lx39agKsPs",
@@ -177,19 +177,19 @@
   "sources": {
     "holders": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T20:00+08:00"
+      "fetched_at": "2026-10-13T21:00+08:00"
     },
     "mcap_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T20:00+08:00"
+      "fetched_at": "2026-10-13T21:00+08:00"
     },
     "liquidity_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T20:00+08:00"
+      "fetched_at": "2026-10-13T21:00+08:00"
     },
     "top20": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T20:00+08:00"
+      "fetched_at": "2026-10-13T21:00+08:00"
     }
   }
 }
