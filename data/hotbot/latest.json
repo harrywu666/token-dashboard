@@ -1,9 +1,9 @@
 {
-  "ts": "2026-10-13T14:00+08:00",
-  "holders": 5860,
-  "holders_delta": -1,
-  "mcap_usd": 4615555,
-  "liquidity_usd": 293264.13,
+  "ts": "2026-10-13T16:00+08:00",
+  "holders": 5856,
+  "holders_delta": 2,
+  "mcap_usd": 4217712,
+  "liquidity_usd": 283222.82,
   "top20": [
     {
       "addr": "2E1g7f7AYSJkUkzMbkwP3QkuawHWDqWbU6Lx39agKsPs",
@@ -107,8 +107,8 @@
       "addr": "3Wm6BiKcEkG95zeRWT3HtBi3qp7tXiRXBCbg7RydcQj2",
       "short": "3Wm6…cQj2",
       "pct": 1.0424,
-      "delta_pct": 0.0402,
-      "change": "added"
+      "delta_pct": 0.0,
+      "change": "same"
     },
     {
       "addr": "GdSmhYHGFjb1QRDJ3dtpbA9TYNJaqEJsZHuUxpksEKNN",
@@ -164,36 +164,32 @@
   "onchain_heat": null,
   "x": {
     "followers": {
-      "usehotbot": 5590,
-      "elijahintek": 25762,
-      "0xWhoismax": 4651,
-      "clawpumptech": 13383
+      "usehotbot": 5596,
+      "elijahintek": 25763,
+      "0xWhoismax": 4649,
+      "clawpumptech": 13382
     },
-    "mentions_1h": 16,
+    "mentions_1h": 7,
     "latest_post": null,
-    "cached_from": 1791870732
+    "cached_from": 1791877390
   },
-  "conclusion": [
-    "距上期约 2 小时：持币地址 5860（较上期 -1），几乎没变；链上近 1h 仍是卖多于买（买 56 / 卖 97），但活跃度比上期那小时明显抬了",
-    "前 20 真人基本没动：合计占比 30.80%（较上期 +0.04 个百分点），只有 3Wm6…cQj2 小幅加仓，无人集中出货或吸筹",
-    "社交通报回暖：近 1h 提及 HotBot 升到 16 条（上期仅 2）；@usehotbot 粉丝 +11，官推本小时无新帖；联创与 ClawPump 在约 12:30–12:50 有几条互动回帖（本小时窗口外）"
-  ],
+  "conclusion": [],
   "sources": {
     "holders": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T14:00+08:00"
+      "fetched_at": "2026-10-13T16:00+08:00"
     },
     "mcap_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T14:00+08:00"
+      "fetched_at": "2026-10-13T16:00+08:00"
     },
     "liquidity_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T14:00+08:00"
+      "fetched_at": "2026-10-13T16:00+08:00"
     },
     "top20": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T14:00+08:00"
+      "fetched_at": "2026-10-13T16:00+08:00"
     }
   }
 }
