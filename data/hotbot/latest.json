@@ -1,9 +1,9 @@
 {
-  "ts": "2026-10-13T10:00+08:00",
-  "holders": 5887,
-  "holders_delta": -33,
-  "mcap_usd": 3696374,
-  "liquidity_usd": 304457.95,
+  "ts": "2026-10-13T11:00+08:00",
+  "holders": 5867,
+  "holders_delta": -20,
+  "mcap_usd": 3874621,
+  "liquidity_usd": 314094.0,
   "top20": [
     {
       "addr": "2E1g7f7AYSJkUkzMbkwP3QkuawHWDqWbU6Lx39agKsPs",
@@ -128,8 +128,8 @@
       "addr": "3Wm6BiKcEkG95zeRWT3HtBi3qp7tXiRXBCbg7RydcQj2",
       "short": "3Wm6…cQj2",
       "pct": 1.0022,
-      "delta_pct": 0.0535,
-      "change": "added"
+      "delta_pct": 0.0,
+      "change": "same"
     },
     {
       "addr": "HYZv2JeSHn5NDe5Ev2Nnc2rTNEaC6F9QVrcMLH5v6GYt",
@@ -164,32 +164,37 @@
   "onchain_heat": null,
   "x": {
     "followers": {
-      "usehotbot": 5567,
-      "elijahintek": 25751,
+      "usehotbot": 5568,
+      "elijahintek": 25759,
       "0xWhoismax": 4647,
-      "clawpumptech": 13373
+      "clawpumptech": 13380
     },
     "mentions_1h": 96,
     "latest_post": null,
-    "cached_from": 1791852364
+    "cached_from": 1791859925
   },
-  "conclusion": [],
+  "conclusion": [
+    "上期为 9:00（10:00 中断未发），增减约跨 2 小时",
+    "持币地址 5867，比 9:00 少 53；近 1h 链上卖仍多于买（买 23 / 卖 43），节奏偏冷",
+    "前 20 真人名单没变，合计占比 30.76%（较 9:00 +0.05 个百分点）；只有 3Wm6…cQj2 加仓约 52 万枚，没有集中出货",
+    "官推发了 Daily News，联创长文继续发酵（赞/转大约翻倍）；冒充号 HotBotOfSol 仍几乎没动静"
+  ],
   "sources": {
     "holders": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T10:00+08:00"
+      "fetched_at": "2026-10-13T11:00+08:00"
     },
     "mcap_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T10:00+08:00"
+      "fetched_at": "2026-10-13T11:00+08:00"
     },
     "liquidity_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T10:00+08:00"
+      "fetched_at": "2026-10-13T11:00+08:00"
     },
     "top20": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T10:00+08:00"
+      "fetched_at": "2026-10-13T11:00+08:00"
     }
   }
 }
