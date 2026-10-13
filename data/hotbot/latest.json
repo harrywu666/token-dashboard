@@ -1,5 +1,5 @@
 {
-  "ts": "2026-10-14T04:00+08:00",
+  "ts": "2026-10-14T06:00+08:00",
   "holders": null,
   "holders_delta": null,
   "mcap_usd": null,
@@ -22,8 +22,8 @@
     {
       "addr": "jssugBCDGaNW5yRRiZ5A2EQ4z12ntGAx4LyPY57nZ2b",
       "short": "jssu…nZ2b",
-      "pct": 2.7295,
-      "delta_pct": 0.0,
+      "pct": 2.7296,
+      "delta_pct": 0.0001,
       "change": "same"
     },
     {
@@ -85,8 +85,8 @@
     {
       "addr": "DwJjRmVfANGUdZdBiGBj1QrY1MK5ZYs4DsCt7A8o6xc3",
       "short": "DwJj…6xc3",
-      "pct": 1.1292,
-      "delta_pct": 0.0,
+      "pct": 1.1295,
+      "delta_pct": 0.0003,
       "change": "same"
     },
     {
@@ -146,7 +146,7 @@
       "change": "same"
     }
   ],
-  "top20_total_pct": 30.8825,
+  "top20_total_pct": 30.8829,
   "excluded": [
     {
       "addr": "GLL3CzybpSCLZdoACf8QUM5YrKVwyA65kQ2RcTsJxxzV",
@@ -177,19 +177,19 @@
   "sources": {
     "holders": {
       "source": "GMGN",
-      "fetched_at": "2026-10-14T04:00+08:00"
+      "fetched_at": "2026-10-14T06:00+08:00"
     },
     "mcap_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-14T04:00+08:00"
+      "fetched_at": "2026-10-14T06:00+08:00"
     },
     "liquidity_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-14T04:00+08:00"
+      "fetched_at": "2026-10-14T06:00+08:00"
     },
     "top20": {
       "source": "GMGN",
-      "fetched_at": "2026-10-14T04:00+08:00"
+      "fetched_at": "2026-10-14T06:00+08:00"
     }
   }
 }
