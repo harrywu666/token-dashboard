@@ -1,9 +1,9 @@
 {
-  "ts": "2026-10-13T11:00+08:00",
-  "holders": 5867,
-  "holders_delta": -53,
-  "mcap_usd": 3874621,
-  "liquidity_usd": 314094.0,
+  "ts": "2026-10-13T12:00+08:00",
+  "holders": 5861,
+  "holders_delta": -6,
+  "mcap_usd": 3799351,
+  "liquidity_usd": 305798.85,
   "top20": [
     {
       "addr": "2E1g7f7AYSJkUkzMbkwP3QkuawHWDqWbU6Lx39agKsPs",
@@ -128,8 +128,8 @@
       "addr": "3Wm6BiKcEkG95zeRWT3HtBi3qp7tXiRXBCbg7RydcQj2",
       "short": "3Wm6…cQj2",
       "pct": 1.0022,
-      "delta_pct": 0.0535,
-      "change": "added"
+      "delta_pct": 0.0,
+      "change": "same"
     },
     {
       "addr": "HYZv2JeSHn5NDe5Ev2Nnc2rTNEaC6F9QVrcMLH5v6GYt",
@@ -162,50 +162,49 @@
     }
   ],
   "onchain_heat": {
-    "buys": 23,
-    "sells": 43,
-    "unique_wallets": 55,
-    "net_flow": 191648.81,
-    "first_time_buyers": 10,
+    "buys": 19,
+    "sells": 44,
+    "unique_wallets": 45,
+    "net_flow": -421446.23,
+    "first_time_buyers": 6,
     "window_hours": 1.0
   },
   "x": {
     "followers": {
-      "usehotbot": 5568,
-      "elijahintek": 25759,
-      "0xWhoismax": 4647,
+      "usehotbot": 5579,
+      "elijahintek": 25761,
+      "0xWhoismax": 4648,
       "clawpumptech": 13380
     },
-    "mentions_1h": 45,
+    "mentions_1h": 2,
     "latest_post": null,
-    "cached_from": 1791859925
+    "cached_from": 1791863134
   },
   "conclusion": [
-    "上期为 9:00（10:00 中断未发），增减约跨 2 小时",
-    "持币地址 5867，比 9:00 少 53；近 1h 链上卖仍多于买（买 23 / 卖 43），节奏偏冷",
-    "前 20 真人名单没变，合计占比 30.76%（较 9:00 +0.05 个百分点）；只有 3Wm6…cQj2 加仓约 52 万枚，没有集中出货",
-    "官推发了 Daily News，联创长文继续发酵（赞/转大约翻倍）；冒充号 HotBotOfSol 仍几乎没动静"
+    "持币地址 5861，比上期少 6；近 1h 链上卖仍多于买（买 19 / 卖 44），整体很淡",
+    "前 20 真人一个都没动，合计占比仍是 30.76%，没有集中出货或吸筹",
+    "社交通报冷清：近 1h 提及只有 2 条，冒充号仍没动静；官推没发新帖，联创只转了一条介绍 HotBot 的内容"
   ],
   "sources": {
     "holders": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T11:00+08:00"
+      "fetched_at": "2026-10-13T12:00+08:00"
     },
     "mcap_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T11:00+08:00"
+      "fetched_at": "2026-10-13T12:00+08:00"
     },
     "liquidity_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T11:00+08:00"
+      "fetched_at": "2026-10-13T12:00+08:00"
     },
     "top20": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T11:00+08:00"
+      "fetched_at": "2026-10-13T12:00+08:00"
     },
     "onchain_heat": {
       "source": "Helius",
-      "fetched_at": "2026-10-13T11:00+08:00"
+      "fetched_at": "2026-10-13T12:00+08:00"
     }
   }
 }
