@@ -1,5 +1,5 @@
 {
-  "ts": "2026-10-13T23:00+08:00",
+  "ts": "2026-10-14T00:00+08:00",
   "holders": null,
   "holders_delta": null,
   "mcap_usd": null,
@@ -86,8 +86,8 @@
       "addr": "DwJjRmVfANGUdZdBiGBj1QrY1MK5ZYs4DsCt7A8o6xc3",
       "short": "DwJj…6xc3",
       "pct": 1.1292,
-      "delta_pct": 0.0012,
-      "change": "added"
+      "delta_pct": 0.0,
+      "change": "same"
     },
     {
       "addr": "7YpvTvSt7QDBU3aYDV6PGgsh4JGyHFfwtwngWCjz8NLx",
@@ -106,9 +106,9 @@
     {
       "addr": "3Wm6BiKcEkG95zeRWT3HtBi3qp7tXiRXBCbg7RydcQj2",
       "short": "3Wm6…cQj2",
-      "pct": 1.0424,
-      "delta_pct": 0.0,
-      "change": "same"
+      "pct": 1.072,
+      "delta_pct": 0.0296,
+      "change": "added"
     },
     {
       "addr": "GdSmhYHGFjb1QRDJ3dtpbA9TYNJaqEJsZHuUxpksEKNN",
@@ -146,7 +146,7 @@
       "change": "same"
     }
   ],
-  "top20_total_pct": 30.8521,
+  "top20_total_pct": 30.8817,
   "excluded": [
     {
       "addr": "GLL3CzybpSCLZdoACf8QUM5YrKVwyA65kQ2RcTsJxxzV",
@@ -161,14 +161,7 @@
       "reason": "exchange:meteora_dlmm"
     }
   ],
-  "onchain_heat": {
-    "buys": 29,
-    "sells": 32,
-    "unique_wallets": 49,
-    "net_flow": -736631.68,
-    "first_time_buyers": 6,
-    "window_hours": 1.0
-  },
+  "onchain_heat": null,
   "x": {
     "followers": {
       "usehotbot": 5606,
@@ -184,23 +177,19 @@
   "sources": {
     "holders": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T23:00+08:00"
+      "fetched_at": "2026-10-14T00:00+08:00"
     },
     "mcap_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T23:00+08:00"
+      "fetched_at": "2026-10-14T00:00+08:00"
     },
     "liquidity_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T23:00+08:00"
+      "fetched_at": "2026-10-14T00:00+08:00"
     },
     "top20": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T23:00+08:00"
-    },
-    "onchain_heat": {
-      "source": "Helius",
-      "fetched_at": "2026-10-13T23:10+08:00"
+      "fetched_at": "2026-10-14T00:00+08:00"
     }
   }
 }
