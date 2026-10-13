@@ -1,7 +1,7 @@
 {
   "ts": "2026-10-13T11:00+08:00",
   "holders": 5867,
-  "holders_delta": -20,
+  "holders_delta": -53,
   "mcap_usd": 3874621,
   "liquidity_usd": 314094.0,
   "top20": [
@@ -128,8 +128,8 @@
       "addr": "3Wm6BiKcEkG95zeRWT3HtBi3qp7tXiRXBCbg7RydcQj2",
       "short": "3Wm6…cQj2",
       "pct": 1.0022,
-      "delta_pct": 0.0,
-      "change": "same"
+      "delta_pct": 0.0535,
+      "change": "added"
     },
     {
       "addr": "HYZv2JeSHn5NDe5Ev2Nnc2rTNEaC6F9QVrcMLH5v6GYt",
@@ -161,7 +161,14 @@
       "reason": "exchange:meteora_dlmm"
     }
   ],
-  "onchain_heat": null,
+  "onchain_heat": {
+    "buys": 23,
+    "sells": 43,
+    "unique_wallets": 55,
+    "net_flow": 191648.81,
+    "first_time_buyers": 10,
+    "window_hours": 1.0
+  },
   "x": {
     "followers": {
       "usehotbot": 5568,
@@ -169,7 +176,7 @@
       "0xWhoismax": 4647,
       "clawpumptech": 13380
     },
-    "mentions_1h": 96,
+    "mentions_1h": 45,
     "latest_post": null,
     "cached_from": 1791859925
   },
@@ -194,6 +201,10 @@
     },
     "top20": {
       "source": "GMGN",
+      "fetched_at": "2026-10-13T11:00+08:00"
+    },
+    "onchain_heat": {
+      "source": "Helius",
       "fetched_at": "2026-10-13T11:00+08:00"
     }
   }
