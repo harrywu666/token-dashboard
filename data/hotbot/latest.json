@@ -1,9 +1,9 @@
 {
-  "ts": "2026-10-13T16:00+08:00",
-  "holders": 5856,
-  "holders_delta": 2,
-  "mcap_usd": 4217712,
-  "liquidity_usd": 283222.82,
+  "ts": "2026-10-13T17:00+08:00",
+  "holders": 5852,
+  "holders_delta": -4,
+  "mcap_usd": 4111695,
+  "liquidity_usd": 287035.39,
   "top20": [
     {
       "addr": "2E1g7f7AYSJkUkzMbkwP3QkuawHWDqWbU6Lx39agKsPs",
@@ -139,14 +139,22 @@
       "change": "same"
     },
     {
+      "addr": "YBJr3oCcA2hGGz18TkWb5YsHxHk4S1tsR5AFAGJfNn9",
+      "short": "YBJr…fNn9",
+      "pct": 0.8994,
+      "change": "new",
+      "delta_pct": null
+    },
+    {
       "addr": "98ziVGActBEdsy2mwyzzNeDdgdUWDw2UAS5p3evUPo4r",
       "short": "98zi…Po4r",
-      "pct": 0.9373,
-      "delta_pct": 0.0,
-      "change": "same"
+      "pct": null,
+      "change": "exited",
+      "delta_pct": null,
+      "prev_pct": 0.9373
     }
   ],
-  "top20_total_pct": 30.8044,
+  "top20_total_pct": 30.7665,
   "excluded": [
     {
       "addr": "GLL3CzybpSCLZdoACf8QUM5YrKVwyA65kQ2RcTsJxxzV",
@@ -165,31 +173,31 @@
   "x": {
     "followers": {
       "usehotbot": 5596,
-      "elijahintek": 25763,
+      "elijahintek": 25764,
       "0xWhoismax": 4649,
-      "clawpumptech": 13382
+      "clawpumptech": 13384
     },
-    "mentions_1h": 7,
+    "mentions_1h": 10,
     "latest_post": null,
-    "cached_from": 1791877390
+    "cached_from": 1791881190
   },
   "conclusion": [],
   "sources": {
     "holders": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T16:00+08:00"
+      "fetched_at": "2026-10-13T17:00+08:00"
     },
     "mcap_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T16:00+08:00"
+      "fetched_at": "2026-10-13T17:00+08:00"
     },
     "liquidity_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T16:00+08:00"
+      "fetched_at": "2026-10-13T17:00+08:00"
     },
     "top20": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T16:00+08:00"
+      "fetched_at": "2026-10-13T17:00+08:00"
     }
   }
 }
