@@ -1,9 +1,9 @@
 {
-  "ts": "2026-10-13T19:00+08:00",
-  "holders": 5855,
-  "holders_delta": 4,
-  "mcap_usd": 3917679,
-  "liquidity_usd": 254147.72,
+  "ts": "2026-10-13T20:00+08:00",
+  "holders": 5862,
+  "holders_delta": 7,
+  "mcap_usd": 3805401,
+  "liquidity_usd": 241894.06,
   "top20": [
     {
       "addr": "2E1g7f7AYSJkUkzMbkwP3QkuawHWDqWbU6Lx39agKsPs",
@@ -16,8 +16,8 @@
       "addr": "42eDBVXEbYxJfaKx5znWi1rwTFWBV69pQ7tCDLLr9ogx",
       "short": "42eD…9ogx",
       "pct": 3.0385,
-      "delta_pct": 0.0844,
-      "change": "added"
+      "delta_pct": 0.0,
+      "change": "same"
     },
     {
       "addr": "jssugBCDGaNW5yRRiZ5A2EQ4z12ntGAx4LyPY57nZ2b",
@@ -164,32 +164,32 @@
   "onchain_heat": null,
   "x": {
     "followers": {
-      "usehotbot": 5605,
+      "usehotbot": 5606,
       "elijahintek": 25767,
       "0xWhoismax": 4650,
-      "clawpumptech": 13384
+      "clawpumptech": 13389
     },
     "mentions_1h": 20,
     "latest_post": null,
-    "cached_from": 1791888336
+    "cached_from": 1791891851
   },
   "conclusion": [],
   "sources": {
     "holders": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T19:00+08:00"
+      "fetched_at": "2026-10-13T20:00+08:00"
     },
     "mcap_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T19:00+08:00"
+      "fetched_at": "2026-10-13T20:00+08:00"
     },
     "liquidity_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T19:00+08:00"
+      "fetched_at": "2026-10-13T20:00+08:00"
     },
     "top20": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T19:00+08:00"
+      "fetched_at": "2026-10-13T20:00+08:00"
     }
   }
 }
