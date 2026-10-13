@@ -1,16 +1,16 @@
 {
-  "ts": "2026-10-13T12:00+08:00",
-  "holders": 1589,
-  "holders_delta": 72,
-  "mcap_usd": 3650448,
-  "liquidity_usd": 697221.69,
+  "ts": "2026-10-13T14:00+08:00",
+  "holders": 1581,
+  "holders_delta": -8,
+  "mcap_usd": 3232954,
+  "liquidity_usd": 633170.39,
   "top20": [
     {
       "addr": "0xf1882812aacac1df9a58195dbbd2f97fe48f81f2",
       "short": "0xf1…81f2",
       "pct": 4.0969,
-      "delta_pct": 0.0681,
-      "change": "added"
+      "delta_pct": 0.0,
+      "change": "same"
     },
     {
       "addr": "0xabc0a4a9f6bf386e725aecb8037e40b77ab685cf",
@@ -22,8 +22,8 @@
     {
       "addr": "0x913637b4e3c635c027497ef63b255d30958ab022",
       "short": "0x91…b022",
-      "pct": 1.9702,
-      "delta_pct": 0.0346,
+      "pct": 2.0032,
+      "delta_pct": 0.033,
       "change": "added"
     },
     {
@@ -37,13 +37,6 @@
       "addr": "0x6a6fbeadd851b42a7572f95bf90c6d34f30cf97c",
       "short": "0x6a…f97c",
       "pct": 1.908,
-      "delta_pct": 0.0,
-      "change": "same"
-    },
-    {
-      "addr": "0x1e15bf63f281c7b77894c76a376aa917945d40af",
-      "short": "0x1e…40af",
-      "pct": 1.6236,
       "delta_pct": 0.0,
       "change": "same"
     },
@@ -88,6 +81,13 @@
       "pct": 1.0817,
       "delta_pct": 0.0,
       "change": "same"
+    },
+    {
+      "addr": "0x1e15bf63f281c7b77894c76a376aa917945d40af",
+      "short": "0x1e…40af",
+      "pct": 1.0652,
+      "delta_pct": -0.5584,
+      "change": "reduced"
     },
     {
       "addr": "0xdce001e4ec11ab58650c51ae9658accbe0f49c48",
@@ -146,7 +146,7 @@
       "change": "same"
     }
   ],
-  "top20_total_pct": 29.0191,
+  "top20_total_pct": 28.4937,
   "excluded": [
     {
       "addr": "0x340278a0ef7c7e83418771504871619453bd0fa6",
@@ -184,64 +184,64 @@
   "onchain_heat": null,
   "burns": {
     "window_hours": 2.0,
-    "count": 3,
-    "amount": 29910.28,
+    "count": 4,
+    "amount": 39349.57,
     "last_1h": null
   },
   "platform_volume": {
     "window_hours": 2.0,
     "new_launches": 0,
-    "settled_events": 28,
-    "settled_eth_out": 0.046083994343188744,
-    "treasury_torch": 120561.89483018665,
+    "settled_events": 21,
+    "settled_eth_out": 0.045466041612463315,
+    "treasury_torch": 123361.70511696019,
     "lower_bound": true
   },
   "x": {
     "followers": {
-      "Torchpaddotfun": 3351
+      "Torchpaddotfun": 3355
     },
     "mentions_1h": null,
     "latest_post": null,
     "cached_from": null
   },
   "conclusion": [
-    "持币地址 1589，比上期再增 72 个，没有回落；近四期累计 +375（+149 → +81 → +73 → +72），增速平台化但仍偏快。本窗口无新发币、结算更弱（约 0.05 ETH），持币续涨与平台量反差更大，拆小号疑虑加重",
-    "前 20 真人 2 个加仓、没人减仓，合计占比 29.02%（+0.10 个百分点）；0xf188…81f2 继续加码至约 4.10%",
-    "近 2 小时销毁 3 笔约 3.0 万 TORCH，节奏继续放缓；仍只有 0x6d93…a6ce，0x0695…9a07 连续五期未动",
+    "持币地址 1581，较上期 -8，近几期连涨（+149→+81→+73→+72）后首次回落；本窗口无新发币、结算仍弱（约 0.045 ETH / 21 笔），持币增速告一段落，拆小号疑虑暂缓但需继续观察",
+    "前 20 真人 1 个加仓、1 个大幅减仓，合计占比 28.49%（-0.53 个百分点）；0x1e15…40af 减约 558 万 TORCH，0x9136…b022 继续小幅加仓",
+    "近 2 小时销毁 4 笔约 3.9 万 TORCH，节奏略回升；仍只有 0x6d93…a6ce，0x0695…9a07 连续六期未动",
     "feeRouter 代理近 2 小时没有升级、没有换管理员；10/25 持币人分红未见公开进展"
   ],
   "sources": {
     "holders": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T12:00+08:00"
+      "fetched_at": "2026-10-13T14:00+08:00"
     },
     "mcap_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T12:00+08:00"
+      "fetched_at": "2026-10-13T14:00+08:00"
     },
     "liquidity_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T12:00+08:00"
+      "fetched_at": "2026-10-13T14:00+08:00"
     },
     "top20": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T12:00+08:00"
+      "fetched_at": "2026-10-13T14:00+08:00"
     },
     "top20_filter": {
       "source": "RPC",
-      "fetched_at": "2026-10-13T12:00+08:00"
+      "fetched_at": "2026-10-13T14:00+08:00"
     },
     "platform_volume": {
       "source": "RPC",
-      "fetched_at": "2026-10-13T12:00+08:00"
+      "fetched_at": "2026-10-13T14:00+08:00"
     },
     "burns": {
       "source": "RPC",
-      "fetched_at": "2026-10-13T12:00+08:00"
+      "fetched_at": "2026-10-13T14:00+08:00"
     },
     "x": {
-      "source": "x.get_users_by_username + get_users_posts",
-      "fetched_at": "2026-10-13T12:00+08:00"
+      "source": "x.get_users_by_usernames + get_users_posts",
+      "fetched_at": "2026-10-13T14:00+08:00"
     }
   }
 }

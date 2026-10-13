@@ -1,9 +1,9 @@
 {
-  "ts": "2026-10-13T12:00+08:00",
-  "holders": 5861,
-  "holders_delta": -6,
-  "mcap_usd": 3799351,
-  "liquidity_usd": 305798.85,
+  "ts": "2026-10-13T14:00+08:00",
+  "holders": 5860,
+  "holders_delta": -1,
+  "mcap_usd": 4615555,
+  "liquidity_usd": 293264.13,
   "top20": [
     {
       "addr": "2E1g7f7AYSJkUkzMbkwP3QkuawHWDqWbU6Lx39agKsPs",
@@ -104,6 +104,13 @@
       "change": "same"
     },
     {
+      "addr": "3Wm6BiKcEkG95zeRWT3HtBi3qp7tXiRXBCbg7RydcQj2",
+      "short": "3Wm6…cQj2",
+      "pct": 1.0424,
+      "delta_pct": 0.0402,
+      "change": "added"
+    },
+    {
       "addr": "GdSmhYHGFjb1QRDJ3dtpbA9TYNJaqEJsZHuUxpksEKNN",
       "short": "GdSm…EKNN",
       "pct": 1.0386,
@@ -125,13 +132,6 @@
       "change": "same"
     },
     {
-      "addr": "3Wm6BiKcEkG95zeRWT3HtBi3qp7tXiRXBCbg7RydcQj2",
-      "short": "3Wm6…cQj2",
-      "pct": 1.0022,
-      "delta_pct": 0.0,
-      "change": "same"
-    },
-    {
       "addr": "HYZv2JeSHn5NDe5Ev2Nnc2rTNEaC6F9QVrcMLH5v6GYt",
       "short": "HYZv…6GYt",
       "pct": 0.9963,
@@ -146,7 +146,7 @@
       "change": "same"
     }
   ],
-  "top20_total_pct": 30.7642,
+  "top20_total_pct": 30.8044,
   "excluded": [
     {
       "addr": "GLL3CzybpSCLZdoACf8QUM5YrKVwyA65kQ2RcTsJxxzV",
@@ -161,50 +161,39 @@
       "reason": "exchange:meteora_dlmm"
     }
   ],
-  "onchain_heat": {
-    "buys": 19,
-    "sells": 44,
-    "unique_wallets": 45,
-    "net_flow": -421446.23,
-    "first_time_buyers": 6,
-    "window_hours": 1.0
-  },
+  "onchain_heat": null,
   "x": {
     "followers": {
-      "usehotbot": 5579,
-      "elijahintek": 25761,
-      "0xWhoismax": 4648,
-      "clawpumptech": 13380
+      "usehotbot": 5590,
+      "elijahintek": 25762,
+      "0xWhoismax": 4651,
+      "clawpumptech": 13383
     },
-    "mentions_1h": 2,
+    "mentions_1h": 16,
     "latest_post": null,
-    "cached_from": 1791863134
+    "cached_from": 1791870732
   },
   "conclusion": [
-    "持币地址 5861，比上期少 6；近 1h 链上卖仍多于买（买 19 / 卖 44），整体很淡",
-    "前 20 真人一个都没动，合计占比仍是 30.76%，没有集中出货或吸筹",
-    "社交通报冷清：近 1h 提及只有 2 条，冒充号仍没动静；官推没发新帖，联创只转了一条介绍 HotBot 的内容"
+    "距上期约 2 小时：持币地址 5860（较上期 -1），几乎没变；链上近 1h 仍是卖多于买（买 56 / 卖 97），但活跃度比上期那小时明显抬了",
+    "前 20 真人基本没动：合计占比 30.80%（较上期 +0.04 个百分点），只有 3Wm6…cQj2 小幅加仓，无人集中出货或吸筹",
+    "社交通报回暖：近 1h 提及 HotBot 升到 16 条（上期仅 2）；@usehotbot 粉丝 +11，官推本小时无新帖；联创与 ClawPump 在约 12:30–12:50 有几条互动回帖（本小时窗口外）"
   ],
   "sources": {
     "holders": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T12:00+08:00"
+      "fetched_at": "2026-10-13T14:00+08:00"
     },
     "mcap_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T12:00+08:00"
+      "fetched_at": "2026-10-13T14:00+08:00"
     },
     "liquidity_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T12:00+08:00"
+      "fetched_at": "2026-10-13T14:00+08:00"
     },
     "top20": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T12:00+08:00"
-    },
-    "onchain_heat": {
-      "source": "Helius",
-      "fetched_at": "2026-10-13T12:00+08:00"
+      "fetched_at": "2026-10-13T14:00+08:00"
     }
   }
 }
