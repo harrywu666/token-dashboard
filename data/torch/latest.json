@@ -1,23 +1,23 @@
 {
-  "ts": "2026-10-13T08:00+08:00",
-  "holders": 1444,
-  "holders_delta": 81,
-  "mcap_usd": 3524994,
-  "liquidity_usd": 671751.95,
+  "ts": "2026-10-13T10:00+08:00",
+  "holders": 1517,
+  "holders_delta": 73,
+  "mcap_usd": 3539381,
+  "liquidity_usd": 674520.39,
   "top20": [
     {
       "addr": "0xf1882812aacac1df9a58195dbbd2f97fe48f81f2",
       "short": "0xf1…81f2",
-      "pct": 3.8925,
-      "delta_pct": 0.1387,
+      "pct": 4.0288,
+      "delta_pct": 0.1363,
       "change": "added"
     },
     {
       "addr": "0xabc0a4a9f6bf386e725aecb8037e40b77ab685cf",
       "short": "0xab…85cf",
       "pct": 2.0234,
-      "delta_pct": 0.2095,
-      "change": "added"
+      "delta_pct": 0.0,
+      "change": "same"
     },
     {
       "addr": "0x54e208854482b2227d74f853de98bed80649ed90",
@@ -44,13 +44,6 @@
       "addr": "0x1e15bf63f281c7b77894c76a376aa917945d40af",
       "short": "0x1e…40af",
       "pct": 1.6236,
-      "delta_pct": 0.0,
-      "change": "same"
-    },
-    {
-      "addr": "0xfd92059c672644e02c7f0203422b8f92c2dc0068",
-      "short": "0xfd…0068",
-      "pct": 1.5188,
       "delta_pct": 0.0,
       "change": "same"
     },
@@ -93,7 +86,7 @@
       "addr": "0x066ef18ded4ac0abe4033652ec6ca17169268de3",
       "short": "0x06…8de3",
       "pct": 1.0817,
-      "delta_pct": 0.0003,
+      "delta_pct": 0.0,
       "change": "same"
     },
     {
@@ -116,6 +109,13 @@
       "pct": 1.0326,
       "delta_pct": 0.0,
       "change": "same"
+    },
+    {
+      "addr": "0x3f4e0d7f86194ac93efa4259cda9013052b1bf5c",
+      "short": "0x3f…bf5c",
+      "pct": 1.0176,
+      "change": "new",
+      "delta_pct": null
     },
     {
       "addr": "0xc01cdb59a8698189eabae68644d8bf1609288e7d",
@@ -144,9 +144,17 @@
       "pct": 0.8907,
       "delta_pct": 0.0,
       "change": "same"
+    },
+    {
+      "addr": "0xfd92059c672644e02c7f0203422b8f92c2dc0068",
+      "short": "0xfd…0068",
+      "pct": null,
+      "change": "exited",
+      "delta_pct": null,
+      "prev_pct": 1.5188
     }
   ],
-  "top20_total_pct": 29.2813,
+  "top20_total_pct": 28.9164,
   "excluded": [
     {
       "addr": "0x340278a0ef7c7e83418771504871619453bd0fa6",
@@ -184,64 +192,64 @@
   "onchain_heat": null,
   "burns": {
     "window_hours": 2.0,
-    "count": 4,
-    "amount": 79964.66,
+    "count": 6,
+    "amount": 60727.28,
     "last_1h": null
   },
   "platform_volume": {
     "window_hours": 2.0,
-    "new_launches": 1,
-    "settled_events": 31,
-    "settled_eth_out": 0.10547141239121591,
-    "treasury_torch": 120494.16431159915,
+    "new_launches": 0,
+    "settled_events": 32,
+    "settled_eth_out": 0.09128490766313851,
+    "treasury_torch": 120561.89483018665,
     "lower_bound": true
   },
   "x": {
     "followers": {
-      "Torchpaddotfun": 3333
+      "Torchpaddotfun": 3340
     },
     "mentions_1h": null,
     "latest_post": null,
     "cached_from": null
   },
   "conclusion": [
-    "持币地址 1444，比上期再增 81 个，没有回落；增速较上期 +149 放缓，但仍偏快。本窗口有 1 个新发币、结算偏弱（约 0.11 ETH），持币续涨与平台量仍不完全匹配，拆小号疑虑未解除",
-    "前 20 真人 3 个加仓、没人减仓，合计占比 29.28%（+0.35 个百分点）；0xf188…81f2 与 0xabc0…85cf 继续加码，后者升到第 2",
-    "近 2 小时销毁 4 笔约 8.0 万 TORCH，节奏回落；仍只有 0x6d93…a6ce，0x0695…9a07 连续三期未动",
+    "持币地址 1517，比上期再增 73 个，没有回落；近四期累计约 +323（6:00 +149 → 8:00 +81 → 本期 +73），增速略缓但仍偏快。本窗口无新发币、结算偏弱（约 0.09 ETH），持币续涨与平台量仍不匹配，拆小号疑虑未解除",
+    "前 20 真人 1 个加仓、1 个新进、1 个掉出，合计占比 28.92%（−0.36 个百分点），集中度略降",
+    "近 2 小时销毁 6 笔约 6.1 万 TORCH，节奏继续回落；仍只有 0x6d93…a6ce，0x0695…9a07 连续四期未动",
     "feeRouter 代理近 2 小时没有升级、没有换管理员；10/25 持币人分红未见公开进展"
   ],
   "sources": {
     "holders": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T08:00+08:00"
+      "fetched_at": "2026-10-13T10:00+08:00"
     },
     "mcap_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T08:00+08:00"
+      "fetched_at": "2026-10-13T10:00+08:00"
     },
     "liquidity_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T08:00+08:00"
+      "fetched_at": "2026-10-13T10:00+08:00"
     },
     "top20": {
       "source": "GMGN",
-      "fetched_at": "2026-10-13T08:00+08:00"
+      "fetched_at": "2026-10-13T10:00+08:00"
     },
     "top20_filter": {
       "source": "RPC",
-      "fetched_at": "2026-10-13T08:00+08:00"
+      "fetched_at": "2026-10-13T10:00+08:00"
     },
     "platform_volume": {
       "source": "RPC",
-      "fetched_at": "2026-10-13T08:00+08:00"
+      "fetched_at": "2026-10-13T10:00+08:00"
     },
     "burns": {
       "source": "RPC",
-      "fetched_at": "2026-10-13T08:00+08:00"
+      "fetched_at": "2026-10-13T10:00+08:00"
     },
     "x": {
-      "source": "user-X--harry + x.get_users_posts",
-      "fetched_at": "2026-10-13T08:00+08:00"
+      "source": "x.get_users_by_username + get_users_posts",
+      "fetched_at": "2026-10-13T10:00+08:00"
     }
   }
 }
