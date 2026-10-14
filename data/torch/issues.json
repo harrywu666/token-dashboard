@@ -203,11 +203,11 @@
     },
     "x": {
       "followers": {
-        "Torchpaddotfun": 3252
+        "Torchpaddotfun": null
       },
       "mentions_1h": null,
       "latest_post": null,
-      "cached_from": 1791818048
+      "cached_from": null
     },
     "conclusion": [],
     "sources": {
@@ -448,11 +448,11 @@
     },
     "x": {
       "followers": {
-        "Torchpaddotfun": 3252
+        "Torchpaddotfun": null
       },
       "mentions_1h": null,
       "latest_post": null,
-      "cached_from": 1791818048
+      "cached_from": null
     },
     "conclusion": [],
     "sources": {
