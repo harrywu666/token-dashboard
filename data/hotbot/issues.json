@@ -7334,11 +7334,11 @@
       }
     ],
     "onchain_heat": {
-      "buys": 47,
-      "sells": 133,
-      "unique_wallets": 134,
-      "net_flow": -382872.05,
-      "first_time_buyers": 16,
+      "buys": 64,
+      "sells": 90,
+      "unique_wallets": null,
+      "net_flow": null,
+      "first_time_buyers": null,
       "window_hours": 1.0,
       "partial": false
     },
@@ -7376,7 +7376,8 @@
       },
       "onchain_heat": {
         "source": "Helius",
-        "fetched_at": "2026-10-14T16:44+08:00"
+        "fetched_at": "2026-10-14T16:00+08:00",
+        "via": "baseline"
       },
       "x": {
         "source": "x",
@@ -7555,9 +7556,9 @@
     "onchain_heat": {
       "buys": 47,
       "sells": 133,
-      "unique_wallets": null,
-      "net_flow": null,
-      "first_time_buyers": null,
+      "unique_wallets": 134,
+      "net_flow": -382872.05,
+      "first_time_buyers": 16,
       "window_hours": 1.0,
       "partial": false
     },
@@ -7595,8 +7596,7 @@
       },
       "onchain_heat": {
         "source": "Helius",
-        "fetched_at": "2026-10-14T17:00+08:00",
-        "via": "baseline"
+        "fetched_at": "2026-10-14T16:44+08:00"
       },
       "x": {
         "source": "x",
