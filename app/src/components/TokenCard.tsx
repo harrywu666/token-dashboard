@@ -34,7 +34,7 @@ export function TokenCard({
   return (
     <a href={`#/token/${token.id}`} className="block no-underline hover:no-underline">
       <Card className="group transition-all hover:-translate-y-0.5 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10">
-        <CardHeader className="flex-row items-start justify-between gap-3 space-y-0">
+        <CardHeader className="flex flex-row items-start justify-between gap-3 space-y-0">
           <div>
             <CardTitle className="text-lg group-hover:text-primary">{token.name}</CardTitle>
             <p className="mt-1 text-xs text-muted-foreground">{token.chain}</p>

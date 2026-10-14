@@ -33,8 +33,8 @@ export default function App() {
   }, [])
 
   return (
-    <Layout clock={clock}>
-      {route.page === 'home' ? <Home /> : <Detail id={route.id} />}
+    <Layout>
+      {route.page === 'home' ? <Home clock={clock} /> : <Detail id={route.id} clock={clock} />}
     </Layout>
   )
 }

@@ -1,8 +1,10 @@
 import { useEffect, useMemo, useState } from 'react'
-import { ArrowLeft } from 'lucide-react'
-import { Badge } from '@/components/ui/badge'
-import { Button } from '@/components/ui/button'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card'
 import {
   Select,
   SelectContent,
@@ -10,14 +12,16 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select'
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
-import { SeriesPanel, type SeriesPoint } from '@/components/SeriesPanel'
-import { MetricCard } from '@/components/MetricCard'
+import { SiteHeader } from '@/components/dashboard/site-header'
+import { SectionCard, SectionCardsGrid } from '@/components/dashboard/section-cards'
+import {
+  ChartAreaInteractive,
+  type SeriesPoint,
+} from '@/components/dashboard/chart-area-interactive'
+import { ExcludedTable, Top20DataTable } from '@/components/dashboard/data-table'
 import { SECTIONS, valueAt, type Kind } from '@/lib/metrics'
 import {
-  CH_LABEL,
-  CH_VARIANT,
   followersSeries,
   loadPeriods,
   loadTokens,
@@ -25,16 +29,16 @@ import {
   type Period,
   type TokenMeta,
 } from '@/lib/data'
-import { fmtTs, shortAddr } from '@/lib/utils'
+import { fmtTs } from '@/lib/utils'
 
 const PANEL_COLORS: Record<string, string> = {
-  holders: 'hsl(252 85% 68%)',
-  top20_pct: 'hsl(152 69% 43%)',
-  mcap_usd: 'hsl(36 90% 52%)',
-  liq_usd: 'hsl(210 90% 60%)',
-  followers: 'hsl(280 70% 60%)',
-  buys_1h: 'hsl(152 69% 43%)',
-  sells_1h: 'hsl(0 72% 55%)',
+  holders: 'oklch(0.7 0.16 285)',
+  top20_pct: 'oklch(0.68 0.17 155)',
+  mcap_usd: 'oklch(0.78 0.15 70)',
+  liq_usd: 'oklch(0.7 0.14 240)',
+  followers: 'oklch(0.72 0.14 310)',
+  buys_1h: 'oklch(0.68 0.17 155)',
+  sells_1h: 'oklch(0.63 0.22 25)',
 }
 
 type PanelDef = {
@@ -56,7 +60,7 @@ function hasEnough(points: SeriesPoint[]): boolean {
   return points.some((p) => p.value != null)
 }
 
-export function Detail({ id }: { id: string }) {
+export function Detail({ id, clock }: { id: string; clock?: string }) {
   const [token, setToken] = useState<TokenMeta | null>(null)
   const [periods, setPeriods] = useState<Period[]>([])
   const [idx, setIdx] = useState(-1)
@@ -90,14 +94,20 @@ export function Detail({ id }: { id: string }) {
 
   const panels = useMemo((): PanelDef[] => {
     const out: PanelDef[] = []
-    const push = (key: string, title: string, kind: Kind, values: (number | null)[], color?: string) => {
+    const push = (
+      key: string,
+      title: string,
+      kind: Kind,
+      values: (number | null)[],
+      color?: string,
+    ) => {
       const points = buildPoints(periods, values)
       if (!hasEnough(points)) return
       out.push({
         key,
         title,
         kind,
-        color: color || PANEL_COLORS[key] || 'hsl(252 85% 68%)',
+        color: color || PANEL_COLORS[key] || 'oklch(0.7 0.16 285)',
         points,
       })
     }
@@ -122,206 +132,151 @@ export function Detail({ id }: { id: string }) {
     return out
   }, [periods])
 
-  if (loading) return <div className="text-muted-foreground">加载中…</div>
+  const periodSelect =
+    periods.length > 0 ? (
+      <div className="w-40 sm:w-52">
+        <Select value={String(idx)} onValueChange={(v) => setIdx(+v)}>
+          <SelectTrigger aria-label="选择期次">
+            <SelectValue placeholder="期次" />
+          </SelectTrigger>
+          <SelectContent>
+            {periods.map((p, i) => (
+              <SelectItem key={p.ts + i} value={String(i)}>
+                {fmtTs(p.ts)}
+              </SelectItem>
+            ))}
+          </SelectContent>
+        </Select>
+      </div>
+    ) : null
+
+  if (loading) {
+    return (
+      <>
+        <SiteHeader title="加载中…" clock={clock} />
+        <div className="px-4 py-6 text-muted-foreground lg:px-6">加载中…</div>
+      </>
+    )
+  }
+
   if (!token || !period) {
     return (
-      <div className="space-y-4">
-        <Button variant="ghost" asChild>
-          <a href="#/">
-            <ArrowLeft className="h-4 w-4" /> 返回
-          </a>
-        </Button>
-        <div className="text-muted-foreground">暂无数据</div>
-      </div>
+      <>
+        <SiteHeader title="暂无数据" clock={clock} />
+        <div className="px-4 py-6 text-muted-foreground lg:px-6">暂无数据</div>
+      </>
     )
   }
 
   return (
-    <div className="space-y-6">
-      <div className="flex flex-wrap items-start justify-between gap-4">
-        <div className="space-y-2">
-          <Button variant="ghost" size="sm" className="-ml-2" asChild>
-            <a href="#/" className="no-underline">
-              <ArrowLeft className="h-4 w-4" /> 返回概览
-            </a>
-          </Button>
-          <h1 className="text-2xl font-bold tracking-tight">{token.name}</h1>
-          <p className="text-sm text-muted-foreground">
-            {token.chain} · {token.group_name}
-          </p>
+    <>
+      <SiteHeader
+        title={token.name}
+        subtitle={`${token.chain} · ${token.group_name || token.id}`}
+        actions={periodSelect}
+        clock={clock}
+      />
+      <div className="flex flex-col gap-4 py-4 md:gap-6 md:py-6">
+        <div className="px-4 lg:px-6">
+          <Card>
+            <CardHeader>
+              <CardTitle>本期结论</CardTitle>
+            </CardHeader>
+            <CardContent>
+              {(period.conclusion || []).length ? (
+                <ul className="list-disc space-y-2 pl-5 text-sm leading-relaxed">
+                  {period.conclusion.map((c, i) => (
+                    <li key={i}>{c}</li>
+                  ))}
+                </ul>
+              ) : (
+                <div className="text-muted-foreground">—</div>
+              )}
+            </CardContent>
+          </Card>
         </div>
-        <div className="w-full sm:w-56">
-          <div className="mb-1 text-xs text-muted-foreground">期次</div>
-          <Select value={String(idx)} onValueChange={(v) => setIdx(+v)}>
-            <SelectTrigger>
-              <SelectValue />
-            </SelectTrigger>
-            <SelectContent>
-              {periods.map((p, i) => (
-                <SelectItem key={p.ts + i} value={String(i)}>
-                  {fmtTs(p.ts)}
-                </SelectItem>
-              ))}
-            </SelectContent>
-          </Select>
-        </div>
-      </div>
 
-      <Card>
-        <CardHeader>
-          <CardTitle>本期结论</CardTitle>
-        </CardHeader>
-        <CardContent>
-          {(period.conclusion || []).length ? (
-            <ul className="list-disc space-y-2 pl-5 text-sm leading-relaxed">
-              {period.conclusion.map((c, i) => (
-                <li key={i}>{c}</li>
-              ))}
-            </ul>
-          ) : (
-            <div className="text-muted-foreground">—</div>
-          )}
-        </CardContent>
-      </Card>
-
-      {SECTIONS.map((sec) => {
-        const keys = sec.keys(allKeys)
-        if (!keys.length) return null
-        const muted = sec.title.startsWith('参考')
-        return (
-          <div key={sec.title}>
-            <h2 className="mb-3 text-sm font-semibold tracking-wider text-muted-foreground">{sec.title}</h2>
-            <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
-              {keys.map((k) => (
-                <MetricCard
-                  key={k}
-                  k={k}
-                  metric={period.metrics[k]}
-                  cur={valueAt(periods, idx, k)}
-                  prev={valueAt(periods, idx - 1, k)}
-                  series={periods.slice(0, idx + 1).map((_, i) => valueAt(periods, i, k))}
-                  muted={muted}
-                />
-              ))}
+        {SECTIONS.map((sec) => {
+          const keys = sec.keys(allKeys)
+          if (!keys.length) return null
+          const muted = sec.title.startsWith('参考')
+          return (
+            <div key={sec.title} className="space-y-3">
+              <h2 className="px-4 text-sm font-semibold tracking-wider text-muted-foreground lg:px-6">
+                {sec.title}
+              </h2>
+              <SectionCardsGrid>
+                {keys.map((k) => (
+                  <SectionCard
+                    key={k}
+                    k={k}
+                    metric={period.metrics[k]}
+                    cur={valueAt(periods, idx, k)}
+                    prev={valueAt(periods, idx - 1, k)}
+                    series={periods.slice(0, idx + 1).map((_, i) => valueAt(periods, i, k))}
+                    muted={muted}
+                  />
+                ))}
+              </SectionCardsGrid>
             </div>
+          )
+        })}
+
+        <div className="space-y-3">
+          <div className="px-4 lg:px-6">
+            <h2 className="text-sm font-semibold tracking-wider text-muted-foreground">
+              走势看板
+            </h2>
+            <p className="mt-1 text-xs text-muted-foreground">
+              一手指标序列（GMGN / 链上 / X），缺数期断点不连；区间按期次条数切换。
+            </p>
           </div>
-        )
-      })}
-
-      <div>
-        <h2 className="mb-3 text-sm font-semibold tracking-wider text-muted-foreground">走势看板</h2>
-        <p className="mb-4 text-xs text-muted-foreground">
-          一手指标序列（GMGN / 链上 / X），缺数期断点不连；区间按期次条数切换。
-        </p>
-        <div className="grid grid-cols-1 gap-4 xl:grid-cols-2">
-          {panels.map((p) => (
-            <SeriesPanel
-              key={p.key}
-              title={p.title}
-              kind={p.kind}
-              color={p.color}
-              points={p.points}
-              defaultRange={periods.length > 24 ? '24' : 'all'}
-            />
-          ))}
-          {!panels.length && (
-            <div className="rounded-xl border border-border bg-card p-6 text-sm text-muted-foreground">
-              暂无可用走势序列
-            </div>
-          )}
+          <div className="grid grid-cols-1 gap-4 px-4 xl:grid-cols-2 lg:px-6">
+            {panels.map((p) => (
+              <ChartAreaInteractive
+                key={p.key}
+                title={p.title}
+                kind={p.kind}
+                color={p.color}
+                points={p.points}
+                defaultRange={periods.length > 24 ? '24' : 'all'}
+              />
+            ))}
+            {!panels.length && (
+              <div className="rounded-xl border border-border bg-card p-6 text-sm text-muted-foreground">
+                暂无可用走势序列
+              </div>
+            )}
+          </div>
         </div>
-      </div>
 
-      <Tabs defaultValue="top20">
-        <TabsList>
-          <TabsTrigger value="top20">前 20 真人钱包</TabsTrigger>
-          <TabsTrigger value="excluded">已剔除</TabsTrigger>
-          <TabsTrigger value="report">简报原文</TabsTrigger>
-        </TabsList>
-        <TabsContent value="top20">
-          <Table>
-            <TableHeader>
-              <TableRow>
-                <TableHead>#</TableHead>
-                <TableHead>地址</TableHead>
-                <TableHead className="text-right">占比%</TableHead>
-                <TableHead>变化</TableHead>
-              </TableRow>
-            </TableHeader>
-            <TableBody>
-              {(period.top20 || []).map((w, i) => {
-                const variant = CH_VARIANT[w.change] || 'muted'
-                const border =
-                  w.change === 'add'
-                    ? 'border-l-2 border-l-up'
-                    : w.change === 'reduce'
-                      ? 'border-l-2 border-l-warn'
-                      : w.change === 'exit'
-                        ? 'border-l-2 border-l-down'
-                        : w.change === 'new'
-                          ? 'border-l-2 border-l-new'
-                          : ''
-                return (
-                  <TableRow key={w.addr + i} className={border}>
-                    <TableCell className="text-muted-foreground">{i + 1}</TableCell>
-                    <TableCell>
-                      <a href={w.link} target="_blank" rel="noreferrer" className="no-underline hover:underline">
-                        {shortAddr(w.addr)}
-                      </a>
-                    </TableCell>
-                    <TableCell className="text-right tabular-nums">{w.pct ?? '—'}</TableCell>
-                    <TableCell>
-                      <Badge variant={variant}>
-                        {CH_LABEL[w.change] || w.change || '未动'}
-                        {w.delta_pct != null && w.delta_pct !== 0
-                          ? ` ${w.delta_pct > 0 ? '+' : ''}${w.delta_pct}%`
-                          : ''}
-                      </Badge>
-                    </TableCell>
-                  </TableRow>
-                )
-              })}
-              {!period.top20?.length && (
-                <TableRow>
-                  <TableCell colSpan={4} className="text-muted-foreground">
-                    —
-                  </TableCell>
-                </TableRow>
-              )}
-            </TableBody>
-          </Table>
-        </TabsContent>
-        <TabsContent value="excluded">
-          <Table>
-            <TableHeader>
-              <TableRow>
-                <TableHead>地址</TableHead>
-                <TableHead>原因</TableHead>
-              </TableRow>
-            </TableHeader>
-            <TableBody>
-              {(period.excluded || []).map((e, i) => (
-                <TableRow key={e.addr + i}>
-                  <TableCell>{shortAddr(e.addr)}</TableCell>
-                  <TableCell className="font-sans text-muted-foreground">{e.reason}</TableCell>
-                </TableRow>
-              ))}
-              {!period.excluded?.length && (
-                <TableRow>
-                  <TableCell colSpan={2} className="text-muted-foreground">
-                    —
-                  </TableCell>
-                </TableRow>
-              )}
-            </TableBody>
-          </Table>
-        </TabsContent>
-        <TabsContent value="report">
-          <pre className="whitespace-pre-wrap rounded-xl border border-border bg-card p-4 text-sm leading-relaxed text-muted-foreground">
-            {period.report_text || '—'}
-          </pre>
-        </TabsContent>
-      </Tabs>
-    </div>
+        <div className="space-y-3">
+          <Tabs defaultValue="top20" className="px-0">
+            <div className="px-4 lg:px-6">
+              <TabsList>
+                <TabsTrigger value="top20">前 20 真人钱包</TabsTrigger>
+                <TabsTrigger value="excluded">已剔除</TabsTrigger>
+                <TabsTrigger value="report">简报原文</TabsTrigger>
+              </TabsList>
+            </div>
+            <TabsContent value="top20" className="mt-3">
+              <Top20DataTable rows={period.top20 || []} />
+            </TabsContent>
+            <TabsContent value="excluded" className="mt-3">
+              <ExcludedTable rows={period.excluded || []} />
+            </TabsContent>
+            <TabsContent value="report" className="mt-3 px-4 lg:px-6">
+              <pre className="whitespace-pre-wrap rounded-xl border border-border bg-card p-4 text-sm leading-relaxed text-muted-foreground">
+                {period.report_text || '—'}
+              </pre>
+            </TabsContent>
+          </Tabs>
+        </div>
+
+        <footer className="px-4 pb-4 text-center text-xs text-muted-foreground lg:px-6">
+          数据每小时更新，非秒级实时 · 有新版本会自动刷新
+        </footer>
+      </div>
+    </>
   )
 }

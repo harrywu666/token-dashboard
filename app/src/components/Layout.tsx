@@ -1,48 +1,34 @@
-import { Activity, LayoutDashboard } from 'lucide-react'
-import { cn } from '@/lib/utils'
+import { SidebarInset, SidebarProvider } from '@/components/ui/sidebar'
+import { TooltipProvider } from '@/components/ui/tooltip'
+import { AppSidebar } from '@/components/dashboard/app-sidebar'
 
 export function Layout({
   children,
-  clock,
+  header,
 }: {
   children: React.ReactNode
-  clock?: string
+  header?: React.ReactNode
 }) {
-  const hash = typeof window !== 'undefined' ? window.location.hash : '#/'
-  const home = !hash || hash === '#' || hash === '#/'
-
   return (
-    <div className="min-h-screen">
-      <header className="sticky top-0 z-30 border-b border-border/80 bg-background/80 backdrop-blur-md">
-        <div className="mx-auto flex h-14 max-w-6xl items-center gap-3 px-4 sm:gap-6 sm:px-5">
-          <a
-            href="#/"
-            className="flex items-center gap-2.5 font-semibold text-foreground no-underline hover:no-underline"
-          >
-            <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-gradient-to-br from-primary to-up">
-              <LayoutDashboard className="h-4 w-4 text-primary-foreground" />
-            </span>
-            代币调查看板
-          </a>
-          <nav className="flex items-center gap-1 text-sm">
-            <a
-              href="#/"
-              className={cn(
-                'rounded-md px-3 py-1.5 no-underline transition-colors',
-                home ? 'bg-secondary text-foreground' : 'text-muted-foreground hover:text-foreground',
-              )}
-            >
-              概览
-            </a>
-          </nav>
-          <div className="ml-auto flex items-center gap-2 text-xs text-muted-foreground">
-            <span className="hidden text-[11px] sm:inline">有新版本会自动刷新</span>
-            <Activity className="h-3.5 w-3.5 text-up" />
-            <span className="hidden sm:inline">{clock || '—'}</span>
+    <TooltipProvider>
+      <SidebarProvider
+        style={
+          {
+            '--sidebar-width': '16rem',
+            '--header-height': '3rem',
+          } as React.CSSProperties
+        }
+      >
+        <AppSidebar variant="inset" />
+        <SidebarInset>
+          {header}
+          <div className="flex flex-1 flex-col">
+            <div className="@container/main flex flex-1 flex-col gap-2">
+              {children}
+            </div>
           </div>
-        </div>
-      </header>
-      <main className="mx-auto max-w-6xl px-4 py-6 sm:px-5 sm:py-8">{children}</main>
-    </div>
+        </SidebarInset>
+      </SidebarProvider>
+    </TooltipProvider>
   )
 }
