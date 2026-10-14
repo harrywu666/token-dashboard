@@ -1,9 +1,9 @@
 {
-  "ts": "2026-10-14T18:00+08:00",
-  "holders": 5260,
+  "ts": "2026-10-14T19:00+08:00",
+  "holders": 5257,
   "holders_delta": -3,
-  "mcap_usd": 4136675,
-  "liquidity_usd": 245346.63,
+  "mcap_usd": 4241392,
+  "liquidity_usd": 248257.41,
   "top20": [
     {
       "addr": "2E1g7f7AYSJkUkzMbkwP3QkuawHWDqWbU6Lx39agKsPs",
@@ -93,7 +93,7 @@
       "addr": "DwJjRmVfANGUdZdBiGBj1QrY1MK5ZYs4DsCt7A8o6xc3",
       "short": "DwJj…6xc3",
       "pct": 1.1301,
-      "delta_pct": 0.0004,
+      "delta_pct": 0.0,
       "change": "same"
     },
     {
@@ -162,50 +162,50 @@
     }
   ],
   "onchain_heat": {
-    "buys": 38,
+    "buys": 35,
     "sells": 59,
-    "unique_wallets": 62,
-    "net_flow": 416483.12,
-    "first_time_buyers": 10,
+    "unique_wallets": 56,
+    "net_flow": 288985.79,
+    "first_time_buyers": 4,
     "window_hours": 1.0,
     "partial": false
   },
   "x": {
     "followers": {
-      "usehotbot": 5685,
+      "usehotbot": 5692,
       "elijahintek": 25784,
       "0xWhoismax": 4656,
-      "clawpumptech": 13443
+      "clawpumptech": 13466
     },
-    "mentions_1h": 68,
+    "mentions_1h": 81,
     "latest_post": null,
-    "cached_from": 1791971280
+    "cached_from": 1791974609
   },
   "conclusion": [],
   "sources": {
     "holders": {
       "source": "GMGN",
-      "fetched_at": "2026-10-14T18:00+08:00"
+      "fetched_at": "2026-10-14T19:00+08:00"
     },
     "mcap_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-14T18:00+08:00"
+      "fetched_at": "2026-10-14T19:00+08:00"
     },
     "liquidity_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-14T18:00+08:00"
+      "fetched_at": "2026-10-14T19:00+08:00"
     },
     "top20": {
       "source": "GMGN",
-      "fetched_at": "2026-10-14T18:00+08:00"
+      "fetched_at": "2026-10-14T19:00+08:00"
     },
     "onchain_heat": {
       "source": "Helius",
-      "fetched_at": "2026-10-14T17:48+08:00"
+      "fetched_at": "2026-10-14T18:42+08:00"
     },
     "x": {
       "source": "x",
-      "fetched_at": "2026-10-14T18:00+08:00",
+      "fetched_at": "2026-10-14T19:00+08:00",
       "via": "baseline"
     }
   }
