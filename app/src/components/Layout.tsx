@@ -15,7 +15,7 @@ export function Layout({
         style={
           {
             '--sidebar-width': '16rem',
-            '--header-height': '3rem',
+            '--header-height': 'calc(var(--spacing) * 12 + 1px)',
           } as React.CSSProperties
         }
       >

@@ -33,10 +33,10 @@ export function TokenCard({
 
   return (
     <a href={`#/token/${token.id}`} className="block no-underline hover:no-underline">
-      <Card className="group transition-all hover:-translate-y-0.5 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10">
+      <Card className="group transition-all hover:-translate-y-0.5 hover:border-primary/50 hover:shadow-xs">
         <CardHeader className="flex flex-row items-start justify-between gap-3 space-y-0">
           <div>
-            <CardTitle className="text-lg group-hover:text-primary">{token.name}</CardTitle>
+            <CardTitle className="text-base font-semibold group-hover:text-primary">{token.name}</CardTitle>
             <p className="mt-1 text-xs text-muted-foreground">{token.chain}</p>
           </div>
           <Badge variant="secondary">{token.group_name || token.id}</Badge>
@@ -44,10 +44,10 @@ export function TokenCard({
         <CardContent className="space-y-4">
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
             {([
-              ['holders', '持币地址', 'count', holdersSpark, 'hsl(252 85% 68%)', false],
-              ['top20_pct', '前20真人占比', 'pct', top20Spark, 'hsl(152 69% 43%)', false],
-              ['buys_1h', '1h买入', 'count', buysSpark, 'hsl(152 69% 43%)', true],
-              ['sells_1h', '1h卖出', 'count', sellsSpark, 'hsl(0 72% 55%)', true],
+              ['holders', '持币地址', 'count', holdersSpark, 'var(--chart-1)', false],
+              ['top20_pct', '前20真人占比', 'pct', top20Spark, 'var(--chart-2)', false],
+              ['buys_1h', '1h买入', 'count', buysSpark, 'var(--chart-2)', true],
+              ['sells_1h', '1h卖出', 'count', sellsSpark, 'var(--chart-5)', true],
             ] as [string, string, Kind, (number | null)[], string, boolean][]).map(([k, label, kind, spark, color, hourly]) => {
               const n = periods.length - 1
               const cur = valueAt(periods, n, k)
@@ -55,8 +55,8 @@ export function TokenCard({
               return (
                 <div key={k} className="min-w-0 overflow-hidden rounded-lg bg-secondary/40 p-2.5">
                   <div className="text-xs text-muted-foreground">{label}</div>
-                  <div className="mt-0.5 font-mono text-lg font-semibold tabular-nums tracking-tight">{fmtVal(cur, kind)}</div>
-                  <div className={cn('font-mono text-xs font-medium', TONE_CLS[d.tone])}>
+                  <div className="mt-0.5 text-2xl font-semibold tabular-nums tracking-tight">{fmtVal(cur, kind)}</div>
+                  <div className={cn('text-xs font-medium', TONE_CLS[d.tone])}>
                     {d.text}
                     {d.tone !== 'none' && <span className="block font-sans font-normal text-muted-foreground">{hourly ? '较上一小时' : '较上期'}</span>}
                   </div>

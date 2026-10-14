@@ -22,14 +22,15 @@ export function TrendChart({ labels, series }: { labels: string[]; series: Serie
     <div className="h-[240px] w-full rounded-xl border border-border bg-card p-2 sm:h-[280px] sm:p-4">
       <ResponsiveContainer width="100%" height="100%">
         <LineChart data={data} margin={{ top: 8, right: 12, left: 0, bottom: 0 }}>
-          <CartesianGrid stroke="hsl(217 25% 16%)" strokeDasharray="3 3" />
-          <XAxis dataKey="ts" minTickGap={40} interval="preserveStartEnd" tick={{ fill: 'hsl(215 16% 57%)', fontSize: 11 }} axisLine={false} tickLine={false} />
-          <YAxis yAxisId="left" tick={{ fill: 'hsl(215 16% 57%)', fontSize: 11 }} axisLine={false} tickLine={false} width={48} />
-          <YAxis yAxisId="right" orientation="right" tick={{ fill: 'hsl(215 16% 57%)', fontSize: 11 }} axisLine={false} tickLine={false} width={40} />
+          <CartesianGrid stroke="var(--border)" strokeDasharray="3 3" />
+          <XAxis dataKey="ts" minTickGap={40} interval="preserveStartEnd" tick={{ fill: 'var(--muted-foreground)', fontSize: 12 }} axisLine={false} tickLine={false} />
+          <YAxis yAxisId="left" tick={{ fill: 'var(--muted-foreground)', fontSize: 12 }} axisLine={false} tickLine={false} width={48} />
+          <YAxis yAxisId="right" orientation="right" tick={{ fill: 'var(--muted-foreground)', fontSize: 12 }} axisLine={false} tickLine={false} width={40} />
           <Tooltip
             contentStyle={{
-              background: 'hsl(222 40% 9%)',
-              border: '1px solid hsl(217 25% 16%)',
+              background: 'var(--popover)',
+              border: '1px solid var(--border)',
+              color: 'var(--popover-foreground)',
               borderRadius: 8,
               fontSize: 12,
             }}

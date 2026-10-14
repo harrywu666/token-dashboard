@@ -2,7 +2,7 @@ import { Line, LineChart, ResponsiveContainer, YAxis } from 'recharts'
 
 export function Sparkline({
   data,
-  color = 'hsl(252 85% 68%)',
+  color = 'var(--chart-1)',
   height = 40,
 }: {
   data: (number | null)[]

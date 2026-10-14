@@ -115,7 +115,7 @@ function summary(points: SeriesPoint[], kind: Kind) {
 export function SeriesPanel({
   title,
   kind,
-  color = 'hsl(252 85% 68%)',
+  color = 'var(--chart-1)',
   points,
   defaultRange = 'all',
 }: {
@@ -198,23 +198,23 @@ export function SeriesPanel({
 
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
           <div>
-            <div className="text-[11px] text-muted-foreground">最新</div>
-            <div className="font-mono text-xl font-semibold tabular-nums tracking-tight sm:text-2xl">
+            <div className="text-sm text-muted-foreground">最新</div>
+            <div className="text-2xl font-semibold tabular-nums tracking-tight">
               {fmtVal(s.latest, kind)}
             </div>
           </div>
           <div>
-            <div className="text-[11px] text-muted-foreground">区间涨跌</div>
+            <div className="text-sm text-muted-foreground">区间涨跌</div>
             <div className={cn('font-mono text-sm font-medium tabular-nums sm:text-base', TONE_CLS[s.tone])}>
               {changeText}
             </div>
           </div>
           <div>
-            <div className="text-[11px] text-muted-foreground">区间最低</div>
+            <div className="text-sm text-muted-foreground">区间最低</div>
             <div className="font-mono text-sm tabular-nums sm:text-base">{fmtVal(s.min, kind)}</div>
           </div>
           <div>
-            <div className="text-[11px] text-muted-foreground">区间最高</div>
+            <div className="text-sm text-muted-foreground">区间最高</div>
             <div className="font-mono text-sm tabular-nums sm:text-base">{fmtVal(s.max, kind)}</div>
           </div>
         </div>
@@ -232,19 +232,19 @@ export function SeriesPanel({
                       <stop offset="100%" stopColor={color} stopOpacity={0.02} />
                     </linearGradient>
                   </defs>
-                  <CartesianGrid stroke="hsl(217 25% 16%)" strokeDasharray="3 3" vertical={false} />
+                  <CartesianGrid stroke="var(--border)" strokeDasharray="3 3" vertical={false} />
                   <XAxis
                     dataKey="label"
                     minTickGap={36}
                     interval="preserveStartEnd"
-                    tick={{ fill: 'hsl(215 16% 57%)', fontSize: 11 }}
+                    tick={{ fill: 'var(--muted-foreground)', fontSize: 12 }}
                     axisLine={false}
                     tickLine={false}
                   />
                   <YAxis
                     domain={domain}
                     tickFormatter={(v: number) => axisFmt(v, kind)}
-                    tick={{ fill: 'hsl(215 16% 57%)', fontSize: 11 }}
+                    tick={{ fill: 'var(--muted-foreground)', fontSize: 12 }}
                     axisLine={false}
                     tickLine={false}
                     width={56}

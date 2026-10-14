@@ -32,13 +32,13 @@ import {
 import { fmtTs } from '@/lib/utils'
 
 const PANEL_COLORS: Record<string, string> = {
-  holders: 'oklch(0.7 0.16 285)',
-  top20_pct: 'oklch(0.68 0.17 155)',
-  mcap_usd: 'oklch(0.78 0.15 70)',
-  liq_usd: 'oklch(0.7 0.14 240)',
-  followers: 'oklch(0.72 0.14 310)',
-  buys_1h: 'oklch(0.68 0.17 155)',
-  sells_1h: 'oklch(0.63 0.22 25)',
+  holders: 'var(--chart-1)',
+  top20_pct: 'var(--chart-2)',
+  mcap_usd: 'var(--chart-4)',
+  liq_usd: 'var(--chart-3)',
+  followers: 'var(--chart-5)',
+  buys_1h: 'var(--chart-2)',
+  sells_1h: 'var(--chart-5)',
 }
 
 type PanelDef = {
@@ -107,7 +107,7 @@ export function Detail({ id, clock }: { id: string; clock?: string }) {
         key,
         title,
         kind,
-        color: color || PANEL_COLORS[key] || 'oklch(0.7 0.16 285)',
+        color: color || PANEL_COLORS[key] || 'var(--chart-1)',
         points,
       })
     }
@@ -202,7 +202,7 @@ export function Detail({ id, clock }: { id: string; clock?: string }) {
           const muted = sec.title.startsWith('参考')
           return (
             <div key={sec.title} className="space-y-3">
-              <h2 className="px-4 text-sm font-semibold tracking-wider text-muted-foreground lg:px-6">
+              <h2 className="px-4 text-sm font-medium text-muted-foreground lg:px-6">
                 {sec.title}
               </h2>
               <SectionCardsGrid>
@@ -224,7 +224,7 @@ export function Detail({ id, clock }: { id: string; clock?: string }) {
 
         <div className="space-y-3">
           <div className="px-4 lg:px-6">
-            <h2 className="text-sm font-semibold tracking-wider text-muted-foreground">
+            <h2 className="text-sm font-medium text-muted-foreground">
               走势看板
             </h2>
             <p className="mt-1 text-xs text-muted-foreground">

@@ -43,33 +43,40 @@ export function SectionCard({
         <CardAction>
           <Badge
             variant="outline"
-            className={cn('gap-1 font-mono tabular-nums', TONE_CLS[d.tone])}
+            className={cn('gap-1 font-normal tabular-nums', TONE_CLS[d.tone])}
           >
             <TrendIcon className="size-3.5" />
             {d.text}
           </Badge>
         </CardAction>
       </CardHeader>
-      <CardFooter className="flex-col items-start gap-2 text-sm">
+      <CardFooter className="flex-col items-start gap-1.5 text-sm">
         <div className="flex w-full items-end justify-between gap-2">
           <div className="min-w-0">
-            <div className="line-clamp-2 text-xs leading-snug text-muted-foreground">
+            <div className="line-clamp-1 flex gap-2 font-medium">
+              {d.tone !== 'none' ? (
+                <>
+                  {meta.hourly ? '较上一小时' : '较上期'}
+                  <TrendIcon className="size-4 shrink-0" />
+                </>
+              ) : (
+                <span className="text-muted-foreground">无上期对比</span>
+              )}
+            </div>
+            <div className="text-muted-foreground">
               {meta.desc || '—'}
             </div>
-            <div className="mt-1 text-[11px] text-muted-foreground">
+            <div className="mt-0.5 text-xs text-muted-foreground">
               {src}
               {metric?.fetched_at ? ` · ${fmtTs(metric.fetched_at).slice(5, 16)}` : ''}
               {metric?.cached ? ' · 沿用缓存' : ''}
-              {d.tone !== 'none' ? (
-                <span> · {meta.hourly ? '较上一小时' : '较上期'}</span>
-              ) : null}
             </div>
           </div>
           <div className="w-20 shrink-0">
             <Sparkline
               data={series}
               height={28}
-              color={muted ? 'oklch(0.68 0.02 250)' : 'oklch(0.7 0.16 285)'}
+              color={muted ? 'var(--muted-foreground)' : 'var(--chart-1)'}
             />
           </div>
         </div>
@@ -80,7 +87,7 @@ export function SectionCard({
 
 export function SectionCardsGrid({ children }: { children: React.ReactNode }) {
   return (
-    <div className="grid grid-cols-1 gap-4 px-4 *:data-[slot=card]:bg-gradient-to-t *:data-[slot=card]:from-primary/5 *:data-[slot=card]:to-card *:data-[slot=card]:shadow-xs sm:grid-cols-2 lg:px-6 @xl/main:grid-cols-2 @5xl/main:grid-cols-4">
+    <div className="grid grid-cols-1 gap-4 px-4 *:data-[slot=card]:bg-gradient-to-t *:data-[slot=card]:from-primary/5 *:data-[slot=card]:to-card *:data-[slot=card]:shadow-xs sm:grid-cols-2 lg:px-6 @xl/main:grid-cols-2 @5xl/main:grid-cols-4 dark:*:data-[slot=card]:bg-card">
       {children}
     </div>
   )

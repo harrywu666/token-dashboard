@@ -126,7 +126,7 @@ function summary(points: SeriesPoint[], kind: Kind) {
 export function ChartAreaInteractive({
   title,
   kind,
-  color = 'oklch(0.7 0.16 285)',
+  color = 'var(--chart-1)',
   points,
   defaultRange = 'all',
 }: {
@@ -223,29 +223,29 @@ export function ChartAreaInteractive({
 
       <div className="grid grid-cols-2 gap-3 px-4 pb-2 sm:grid-cols-4 lg:px-6">
         <div>
-          <div className="text-[11px] text-muted-foreground">最新</div>
-          <div className="font-mono text-xl font-semibold tabular-nums tracking-tight sm:text-2xl">
+          <div className="text-sm text-muted-foreground">最新</div>
+          <div className="text-2xl font-semibold tabular-nums tracking-tight">
             {fmtVal(s.latest, kind)}
           </div>
         </div>
         <div>
-          <div className="text-[11px] text-muted-foreground">区间涨跌</div>
+          <div className="text-sm text-muted-foreground">区间涨跌</div>
           <div className={cn('font-mono text-sm font-medium tabular-nums sm:text-base', TONE_CLS[s.tone])}>
             {changeText}
           </div>
         </div>
         <div>
-          <div className="text-[11px] text-muted-foreground">区间最低</div>
+          <div className="text-sm text-muted-foreground">区间最低</div>
           <div className="font-mono text-sm tabular-nums sm:text-base">{fmtVal(s.min, kind)}</div>
         </div>
         <div>
-          <div className="text-[11px] text-muted-foreground">区间最高</div>
+          <div className="text-sm text-muted-foreground">区间最高</div>
           <div className="font-mono text-sm tabular-nums sm:text-base">{fmtVal(s.max, kind)}</div>
         </div>
       </div>
 
       <CardContent className="px-2 pt-2 sm:px-6 sm:pt-4">
-        <div className="aspect-auto h-[220px] w-full min-w-0 overflow-x-auto sm:h-[280px]">
+        <div className="aspect-auto h-[250px] w-full min-w-0 overflow-x-auto">
           <div className="h-full min-w-[280px]">
             {hasAny ? (
               <ResponsiveContainer width="100%" height="100%">
@@ -256,19 +256,19 @@ export function ChartAreaInteractive({
                       <stop offset="95%" stopColor={color} stopOpacity={0.05} />
                     </linearGradient>
                   </defs>
-                  <CartesianGrid stroke="oklch(1 0 0 / 8%)" strokeDasharray="3 3" vertical={false} />
+                  <CartesianGrid stroke="var(--border)" strokeDasharray="3 3" vertical={false} />
                   <XAxis
                     dataKey="label"
                     minTickGap={36}
                     interval="preserveStartEnd"
-                    tick={{ fill: 'oklch(0.68 0.02 250)', fontSize: 11 }}
+                    tick={{ fill: 'var(--muted-foreground)', fontSize: 12 }}
                     axisLine={false}
                     tickLine={false}
                   />
                   <YAxis
                     domain={domain}
                     tickFormatter={(v: number) => axisFmt(v, kind)}
-                    tick={{ fill: 'oklch(0.68 0.02 250)', fontSize: 11 }}
+                    tick={{ fill: 'var(--muted-foreground)', fontSize: 12 }}
                     axisLine={false}
                     tickLine={false}
                     width={56}
