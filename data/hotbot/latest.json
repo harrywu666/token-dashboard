@@ -1,9 +1,9 @@
 {
-  "ts": "2026-10-14T10:00+08:00",
-  "holders": null,
-  "holders_delta": null,
-  "mcap_usd": null,
-  "liquidity_usd": null,
+  "ts": "2026-10-14T11:00+08:00",
+  "holders": 5330,
+  "holders_delta": -532,
+  "mcap_usd": 3204969,
+  "liquidity_usd": 243077.63,
   "top20": [
     {
       "addr": "2E1g7f7AYSJkUkzMbkwP3QkuawHWDqWbU6Lx39agKsPs",
@@ -50,9 +50,9 @@
     {
       "addr": "8k1BPp8pCxq7RJxxBz3BUxvBjsfjhkHKnhr2WSQABGM9",
       "short": "8k1B…BGM9",
-      "pct": 1.5583,
-      "delta_pct": 0.0,
-      "change": "same"
+      "pct": 1.5271,
+      "delta_pct": -0.0312,
+      "change": "reduced"
     },
     {
       "addr": "CUsUzbVnmoVcNRW6XDcP6KeZDjfdmMKyyMMLeBh1Rcks",
@@ -85,8 +85,8 @@
     {
       "addr": "DwJjRmVfANGUdZdBiGBj1QrY1MK5ZYs4DsCt7A8o6xc3",
       "short": "DwJj…6xc3",
-      "pct": 1.1295,
-      "delta_pct": 0.0,
+      "pct": 1.1296,
+      "delta_pct": 0.0001,
       "change": "same"
     },
     {
@@ -146,7 +146,7 @@
       "change": "same"
     }
   ],
-  "top20_total_pct": 30.7712,
+  "top20_total_pct": 30.7401,
   "excluded": [
     {
       "addr": "GLL3CzybpSCLZdoACf8QUM5YrKVwyA65kQ2RcTsJxxzV",
@@ -164,32 +164,32 @@
   "onchain_heat": null,
   "x": {
     "followers": {
-      "usehotbot": 5606,
-      "elijahintek": 25767,
-      "0xWhoismax": 4650,
-      "clawpumptech": 13389
+      "usehotbot": 5646,
+      "elijahintek": 25777,
+      "0xWhoismax": 4651,
+      "clawpumptech": 13418
     },
     "mentions_1h": 20,
     "latest_post": null,
-    "cached_from": 1791891851
+    "cached_from": 1791946120
   },
   "conclusion": [],
   "sources": {
     "holders": {
       "source": "GMGN",
-      "fetched_at": "2026-10-14T10:00+08:00"
+      "fetched_at": "2026-10-14T11:00+08:00"
     },
     "mcap_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-14T10:00+08:00"
+      "fetched_at": "2026-10-14T11:00+08:00"
     },
     "liquidity_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-14T10:00+08:00"
+      "fetched_at": "2026-10-14T11:00+08:00"
     },
     "top20": {
       "source": "GMGN",
-      "fetched_at": "2026-10-14T10:00+08:00"
+      "fetched_at": "2026-10-14T11:00+08:00"
     }
   }
 }
