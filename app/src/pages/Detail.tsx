@@ -12,13 +12,12 @@ import {
 } from '@/components/ui/select'
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
-import { TrendChart } from '@/components/TrendChart'
+import { SeriesPanel, type SeriesPoint } from '@/components/SeriesPanel'
 import { MetricCard } from '@/components/MetricCard'
-import { SECTIONS, valueAt } from '@/lib/metrics'
+import { SECTIONS, valueAt, type Kind } from '@/lib/metrics'
 import {
   CH_LABEL,
   CH_VARIANT,
-  LBL,
   followersSeries,
   loadPeriods,
   loadTokens,
@@ -26,7 +25,36 @@ import {
   type Period,
   type TokenMeta,
 } from '@/lib/data'
-import { fmt, fmtTs, shortAddr, cn } from '@/lib/utils'
+import { fmtTs, shortAddr } from '@/lib/utils'
+
+const PANEL_COLORS: Record<string, string> = {
+  holders: 'hsl(252 85% 68%)',
+  top20_pct: 'hsl(152 69% 43%)',
+  mcap_usd: 'hsl(36 90% 52%)',
+  liq_usd: 'hsl(210 90% 60%)',
+  followers: 'hsl(280 70% 60%)',
+  buys_1h: 'hsl(152 69% 43%)',
+  sells_1h: 'hsl(0 72% 55%)',
+}
+
+type PanelDef = {
+  key: string
+  title: string
+  kind: Kind
+  color: string
+  points: SeriesPoint[]
+}
+
+function buildPoints(periods: Period[], values: (number | null)[]): SeriesPoint[] {
+  return periods.map((p, i) => ({
+    ts: p.ts,
+    value: values[i] ?? null,
+  }))
+}
+
+function hasEnough(points: SeriesPoint[]): boolean {
+  return points.some((p) => p.value != null)
+}
 
 export function Detail({ id }: { id: string }) {
   const [token, setToken] = useState<TokenMeta | null>(null)
@@ -60,16 +88,38 @@ export function Detail({ id }: { id: string }) {
     return [...keys]
   }, [periods])
 
-  const chartSeries = useMemo(() => {
-    const series = [
-      { key: 'holders', label: '持币地址', color: 'hsl(252 85% 68%)', data: metricSeries(periods, 'holders') },
-      { key: 'top20', label: '前20占比%', color: 'hsl(152 69% 43%)', data: metricSeries(periods, 'top20_pct') },
-    ]
-    const f = followersSeries(periods)
-    if (f.some((v) => v != null)) {
-      series.push({ key: 'followers', label: '官推粉丝', color: 'hsl(36 90% 52%)', data: f })
+  const panels = useMemo((): PanelDef[] => {
+    const out: PanelDef[] = []
+    const push = (key: string, title: string, kind: Kind, values: (number | null)[], color?: string) => {
+      const points = buildPoints(periods, values)
+      if (!hasEnough(points)) return
+      out.push({
+        key,
+        title,
+        kind,
+        color: color || PANEL_COLORS[key] || 'hsl(252 85% 68%)',
+        points,
+      })
     }
-    return series
+
+    push('holders', '持币地址', 'count', metricSeries(periods, 'holders'))
+    push('top20_pct', '前20真人占比 %', 'pct', metricSeries(periods, 'top20_pct'))
+    push('mcap_usd', '市值 (USD)', 'usd', metricSeries(periods, 'mcap_usd'))
+    push('liq_usd', '流动性 (USD)', 'usd', metricSeries(periods, 'liq_usd'))
+
+    const fol = followersSeries(periods)
+    if (fol.some((v) => v != null)) {
+      const handle =
+        periods
+          .map((p) => Object.keys(p.metrics || {}).find((k) => k.startsWith('@')))
+          .find(Boolean) || '@官推'
+      push('followers', `${handle} 粉丝`, 'count', fol, PANEL_COLORS.followers)
+    }
+
+    push('buys_1h', '1h 买入笔数', 'count', metricSeries(periods, 'buys_1h'), PANEL_COLORS.buys_1h)
+    push('sells_1h', '1h 卖出笔数', 'count', metricSeries(periods, 'sells_1h'), PANEL_COLORS.sells_1h)
+
+    return out
   }, [periods])
 
   if (loading) return <div className="text-muted-foreground">加载中…</div>
@@ -96,7 +146,9 @@ export function Detail({ id }: { id: string }) {
             </a>
           </Button>
           <h1 className="text-2xl font-bold tracking-tight">{token.name}</h1>
-          <p className="text-sm text-muted-foreground">{token.chain} · {token.group_name}</p>
+          <p className="text-sm text-muted-foreground">
+            {token.chain} · {token.group_name}
+          </p>
         </div>
         <div className="w-full sm:w-56">
           <div className="mb-1 text-xs text-muted-foreground">期次</div>
@@ -157,8 +209,27 @@ export function Detail({ id }: { id: string }) {
       })}
 
       <div>
-        <h2 className="mb-3 text-sm font-semibold uppercase tracking-wider text-muted-foreground">走势</h2>
-        <TrendChart labels={periods.map((p) => p.ts)} series={chartSeries} />
+        <h2 className="mb-3 text-sm font-semibold tracking-wider text-muted-foreground">走势看板</h2>
+        <p className="mb-4 text-xs text-muted-foreground">
+          一手指标序列（GMGN / 链上 / X），缺数期断点不连；区间按期次条数切换。
+        </p>
+        <div className="grid grid-cols-1 gap-4 xl:grid-cols-2">
+          {panels.map((p) => (
+            <SeriesPanel
+              key={p.key}
+              title={p.title}
+              kind={p.kind}
+              color={p.color}
+              points={p.points}
+              defaultRange={periods.length > 24 ? '24' : 'all'}
+            />
+          ))}
+          {!panels.length && (
+            <div className="rounded-xl border border-border bg-card p-6 text-sm text-muted-foreground">
+              暂无可用走势序列
+            </div>
+          )}
+        </div>
       </div>
 
       <Tabs defaultValue="top20">
@@ -202,7 +273,9 @@ export function Detail({ id }: { id: string }) {
                     <TableCell>
                       <Badge variant={variant}>
                         {CH_LABEL[w.change] || w.change || '未动'}
-                        {w.delta_pct != null && w.delta_pct !== 0 ? ` ${w.delta_pct > 0 ? '+' : ''}${w.delta_pct}%` : ''}
+                        {w.delta_pct != null && w.delta_pct !== 0
+                          ? ` ${w.delta_pct > 0 ? '+' : ''}${w.delta_pct}%`
+                          : ''}
                       </Badge>
                     </TableCell>
                   </TableRow>
@@ -252,4 +325,3 @@ export function Detail({ id }: { id: string }) {
     </div>
   )
 }
-
