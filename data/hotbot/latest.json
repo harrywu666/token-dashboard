@@ -1,9 +1,9 @@
 {
-  "ts": "2026-10-15T22:00+08:00",
-  "holders": 5292,
-  "holders_delta": -10,
-  "mcap_usd": 3337078.38,
-  "liquidity_usd": 215523.13,
+  "ts": "2026-10-15T23:00+08:00",
+  "holders": 5296,
+  "holders_delta": 4,
+  "mcap_usd": 3372688.69,
+  "liquidity_usd": 220013.09,
   "top20": [
     {
       "addr": "2E1g7f7AYSJkUkzMbkwP3QkuawHWDqWbU6Lx39agKsPs",
@@ -72,8 +72,8 @@
       "addr": "6451zSoUiy4GZeq2vEUHb73LcDJ8eeCHXEaGSqL8K6Fj",
       "short": "6451…K6Fj",
       "pct": 1.1862,
-      "delta_pct": 0.0282,
-      "change": "added"
+      "delta_pct": 0.0,
+      "change": "same"
     },
     {
       "addr": "DwJjRmVfANGUdZdBiGBj1QrY1MK5ZYs4DsCt7A8o6xc3",
@@ -162,53 +162,53 @@
     }
   ],
   "onchain_heat": {
-    "buys": 25,
-    "sells": 37,
-    "unique_wallets": 52,
-    "net_flow": -2685768.43,
-    "first_time_buyers": 4,
+    "buys": 39,
+    "sells": 29,
+    "unique_wallets": 49,
+    "net_flow": -91891.55,
+    "first_time_buyers": 5,
     "window_hours": 1.0,
     "partial": false
   },
   "x": {
     "followers": {
-      "usehotbot": 5776,
-      "elijahintek": 25802,
+      "usehotbot": 5771,
+      "elijahintek": 25804,
       "0xWhoismax": 4664,
       "clawpumptech": 13548
     },
-    "mentions_1h": 7,
+    "mentions_1h": 1,
     "latest_post": null,
-    "cached_from": 1792071935
+    "cached_from": 1792075696
   },
   "conclusion": [],
   "sources": {
     "holders": {
       "source": "GMGN",
-      "fetched_at": "2026-10-15T22:00+08:00",
+      "fetched_at": "2026-10-15T23:00+08:00",
       "via": "baseline"
     },
     "mcap_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-15T22:00+08:00",
+      "fetched_at": "2026-10-15T23:00+08:00",
       "via": "baseline"
     },
     "liquidity_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-15T22:00+08:00",
+      "fetched_at": "2026-10-15T23:00+08:00",
       "via": "baseline"
     },
     "top20": {
       "source": "GMGN",
-      "fetched_at": "2026-10-15T22:00+08:00"
+      "fetched_at": "2026-10-15T23:00+08:00"
     },
     "onchain_heat": {
       "source": "Helius",
-      "fetched_at": "2026-10-15T22:00+08:00"
+      "fetched_at": "2026-10-15T23:00+08:00"
     },
     "x": {
       "source": "x",
-      "fetched_at": "2026-10-15T22:00+08:00",
+      "fetched_at": "2026-10-15T23:00+08:00",
       "via": "baseline"
     }
   }
