@@ -1,9 +1,9 @@
 {
-  "ts": "2026-10-15T08:00+08:00",
-  "holders": 5409,
-  "holders_delta": 153,
-  "mcap_usd": 3536591,
-  "liquidity_usd": 232616.49,
+  "ts": "2026-10-15T09:00+08:00",
+  "holders": 5369,
+  "holders_delta": -40,
+  "mcap_usd": 3722912,
+  "liquidity_usd": 238648.8,
   "top20": [
     {
       "addr": "2E1g7f7AYSJkUkzMbkwP3QkuawHWDqWbU6Lx39agKsPs",
@@ -27,6 +27,13 @@
       "change": "same"
     },
     {
+      "addr": "5RnLZorMV5escChAt9igJzmbLAy653HBua7EKVU7nZUC",
+      "short": "5RnL…nZUC",
+      "pct": 2.6085,
+      "delta_pct": 0.9424,
+      "change": "added"
+    },
+    {
       "addr": "kHfajAXALAgbBup22egPEjgP135Le4yzM7LZd6oXbtF",
       "short": "kHfa…XbtF",
       "pct": 2.0975,
@@ -37,20 +44,13 @@
       "addr": "9CNyLECt2j8tnDhqxtjYk5HUhZ2b8Nwnyb7sfYN7vND2",
       "short": "9CNy…vND2",
       "pct": 1.7936,
-      "delta_pct": -0.1993,
-      "change": "reduced"
+      "delta_pct": 0.0,
+      "change": "same"
     },
     {
       "addr": "AnCMde5PQzP7hVQmh5TeeCiUgGAqTY8kK9d9o91nEs3Q",
       "short": "AnCM…Es3Q",
       "pct": 1.6896,
-      "delta_pct": 0.0,
-      "change": "same"
-    },
-    {
-      "addr": "5RnLZorMV5escChAt9igJzmbLAy653HBua7EKVU7nZUC",
-      "short": "5RnL…nZUC",
-      "pct": 1.6661,
       "delta_pct": 0.0,
       "change": "same"
     },
@@ -142,19 +142,11 @@
       "addr": "YBJr3oCcA2hGGz18TkWb5YsHxHk4S1tsR5AFAGJfNn9",
       "short": "YBJr…fNn9",
       "pct": 0.8994,
-      "change": "new",
-      "delta_pct": null
-    },
-    {
-      "addr": "8k1BPp8pCxq7RJxxBz3BUxvBjsfjhkHKnhr2WSQABGM9",
-      "short": "8k1B…BGM9",
-      "pct": null,
-      "change": "exited",
-      "delta_pct": null,
-      "prev_pct": 1.5586
+      "delta_pct": 0.0,
+      "change": "same"
     }
   ],
-  "top20_total_pct": 30.7294,
+  "top20_total_pct": 31.6718,
   "excluded": [
     {
       "addr": "GLL3CzybpSCLZdoACf8QUM5YrKVwyA65kQ2RcTsJxxzV",
@@ -170,50 +162,50 @@
     }
   ],
   "onchain_heat": {
-    "buys": 5,
-    "sells": 14,
-    "unique_wallets": 13,
-    "net_flow": -77491.05,
-    "first_time_buyers": 0,
+    "buys": 59,
+    "sells": 93,
+    "unique_wallets": 73,
+    "net_flow": -1095912.66,
+    "first_time_buyers": 9,
     "window_hours": 1.0,
     "partial": true
   },
   "x": {
     "followers": {
-      "usehotbot": 5742,
+      "usehotbot": 5749,
       "elijahintek": 25786,
       "0xWhoismax": 4656,
-      "clawpumptech": 13534
+      "clawpumptech": 13536
     },
-    "mentions_1h": 9,
+    "mentions_1h": 16,
     "latest_post": null,
-    "cached_from": 1792017170
+    "cached_from": 1792025759
   },
   "conclusion": [],
   "sources": {
     "holders": {
       "source": "GMGN",
-      "fetched_at": "2026-10-15T08:00+08:00"
+      "fetched_at": "2026-10-15T09:00+08:00"
     },
     "mcap_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-15T08:00+08:00"
+      "fetched_at": "2026-10-15T09:00+08:00"
     },
     "liquidity_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-15T08:00+08:00"
+      "fetched_at": "2026-10-15T09:00+08:00"
     },
     "top20": {
       "source": "GMGN",
-      "fetched_at": "2026-10-15T08:00+08:00"
+      "fetched_at": "2026-10-15T09:00+08:00"
     },
     "onchain_heat": {
       "source": "Helius",
-      "fetched_at": "2026-10-15T07:52+08:00"
+      "fetched_at": "2026-10-15T08:55+08:00"
     },
     "x": {
       "source": "x",
-      "fetched_at": "2026-10-15T08:00+08:00",
+      "fetched_at": "2026-10-15T09:00+08:00",
       "via": "baseline"
     }
   }
