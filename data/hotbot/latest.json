@@ -1,9 +1,9 @@
 {
-  "ts": "2026-10-15T14:00+08:00",
-  "holders": 5428,
-  "holders_delta": 90,
-  "mcap_usd": 3286234,
-  "liquidity_usd": 212891.86,
+  "ts": "2026-10-15T15:00+08:00",
+  "holders": 5424,
+  "holders_delta": -4,
+  "mcap_usd": 3329794,
+  "liquidity_usd": 217399.2,
   "top20": [
     {
       "addr": "2E1g7f7AYSJkUkzMbkwP3QkuawHWDqWbU6Lx39agKsPs",
@@ -142,16 +142,8 @@
       "addr": "YBJr3oCcA2hGGz18TkWb5YsHxHk4S1tsR5AFAGJfNn9",
       "short": "YBJr…fNn9",
       "pct": 0.8994,
-      "change": "new",
-      "delta_pct": null
-    },
-    {
-      "addr": "6iUvUvsznZ3t2Dpd1qVRitfRLui12TEZveJ49w9TELM4",
-      "short": "6iUv…ELM4",
-      "pct": null,
-      "change": "exited",
-      "delta_pct": null,
-      "prev_pct": 1.3397
+      "delta_pct": 0.0,
+      "change": "same"
     }
   ],
   "top20_total_pct": 31.2387,
@@ -170,50 +162,50 @@
     }
   ],
   "onchain_heat": {
-    "buys": 132,
-    "sells": 101,
-    "unique_wallets": 150,
-    "net_flow": -6810555.47,
-    "first_time_buyers": 25,
+    "buys": 46,
+    "sells": 82,
+    "unique_wallets": 80,
+    "net_flow": 1037085.38,
+    "first_time_buyers": 13,
     "window_hours": 1.0,
     "partial": false
   },
   "x": {
     "followers": {
-      "usehotbot": 5763,
-      "elijahintek": 25793,
+      "usehotbot": 5762,
+      "elijahintek": 25792,
       "0xWhoismax": 4657,
-      "clawpumptech": 13541
+      "clawpumptech": 13540
     },
-    "mentions_1h": 16,
+    "mentions_1h": 12,
     "latest_post": null,
-    "cached_from": 1792042800
+    "cached_from": 1792047068
   },
   "conclusion": [],
   "sources": {
     "holders": {
       "source": "GMGN",
-      "fetched_at": "2026-10-15T14:00+08:00"
+      "fetched_at": "2026-10-15T15:00+08:00"
     },
     "mcap_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-15T14:00+08:00"
+      "fetched_at": "2026-10-15T15:00+08:00"
     },
     "liquidity_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-15T14:00+08:00"
+      "fetched_at": "2026-10-15T15:00+08:00"
     },
     "top20": {
       "source": "GMGN",
-      "fetched_at": "2026-10-15T14:00+08:00"
+      "fetched_at": "2026-10-15T15:00+08:00"
     },
     "onchain_heat": {
       "source": "Helius",
-      "fetched_at": "2026-10-15T14:00+08:00"
+      "fetched_at": "2026-10-15T15:00+08:00"
     },
     "x": {
       "source": "x",
-      "fetched_at": "2026-10-15T14:00+08:00",
+      "fetched_at": "2026-10-15T15:00+08:00",
       "via": "baseline"
     }
   }
