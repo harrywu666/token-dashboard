@@ -12046,9 +12046,9 @@
     "onchain_heat": {
       "buys": 10,
       "sells": 33,
-      "unique_wallets": 43,
-      "net_flow": -133150.34,
-      "first_time_buyers": 3,
+      "unique_wallets": null,
+      "net_flow": null,
+      "first_time_buyers": null,
       "window_hours": 1.0,
       "partial": false
     },
@@ -12061,7 +12061,7 @@
       },
       "mentions_1h": 2,
       "latest_post": null,
-      "cached_from": 1792063560
+      "cached_from": null
     },
     "conclusion": [],
     "sources": {
@@ -12083,11 +12083,227 @@
       },
       "onchain_heat": {
         "source": "Helius",
-        "fetched_at": "2026-10-15T20:00+08:00"
+        "fetched_at": "2026-10-15T20:00+08:00",
+        "via": "baseline"
       },
       "x": {
         "source": "x",
         "fetched_at": "2026-10-15T20:00+08:00",
+        "via": "baseline"
+      }
+    }
+  },
+  {
+    "ts": "2026-10-15T21:00+08:00",
+    "holders": 5302,
+    "holders_delta": -7,
+    "mcap_usd": 3610728.52,
+    "liquidity_usd": 226111.71,
+    "top20": [
+      {
+        "addr": "2E1g7f7AYSJkUkzMbkwP3QkuawHWDqWbU6Lx39agKsPs",
+        "short": "2E1g…KsPs",
+        "pct": 3.1157,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "42eDBVXEbYxJfaKx5znWi1rwTFWBV69pQ7tCDLLr9ogx",
+        "short": "42eD…9ogx",
+        "pct": 2.9593,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "jssugBCDGaNW5yRRiZ5A2EQ4z12ntGAx4LyPY57nZ2b",
+        "short": "jssu…nZ2b",
+        "pct": 2.7296,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "5RnLZorMV5escChAt9igJzmbLAy653HBua7EKVU7nZUC",
+        "short": "5RnL…nZUC",
+        "pct": 2.6085,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "kHfajAXALAgbBup22egPEjgP135Le4yzM7LZd6oXbtF",
+        "short": "kHfa…XbtF",
+        "pct": 2.0975,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "9CNyLECt2j8tnDhqxtjYk5HUhZ2b8Nwnyb7sfYN7vND2",
+        "short": "9CNy…vND2",
+        "pct": 1.7936,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "AnCMde5PQzP7hVQmh5TeeCiUgGAqTY8kK9d9o91nEs3Q",
+        "short": "AnCM…Es3Q",
+        "pct": 1.6088,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "CUsUzbVnmoVcNRW6XDcP6KeZDjfdmMKyyMMLeBh1Rcks",
+        "short": "CUsU…Rcks",
+        "pct": 1.4475,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "5Uuw6GMbUrA5p5XgGEVYeFk4jTWuSMt95Xuf5gL45xK7",
+        "short": "5Uuw…5xK7",
+        "pct": 1.3563,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "6451zSoUiy4GZeq2vEUHb73LcDJ8eeCHXEaGSqL8K6Fj",
+        "short": "6451…K6Fj",
+        "pct": 1.158,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "DwJjRmVfANGUdZdBiGBj1QrY1MK5ZYs4DsCt7A8o6xc3",
+        "short": "DwJj…6xc3",
+        "pct": 1.1307,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "YW6bofTJXBLxQuyLdZ654M9Ji2zPvZRP4zYT8ojKjPR",
+        "short": "YW6b…KjPR",
+        "pct": 1.1055,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "7YpvTvSt7QDBU3aYDV6PGgsh4JGyHFfwtwngWCjz8NLx",
+        "short": "7Ypv…8NLx",
+        "pct": 1.0976,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "3Wm6BiKcEkG95zeRWT3HtBi3qp7tXiRXBCbg7RydcQj2",
+        "short": "3Wm6…cQj2",
+        "pct": 1.0728,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "GdSmhYHGFjb1QRDJ3dtpbA9TYNJaqEJsZHuUxpksEKNN",
+        "short": "GdSm…EKNN",
+        "pct": 1.0386,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "8LBxhvbNNSBnBdQdRG3dW8wndoSaGLGaKZDPcKEhfT42",
+        "short": "8LBx…fT42",
+        "pct": 1.0386,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "858mUYBxTJcFxGjCzo4Tt3pkaJfYBXRyXsuykj2C1LsZ",
+        "short": "858m…1LsZ",
+        "pct": 1.007,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "HYZv2JeSHn5NDe5Ev2Nnc2rTNEaC6F9QVrcMLH5v6GYt",
+        "short": "HYZv…6GYt",
+        "pct": 0.9963,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "niDQB4CxfdqDcdBWJFe4PkfsZD6njoiHCMfn5VNvRDY",
+        "short": "niDQ…vRDY",
+        "pct": 0.9872,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "YBJr3oCcA2hGGz18TkWb5YsHxHk4S1tsR5AFAGJfNn9",
+        "short": "YBJr…fNn9",
+        "pct": 0.8994,
+        "delta_pct": 0.0,
+        "change": "same"
+      }
+    ],
+    "top20_total_pct": 31.2485,
+    "excluded": [
+      {
+        "addr": "GLL3CzybpSCLZdoACf8QUM5YrKVwyA65kQ2RcTsJxxzV",
+        "reason": "exchange:pump_amm"
+      },
+      {
+        "addr": "21GML1ieck3tVVM1J5N6GsXh51rTrzVF55tbgdcvPAex",
+        "reason": "known_non_human"
+      },
+      {
+        "addr": "6D4EWF22HfQamimKhX47tqiu9DVCkcxDMrmhnSvewKAo",
+        "reason": "exchange:meteora_dlmm"
+      }
+    ],
+    "onchain_heat": {
+      "buys": 27,
+      "sells": 17,
+      "unique_wallets": 36,
+      "net_flow": 719752.41,
+      "first_time_buyers": 8,
+      "window_hours": 1.0,
+      "partial": false
+    },
+    "x": {
+      "followers": {
+        "usehotbot": 5775,
+        "elijahintek": 25801,
+        "0xWhoismax": 4662,
+        "clawpumptech": 13545
+      },
+      "mentions_1h": 5,
+      "latest_post": null,
+      "cached_from": 1792067220
+    },
+    "conclusion": [],
+    "sources": {
+      "holders": {
+        "source": "GMGN",
+        "fetched_at": "2026-10-15T21:00+08:00",
+        "via": "baseline"
+      },
+      "mcap_usd": {
+        "source": "GMGN",
+        "fetched_at": "2026-10-15T21:00+08:00",
+        "via": "baseline"
+      },
+      "liquidity_usd": {
+        "source": "GMGN",
+        "fetched_at": "2026-10-15T21:00+08:00",
+        "via": "baseline"
+      },
+      "top20": {
+        "source": "GMGN",
+        "fetched_at": "2026-10-15T21:00+08:00"
+      },
+      "onchain_heat": {
+        "source": "Helius",
+        "fetched_at": "2026-10-15T21:00+08:00"
+      },
+      "x": {
+        "source": "x",
+        "fetched_at": "2026-10-15T21:00+08:00",
         "via": "baseline"
       }
     }
