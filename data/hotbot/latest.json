@@ -1,9 +1,9 @@
 {
-  "ts": "2026-10-15T18:00+08:00",
-  "holders": 5345,
-  "holders_delta": -26,
-  "mcap_usd": 3440610.17,
-  "liquidity_usd": 222635.64,
+  "ts": "2026-10-15T19:00+08:00",
+  "holders": 5348,
+  "holders_delta": 3,
+  "mcap_usd": 3467008.22,
+  "liquidity_usd": 220748.73,
   "top20": [
     {
       "addr": "2E1g7f7AYSJkUkzMbkwP3QkuawHWDqWbU6Lx39agKsPs",
@@ -71,15 +71,15 @@
     {
       "addr": "6451zSoUiy4GZeq2vEUHb73LcDJ8eeCHXEaGSqL8K6Fj",
       "short": "6451…K6Fj",
-      "pct": 1.1485,
-      "delta_pct": 0.0,
-      "change": "same"
+      "pct": 1.158,
+      "delta_pct": 0.0095,
+      "change": "added"
     },
     {
       "addr": "DwJjRmVfANGUdZdBiGBj1QrY1MK5ZYs4DsCt7A8o6xc3",
       "short": "DwJj…6xc3",
-      "pct": 1.1304,
-      "delta_pct": 0.0,
+      "pct": 1.1307,
+      "delta_pct": 0.0003,
       "change": "same"
     },
     {
@@ -146,7 +146,7 @@
       "change": "same"
     }
   ],
-  "top20_total_pct": 31.2387,
+  "top20_total_pct": 31.2485,
   "excluded": [
     {
       "addr": "GLL3CzybpSCLZdoACf8QUM5YrKVwyA65kQ2RcTsJxxzV",
@@ -162,53 +162,53 @@
     }
   ],
   "onchain_heat": {
-    "buys": 25,
-    "sells": 42,
-    "unique_wallets": 54,
-    "net_flow": -399840.95,
-    "first_time_buyers": 0,
+    "buys": 11,
+    "sells": 23,
+    "unique_wallets": 26,
+    "net_flow": -12853.3,
+    "first_time_buyers": 1,
     "window_hours": 1.0,
     "partial": false
   },
   "x": {
     "followers": {
-      "usehotbot": 5766,
-      "elijahintek": 25799,
-      "0xWhoismax": 4660,
-      "clawpumptech": 13540
+      "usehotbot": 5771,
+      "elijahintek": 25801,
+      "0xWhoismax": 4661,
+      "clawpumptech": 13542
     },
-    "mentions_1h": 5,
+    "mentions_1h": 8,
     "latest_post": null,
-    "cached_from": 1792057500
+    "cached_from": 1792061156
   },
   "conclusion": [],
   "sources": {
     "holders": {
       "source": "GMGN",
-      "fetched_at": "2026-10-15T18:00+08:00",
+      "fetched_at": "2026-10-15T19:00+08:00",
       "via": "baseline"
     },
     "mcap_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-15T18:00+08:00",
+      "fetched_at": "2026-10-15T19:00+08:00",
       "via": "baseline"
     },
     "liquidity_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-15T18:00+08:00",
+      "fetched_at": "2026-10-15T19:00+08:00",
       "via": "baseline"
     },
     "top20": {
       "source": "GMGN",
-      "fetched_at": "2026-10-15T18:00+08:00"
+      "fetched_at": "2026-10-15T19:00+08:00"
     },
     "onchain_heat": {
       "source": "Helius",
-      "fetched_at": "2026-10-15T18:00+08:00"
+      "fetched_at": "2026-10-15T19:00+08:00"
     },
     "x": {
       "source": "x",
-      "fetched_at": "2026-10-15T18:00+08:00",
+      "fetched_at": "2026-10-15T19:00+08:00",
       "via": "baseline"
     }
   }
