@@ -1,9 +1,9 @@
 {
-  "ts": "2026-10-15T15:00+08:00",
-  "holders": 5424,
-  "holders_delta": -4,
-  "mcap_usd": 3329794,
-  "liquidity_usd": 217399.2,
+  "ts": "2026-10-15T16:00+08:00",
+  "holders": 5404,
+  "holders_delta": -20,
+  "mcap_usd": 3678879,
+  "liquidity_usd": 227894.44,
   "top20": [
     {
       "addr": "2E1g7f7AYSJkUkzMbkwP3QkuawHWDqWbU6Lx39agKsPs",
@@ -162,50 +162,50 @@
     }
   ],
   "onchain_heat": {
-    "buys": 46,
-    "sells": 82,
-    "unique_wallets": 80,
-    "net_flow": 1037085.38,
-    "first_time_buyers": 13,
+    "buys": 14,
+    "sells": 67,
+    "unique_wallets": 64,
+    "net_flow": 1744082.04,
+    "first_time_buyers": 5,
     "window_hours": 1.0,
     "partial": false
   },
   "x": {
     "followers": {
-      "usehotbot": 5762,
-      "elijahintek": 25792,
-      "0xWhoismax": 4657,
-      "clawpumptech": 13540
+      "usehotbot": 5764,
+      "elijahintek": 25796,
+      "0xWhoismax": 4659,
+      "clawpumptech": 13541
     },
-    "mentions_1h": 12,
+    "mentions_1h": 51,
     "latest_post": null,
-    "cached_from": 1792047068
+    "cached_from": 1792050191
   },
   "conclusion": [],
   "sources": {
     "holders": {
       "source": "GMGN",
-      "fetched_at": "2026-10-15T15:00+08:00"
+      "fetched_at": "2026-10-15T16:00+08:00"
     },
     "mcap_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-15T15:00+08:00"
+      "fetched_at": "2026-10-15T16:00+08:00"
     },
     "liquidity_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-15T15:00+08:00"
+      "fetched_at": "2026-10-15T16:00+08:00"
     },
     "top20": {
       "source": "GMGN",
-      "fetched_at": "2026-10-15T15:00+08:00"
+      "fetched_at": "2026-10-15T16:00+08:00"
     },
     "onchain_heat": {
       "source": "Helius",
-      "fetched_at": "2026-10-15T15:00+08:00"
+      "fetched_at": "2026-10-15T16:00+08:00"
     },
     "x": {
       "source": "x",
-      "fetched_at": "2026-10-15T15:00+08:00",
+      "fetched_at": "2026-10-15T16:00+08:00",
       "via": "baseline"
     }
   }
