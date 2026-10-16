@@ -1,9 +1,9 @@
 {
-  "ts": "2026-10-17T06:00+08:00",
-  "holders": 5402,
-  "holders_delta": -58,
-  "mcap_usd": 4115234.75,
-  "liquidity_usd": 293715.54,
+  "ts": "2026-10-17T08:00+08:00",
+  "holders": 5372,
+  "holders_delta": -30,
+  "mcap_usd": 4419838.7,
+  "liquidity_usd": 269091.02,
   "top20": [
     {
       "addr": "2E1g7f7AYSJkUkzMbkwP3QkuawHWDqWbU6Lx39agKsPs",
@@ -22,9 +22,9 @@
     {
       "addr": "42eDBVXEbYxJfaKx5znWi1rwTFWBV69pQ7tCDLLr9ogx",
       "short": "42eD…9ogx",
-      "pct": 2.5401,
-      "delta_pct": 0.0,
-      "change": "same"
+      "pct": 2.5594,
+      "delta_pct": 0.0193,
+      "change": "added"
     },
     {
       "addr": "kHfajAXALAgbBup22egPEjgP135Le4yzM7LZd6oXbtF",
@@ -37,8 +37,8 @@
       "addr": "9WvrTPvViRb9tDrYtEMyt5ohPaLD3gZXbAxbPxz3YRpw",
       "short": "9Wvr…YRpw",
       "pct": 2.0543,
-      "change": "new",
-      "delta_pct": null
+      "delta_pct": 0.0,
+      "change": "same"
     },
     {
       "addr": "5RnLZorMV5escChAt9igJzmbLAy653HBua7EKVU7nZUC",
@@ -85,7 +85,7 @@
     {
       "addr": "DwJjRmVfANGUdZdBiGBj1QrY1MK5ZYs4DsCt7A8o6xc3",
       "short": "DwJj…6xc3",
-      "pct": 1.1321,
+      "pct": 1.1322,
       "delta_pct": 0.0001,
       "change": "same"
     },
@@ -135,8 +135,8 @@
       "addr": "6451zSoUiy4GZeq2vEUHb73LcDJ8eeCHXEaGSqL8K6Fj",
       "short": "6451…K6Fj",
       "pct": 1.0035,
-      "change": "new",
-      "delta_pct": null
+      "delta_pct": 0.0,
+      "change": "same"
     },
     {
       "addr": "HYZv2JeSHn5NDe5Ev2Nnc2rTNEaC6F9QVrcMLH5v6GYt",
@@ -144,25 +144,9 @@
       "pct": 0.9963,
       "delta_pct": 0.0,
       "change": "same"
-    },
-    {
-      "addr": "CLf17c5KufuAP7rY23NVRfBH2yxFzMhk6a9QouJ18Mbw",
-      "short": "CLf1…8Mbw",
-      "pct": null,
-      "change": "exited",
-      "delta_pct": null,
-      "prev_pct": 1.9523
-    },
-    {
-      "addr": "niDQB4CxfdqDcdBWJFe4PkfsZD6njoiHCMfn5VNvRDY",
-      "short": "niDQ…vRDY",
-      "pct": null,
-      "change": "exited",
-      "delta_pct": null,
-      "prev_pct": 0.9872
     }
   ],
-  "top20_total_pct": 31.2021,
+  "top20_total_pct": 31.2215,
   "excluded": [
     {
       "addr": "GLL3CzybpSCLZdoACf8QUM5YrKVwyA65kQ2RcTsJxxzV",
@@ -174,53 +158,53 @@
     }
   ],
   "onchain_heat": {
-    "buys": 38,
-    "sells": 42,
-    "unique_wallets": 61,
-    "net_flow": 2854239.09,
-    "first_time_buyers": 10,
+    "buys": 18,
+    "sells": 51,
+    "unique_wallets": 57,
+    "net_flow": -278059.05,
+    "first_time_buyers": 4,
     "window_hours": null,
     "partial": false
   },
   "x": {
     "followers": {
-      "usehotbot": 5997,
-      "elijahintek": 25899,
-      "0xWhoismax": 4704,
-      "clawpumptech": 13653
+      "usehotbot": 6009,
+      "elijahintek": 25903,
+      "0xWhoismax": 4707,
+      "clawpumptech": 13655
     },
-    "mentions_1h": 64,
+    "mentions_1h": 24,
     "latest_post": null,
-    "cached_from": 1792187389
+    "cached_from": null
   },
   "conclusion": [],
   "sources": {
     "holders": {
       "source": "GMGN",
-      "fetched_at": "2026-10-17T06:00+08:00",
+      "fetched_at": "2026-10-17T08:00+08:00",
       "via": "baseline"
     },
     "mcap_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-17T06:00+08:00",
+      "fetched_at": "2026-10-17T08:00+08:00",
       "via": "baseline"
     },
     "liquidity_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-17T06:00+08:00",
+      "fetched_at": "2026-10-17T08:00+08:00",
       "via": "baseline"
     },
     "top20": {
       "source": "GMGN",
-      "fetched_at": "2026-10-17T06:00+08:00"
+      "fetched_at": "2026-10-17T08:00+08:00"
     },
     "onchain_heat": {
       "source": "Helius",
-      "fetched_at": "2026-10-17T06:00+08:00"
+      "fetched_at": "2026-10-17T08:00+08:00"
     },
     "x": {
       "source": "x",
-      "fetched_at": "2026-10-17T06:00+08:00",
+      "fetched_at": "2026-10-17T08:00+08:00",
       "via": "baseline"
     }
   }
