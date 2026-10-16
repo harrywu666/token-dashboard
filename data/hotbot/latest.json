@@ -1,9 +1,9 @@
 {
-  "ts": "2026-10-16T15:00+08:00",
-  "holders": 5342,
-  "holders_delta": 22,
-  "mcap_usd": 5019758.76,
-  "liquidity_usd": 272980.14,
+  "ts": "2026-10-16T16:00+08:00",
+  "holders": 5343,
+  "holders_delta": 1,
+  "mcap_usd": 5243225.4,
+  "liquidity_usd": 278878.05,
   "top20": [
     {
       "addr": "2E1g7f7AYSJkUkzMbkwP3QkuawHWDqWbU6Lx39agKsPs",
@@ -162,53 +162,53 @@
     }
   ],
   "onchain_heat": {
-    "buys": 68,
-    "sells": 59,
-    "unique_wallets": 80,
-    "net_flow": 939219.78,
-    "first_time_buyers": 13,
+    "buys": 39,
+    "sells": 92,
+    "unique_wallets": 75,
+    "net_flow": 789216.11,
+    "first_time_buyers": 7,
     "window_hours": 1.0,
     "partial": false
   },
   "x": {
     "followers": {
-      "usehotbot": 5876,
-      "elijahintek": 25865,
-      "0xWhoismax": 4678,
-      "clawpumptech": 13591
+      "usehotbot": 5883,
+      "elijahintek": 25869,
+      "0xWhoismax": 4680,
+      "clawpumptech": 13597
     },
-    "mentions_1h": 44,
+    "mentions_1h": 45,
     "latest_post": null,
-    "cached_from": 1792133522
+    "cached_from": 1792136841
   },
   "conclusion": [],
   "sources": {
     "holders": {
       "source": "GMGN",
-      "fetched_at": "2026-10-16T15:00+08:00",
+      "fetched_at": "2026-10-16T16:00+08:00",
       "via": "baseline"
     },
     "mcap_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-16T15:00+08:00",
+      "fetched_at": "2026-10-16T16:00+08:00",
       "via": "baseline"
     },
     "liquidity_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-16T15:00+08:00",
+      "fetched_at": "2026-10-16T16:00+08:00",
       "via": "baseline"
     },
     "top20": {
       "source": "GMGN",
-      "fetched_at": "2026-10-16T15:00+08:00"
+      "fetched_at": "2026-10-16T16:00+08:00"
     },
     "onchain_heat": {
       "source": "Helius",
-      "fetched_at": "2026-10-16T14:50+08:00"
+      "fetched_at": "2026-10-16T15:46+08:00"
     },
     "x": {
       "source": "x",
-      "fetched_at": "2026-10-16T15:00+08:00",
+      "fetched_at": "2026-10-16T16:00+08:00",
       "via": "baseline"
     }
   }
