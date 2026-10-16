@@ -1,9 +1,9 @@
 {
-  "ts": "2026-10-16T14:00+08:00",
-  "holders": 5320,
-  "holders_delta": -20,
-  "mcap_usd": 5000529.49,
-  "liquidity_usd": 270913.1,
+  "ts": "2026-10-16T15:00+08:00",
+  "holders": 5342,
+  "holders_delta": 22,
+  "mcap_usd": 5019758.76,
+  "liquidity_usd": 272980.14,
   "top20": [
     {
       "addr": "2E1g7f7AYSJkUkzMbkwP3QkuawHWDqWbU6Lx39agKsPs",
@@ -155,56 +155,60 @@
     {
       "addr": "21GML1ieck3tVVM1J5N6GsXh51rTrzVF55tbgdcvPAex",
       "reason": "known_non_human"
+    },
+    {
+      "addr": "6D4EWF22HfQamimKhX47tqiu9DVCkcxDMrmhnSvewKAo",
+      "reason": "exchange:meteora_dlmm"
     }
   ],
   "onchain_heat": {
-    "buys": 47,
-    "sells": 91,
-    "unique_wallets": 105,
-    "net_flow": 1703582.1,
-    "first_time_buyers": 9,
+    "buys": 68,
+    "sells": 59,
+    "unique_wallets": 80,
+    "net_flow": 939219.78,
+    "first_time_buyers": 13,
     "window_hours": 1.0,
     "partial": false
   },
   "x": {
     "followers": {
-      "usehotbot": 5869,
-      "elijahintek": 25860,
+      "usehotbot": 5876,
+      "elijahintek": 25865,
       "0xWhoismax": 4678,
-      "clawpumptech": 13590
+      "clawpumptech": 13591
     },
-    "mentions_1h": 72,
+    "mentions_1h": 44,
     "latest_post": null,
-    "cached_from": 1792129692
+    "cached_from": 1792133522
   },
   "conclusion": [],
   "sources": {
     "holders": {
       "source": "GMGN",
-      "fetched_at": "2026-10-16T14:00+08:00",
+      "fetched_at": "2026-10-16T15:00+08:00",
       "via": "baseline"
     },
     "mcap_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-16T14:00+08:00",
+      "fetched_at": "2026-10-16T15:00+08:00",
       "via": "baseline"
     },
     "liquidity_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-16T14:00+08:00",
+      "fetched_at": "2026-10-16T15:00+08:00",
       "via": "baseline"
     },
     "top20": {
       "source": "GMGN",
-      "fetched_at": "2026-10-16T14:00+08:00"
+      "fetched_at": "2026-10-16T15:00+08:00"
     },
     "onchain_heat": {
       "source": "Helius",
-      "fetched_at": "2026-10-16T13:47+08:00"
+      "fetched_at": "2026-10-16T14:50+08:00"
     },
     "x": {
       "source": "x",
-      "fetched_at": "2026-10-16T14:00+08:00",
+      "fetched_at": "2026-10-16T15:00+08:00",
       "via": "baseline"
     }
   }
