@@ -1,9 +1,9 @@
 {
-  "ts": "2026-10-17T19:00+08:00",
-  "holders": 5304,
-  "holders_delta": -34,
-  "mcap_usd": 3943303,
-  "liquidity_usd": 240727.66,
+  "ts": "2026-10-17T23:00+08:00",
+  "holders": 5343,
+  "holders_delta": 13,
+  "mcap_usd": 3681645,
+  "liquidity_usd": 235416.13,
   "top20": [
     {
       "addr": "2E1g7f7AYSJkUkzMbkwP3QkuawHWDqWbU6Lx39agKsPs",
@@ -85,7 +85,7 @@
     {
       "addr": "DwJjRmVfANGUdZdBiGBj1QrY1MK5ZYs4DsCt7A8o6xc3",
       "short": "DwJj…6xc3",
-      "pct": 1.1322,
+      "pct": 1.1323,
       "delta_pct": 0.0,
       "change": "same"
     },
@@ -146,7 +146,7 @@
       "change": "same"
     }
   ],
-  "top20_total_pct": 31.1084,
+  "top20_total_pct": 31.1085,
   "excluded": [
     {
       "addr": "GLL3CzybpSCLZdoACf8QUM5YrKVwyA65kQ2RcTsJxxzV",
@@ -158,51 +158,55 @@
     }
   ],
   "onchain_heat": {
-    "buys": 8,
-    "sells": 15,
-    "unique_wallets": 17,
-    "net_flow": -74052.02,
-    "first_time_buyers": 2,
+    "buys": 62,
+    "sells": 24,
+    "unique_wallets": 46,
+    "net_flow": 1154916.23,
+    "first_time_buyers": 5,
     "window_hours": 1.0,
     "partial": false
   },
   "x": {
     "followers": {
-      "usehotbot": 6053,
-      "elijahintek": 25909,
-      "0xWhoismax": 4707,
-      "clawpumptech": 13690
+      "usehotbot": 6063,
+      "elijahintek": 25908,
+      "0xWhoismax": 4706,
+      "clawpumptech": 13710
     },
-    "mentions_1h": 14,
+    "mentions_1h": 24,
     "latest_post": null,
     "cached_from": null
   },
-  "conclusion": [],
+  "conclusion": [
+    "较 22:00：持币地址 5343（+13）；市值约 $3,681,645（约 +4.1%）、流动性约 $235,416（约 +2.4%）——持币续增，盘面明显反弹",
+    "前20真人：全部未变，合计 31.11%",
+    "链上近 1h 代币净流入约 1,154,916 枚（买 62 / 卖 24，partial=false）——买笔明显多于卖，净流入放大（上期约 +4.8 万枚）",
+    "社交：提及回升（约 24，上期 14）；抄袭质疑与「归零」喊单再起，夹杂产品讨论与黑客松争议"
+  ],
   "sources": {
     "holders": {
       "source": "GMGN",
-      "fetched_at": "2026-10-17T19:00+08:00"
+      "fetched_at": "2026-10-17T23:00+08:00"
     },
     "mcap_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-17T19:00+08:00"
+      "fetched_at": "2026-10-17T23:00+08:00"
     },
     "liquidity_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-17T19:00+08:00"
+      "fetched_at": "2026-10-17T23:00+08:00"
     },
     "top20": {
       "source": "GMGN",
-      "fetched_at": "2026-10-17T19:00+08:00"
+      "fetched_at": "2026-10-17T23:00+08:00"
     },
     "onchain_heat": {
       "source": "Helius",
-      "fetched_at": "2026-10-17T19:00+08:00",
-      "via": "baseline"
+      "fetched_at": "2026-10-17T22:41+08:00"
     },
     "x": {
       "source": "x",
-      "fetched_at": "2026-10-17T19:00+08:00",
+      "fetched_at": "2026-10-17T23:00+08:00",
       "via": "baseline"
     }
   }
