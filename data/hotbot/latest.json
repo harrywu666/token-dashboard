@@ -1,9 +1,9 @@
 {
-  "ts": "2026-10-17T09:00+08:00",
-  "holders": 5371,
+  "ts": "2026-10-17T11:00+08:00",
+  "holders": 5363,
   "holders_delta": -1,
-  "mcap_usd": 4051869,
-  "liquidity_usd": 255777.23,
+  "mcap_usd": 4223167,
+  "liquidity_usd": 247326.62,
   "top20": [
     {
       "addr": "2E1g7f7AYSJkUkzMbkwP3QkuawHWDqWbU6Lx39agKsPs",
@@ -142,16 +142,8 @@
       "addr": "niDQB4CxfdqDcdBWJFe4PkfsZD6njoiHCMfn5VNvRDY",
       "short": "niDQ…vRDY",
       "pct": 0.9872,
-      "change": "new",
-      "delta_pct": null
-    },
-    {
-      "addr": "858mUYBxTJcFxGjCzo4Tt3pkaJfYBXRyXsuykj2C1LsZ",
-      "short": "858m…1LsZ",
-      "pct": null,
-      "change": "exited",
-      "delta_pct": null,
-      "prev_pct": 1.007
+      "delta_pct": 0.0,
+      "change": "same"
     }
   ],
   "top20_total_pct": 31.2017,
@@ -166,12 +158,12 @@
     }
   ],
   "onchain_heat": {
-    "buys": 12,
-    "sells": 22,
-    "unique_wallets": 24,
-    "net_flow": -327178.57,
-    "first_time_buyers": 4,
-    "window_hours": 1.0,
+    "buys": 14,
+    "sells": 27,
+    "unique_wallets": 29,
+    "net_flow": -432093.75,
+    "first_time_buyers": 5,
+    "window_hours": null,
     "partial": false
   },
   "x": {
@@ -185,32 +177,36 @@
     "latest_post": null,
     "cached_from": 1792205142
   },
-  "conclusion": [],
+  "conclusion": [
+    "较 10:00：持币地址 5363（-1）；市值约 $4,223,167（约 -0.9%）、流动性约 $247,327（约 -2.0%）——持币基本持平，市值回吐上期反弹、流动性续降",
+    "前20真人：DwJj…6xc3 微加约 451 枚；其余未变；合计 31.20%",
+    "链上近 1h 代币净流出约 432,094 枚（买 14 / 卖 27，partial=false）——卖笔更多且净流由上期净流入翻负",
+    "社交：官推本窗无新帖；elijah 转推并回复 Kyuubi「避 rug」视频；提及回落至约 18（上期 40），晒单质疑与带 CA 推介仍在"
+  ],
   "sources": {
     "holders": {
       "source": "GMGN",
-      "fetched_at": "2026-10-17T09:00+08:00"
+      "fetched_at": "2026-10-17T11:00+08:00"
     },
     "mcap_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-17T09:00+08:00"
+      "fetched_at": "2026-10-17T11:00+08:00"
     },
     "liquidity_usd": {
       "source": "GMGN",
-      "fetched_at": "2026-10-17T09:00+08:00"
+      "fetched_at": "2026-10-17T11:00+08:00"
     },
     "top20": {
       "source": "GMGN",
-      "fetched_at": "2026-10-17T09:00+08:00"
+      "fetched_at": "2026-10-17T11:00+08:00"
     },
     "onchain_heat": {
       "source": "Helius",
-      "fetched_at": "2026-10-17T09:00+08:00",
-      "via": "baseline"
+      "fetched_at": "2026-10-17T11:00+08:00"
     },
     "x": {
       "source": "x",
-      "fetched_at": "2026-10-17T09:00+08:00",
+      "fetched_at": "2026-10-17T11:00+08:00",
       "via": "baseline"
     }
   }

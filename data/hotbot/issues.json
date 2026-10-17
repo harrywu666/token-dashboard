@@ -18247,14 +18247,14 @@
     },
     "x": {
       "followers": {
-        "usehotbot": 6022,
-        "elijahintek": 25906,
-        "0xWhoismax": 4706,
-        "clawpumptech": 13666
+        "usehotbot": 6016,
+        "elijahintek": 25904,
+        "0xWhoismax": 4707,
+        "clawpumptech": 13661
       },
-      "mentions_1h": 18,
+      "mentions_1h": 24,
       "latest_post": null,
-      "cached_from": 1792205142
+      "cached_from": null
     },
     "conclusion": [],
     "sources": {
@@ -18282,6 +18282,433 @@
       "x": {
         "source": "x",
         "fetched_at": "2026-10-17T09:00+08:00",
+        "via": "baseline"
+      }
+    }
+  },
+  {
+    "ts": "2026-10-17T10:00+08:00",
+    "holders": 5364,
+    "holders_delta": -7,
+    "mcap_usd": 4260206,
+    "liquidity_usd": 252388.27,
+    "top20": [
+      {
+        "addr": "2E1g7f7AYSJkUkzMbkwP3QkuawHWDqWbU6Lx39agKsPs",
+        "short": "2E1g…KsPs",
+        "pct": 3.1157,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "jssugBCDGaNW5yRRiZ5A2EQ4z12ntGAx4LyPY57nZ2b",
+        "short": "jssu…nZ2b",
+        "pct": 2.7296,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "42eDBVXEbYxJfaKx5znWi1rwTFWBV69pQ7tCDLLr9ogx",
+        "short": "42eD…9ogx",
+        "pct": 2.5594,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "kHfajAXALAgbBup22egPEjgP135Le4yzM7LZd6oXbtF",
+        "short": "kHfa…XbtF",
+        "pct": 2.0975,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "9WvrTPvViRb9tDrYtEMyt5ohPaLD3gZXbAxbPxz3YRpw",
+        "short": "9Wvr…YRpw",
+        "pct": 2.0543,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "5RnLZorMV5escChAt9igJzmbLAy653HBua7EKVU7nZUC",
+        "short": "5RnL…nZUC",
+        "pct": 1.6281,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "DSq7CLyqAmzp6jPPQ9THx2Y4ctfhFvwtE1MGVqxh8RRK",
+        "short": "DSq7…8RRK",
+        "pct": 1.6223,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "AnCMde5PQzP7hVQmh5TeeCiUgGAqTY8kK9d9o91nEs3Q",
+        "short": "AnCM…Es3Q",
+        "pct": 1.6088,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "9CNyLECt2j8tnDhqxtjYk5HUhZ2b8Nwnyb7sfYN7vND2",
+        "short": "9CNy…vND2",
+        "pct": 1.5319,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "CUsUzbVnmoVcNRW6XDcP6KeZDjfdmMKyyMMLeBh1Rcks",
+        "short": "CUsU…Rcks",
+        "pct": 1.4255,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "5Uuw6GMbUrA5p5XgGEVYeFk4jTWuSMt95Xuf5gL45xK7",
+        "short": "5Uuw…5xK7",
+        "pct": 1.3563,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "DwJjRmVfANGUdZdBiGBj1QrY1MK5ZYs4DsCt7A8o6xc3",
+        "short": "DwJj…6xc3",
+        "pct": 1.1322,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "YW6bofTJXBLxQuyLdZ654M9Ji2zPvZRP4zYT8ojKjPR",
+        "short": "YW6b…KjPR",
+        "pct": 1.1055,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "7YpvTvSt7QDBU3aYDV6PGgsh4JGyHFfwtwngWCjz8NLx",
+        "short": "7Ypv…8NLx",
+        "pct": 1.0976,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "3Wm6BiKcEkG95zeRWT3HtBi3qp7tXiRXBCbg7RydcQj2",
+        "short": "3Wm6…cQj2",
+        "pct": 1.0728,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "GdSmhYHGFjb1QRDJ3dtpbA9TYNJaqEJsZHuUxpksEKNN",
+        "short": "GdSm…EKNN",
+        "pct": 1.0386,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "8LBxhvbNNSBnBdQdRG3dW8wndoSaGLGaKZDPcKEhfT42",
+        "short": "8LBx…fT42",
+        "pct": 1.0386,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "6451zSoUiy4GZeq2vEUHb73LcDJ8eeCHXEaGSqL8K6Fj",
+        "short": "6451…K6Fj",
+        "pct": 1.0035,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "HYZv2JeSHn5NDe5Ev2Nnc2rTNEaC6F9QVrcMLH5v6GYt",
+        "short": "HYZv…6GYt",
+        "pct": 0.9963,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "niDQB4CxfdqDcdBWJFe4PkfsZD6njoiHCMfn5VNvRDY",
+        "short": "niDQ…vRDY",
+        "pct": 0.9872,
+        "delta_pct": 0.0,
+        "change": "same"
+      }
+    ],
+    "top20_total_pct": 31.2017,
+    "excluded": [
+      {
+        "addr": "GLL3CzybpSCLZdoACf8QUM5YrKVwyA65kQ2RcTsJxxzV",
+        "reason": "pump_amm"
+      },
+      {
+        "addr": "6D4EWF22HfQamimKhX47tqiu9DVCkcxDMrmhnSvewKAo",
+        "reason": "meteora_dlmm"
+      }
+    ],
+    "onchain_heat": {
+      "buys": 16,
+      "sells": 32,
+      "unique_wallets": 48,
+      "net_flow": 990061.56,
+      "first_time_buyers": 6,
+      "window_hours": 1.0,
+      "partial": false
+    },
+    "x": {
+      "followers": {
+        "usehotbot": 6023,
+        "elijahintek": 25905,
+        "0xWhoismax": 4707,
+        "clawpumptech": 13662
+      },
+      "mentions_1h": 40,
+      "latest_post": null,
+      "cached_from": null
+    },
+    "conclusion": [
+      "较 9:00：持币地址 5364（-7）；市值约 $4,260,206（约 +5.1%）、流动性约 $252,388（约 -1.3%）——持币略降、市值反弹回补上期回吐、流动性续降",
+      "前20真人：全部未变，合计 31.20%",
+      "链上近 1h 代币净流入约 990,062 枚（买 16 / 卖 32，partial=false）——卖笔更多但买侧体量大，净流由上期净流出翻正",
+      "社交：官推发 Daily Clips「WHEN HOT BOT?」引爆 wen/beta 跟帖；elijah 转推并跟帖；晒单真伪质疑与赛后费用/提取指控仍在"
+    ],
+    "sources": {
+      "holders": {
+        "source": "GMGN",
+        "fetched_at": "2026-10-17T10:00+08:00"
+      },
+      "mcap_usd": {
+        "source": "GMGN",
+        "fetched_at": "2026-10-17T10:00+08:00"
+      },
+      "liquidity_usd": {
+        "source": "GMGN",
+        "fetched_at": "2026-10-17T10:00+08:00"
+      },
+      "top20": {
+        "source": "GMGN",
+        "fetched_at": "2026-10-17T10:00+08:00"
+      },
+      "onchain_heat": {
+        "source": "Helius",
+        "fetched_at": "2026-10-17T10:00+08:00",
+        "via": "baseline"
+      },
+      "x": {
+        "source": "x",
+        "fetched_at": "2026-10-17T10:00+08:00",
+        "via": "baseline"
+      }
+    }
+  },
+  {
+    "ts": "2026-10-17T11:00+08:00",
+    "holders": 5363,
+    "holders_delta": -1,
+    "mcap_usd": 4223167,
+    "liquidity_usd": 247326.62,
+    "top20": [
+      {
+        "addr": "2E1g7f7AYSJkUkzMbkwP3QkuawHWDqWbU6Lx39agKsPs",
+        "short": "2E1g…KsPs",
+        "pct": 3.1157,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "jssugBCDGaNW5yRRiZ5A2EQ4z12ntGAx4LyPY57nZ2b",
+        "short": "jssu…nZ2b",
+        "pct": 2.7296,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "42eDBVXEbYxJfaKx5znWi1rwTFWBV69pQ7tCDLLr9ogx",
+        "short": "42eD…9ogx",
+        "pct": 2.5594,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "kHfajAXALAgbBup22egPEjgP135Le4yzM7LZd6oXbtF",
+        "short": "kHfa…XbtF",
+        "pct": 2.0975,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "9WvrTPvViRb9tDrYtEMyt5ohPaLD3gZXbAxbPxz3YRpw",
+        "short": "9Wvr…YRpw",
+        "pct": 2.0543,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "5RnLZorMV5escChAt9igJzmbLAy653HBua7EKVU7nZUC",
+        "short": "5RnL…nZUC",
+        "pct": 1.6281,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "DSq7CLyqAmzp6jPPQ9THx2Y4ctfhFvwtE1MGVqxh8RRK",
+        "short": "DSq7…8RRK",
+        "pct": 1.6223,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "AnCMde5PQzP7hVQmh5TeeCiUgGAqTY8kK9d9o91nEs3Q",
+        "short": "AnCM…Es3Q",
+        "pct": 1.6088,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "9CNyLECt2j8tnDhqxtjYk5HUhZ2b8Nwnyb7sfYN7vND2",
+        "short": "9CNy…vND2",
+        "pct": 1.5319,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "CUsUzbVnmoVcNRW6XDcP6KeZDjfdmMKyyMMLeBh1Rcks",
+        "short": "CUsU…Rcks",
+        "pct": 1.4255,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "5Uuw6GMbUrA5p5XgGEVYeFk4jTWuSMt95Xuf5gL45xK7",
+        "short": "5Uuw…5xK7",
+        "pct": 1.3563,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "DwJjRmVfANGUdZdBiGBj1QrY1MK5ZYs4DsCt7A8o6xc3",
+        "short": "DwJj…6xc3",
+        "pct": 1.1322,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "YW6bofTJXBLxQuyLdZ654M9Ji2zPvZRP4zYT8ojKjPR",
+        "short": "YW6b…KjPR",
+        "pct": 1.1055,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "7YpvTvSt7QDBU3aYDV6PGgsh4JGyHFfwtwngWCjz8NLx",
+        "short": "7Ypv…8NLx",
+        "pct": 1.0976,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "3Wm6BiKcEkG95zeRWT3HtBi3qp7tXiRXBCbg7RydcQj2",
+        "short": "3Wm6…cQj2",
+        "pct": 1.0728,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "GdSmhYHGFjb1QRDJ3dtpbA9TYNJaqEJsZHuUxpksEKNN",
+        "short": "GdSm…EKNN",
+        "pct": 1.0386,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "8LBxhvbNNSBnBdQdRG3dW8wndoSaGLGaKZDPcKEhfT42",
+        "short": "8LBx…fT42",
+        "pct": 1.0386,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "6451zSoUiy4GZeq2vEUHb73LcDJ8eeCHXEaGSqL8K6Fj",
+        "short": "6451…K6Fj",
+        "pct": 1.0035,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "HYZv2JeSHn5NDe5Ev2Nnc2rTNEaC6F9QVrcMLH5v6GYt",
+        "short": "HYZv…6GYt",
+        "pct": 0.9963,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "niDQB4CxfdqDcdBWJFe4PkfsZD6njoiHCMfn5VNvRDY",
+        "short": "niDQ…vRDY",
+        "pct": 0.9872,
+        "delta_pct": 0.0,
+        "change": "same"
+      }
+    ],
+    "top20_total_pct": 31.2017,
+    "excluded": [
+      {
+        "addr": "GLL3CzybpSCLZdoACf8QUM5YrKVwyA65kQ2RcTsJxxzV",
+        "reason": "pump_amm"
+      },
+      {
+        "addr": "6D4EWF22HfQamimKhX47tqiu9DVCkcxDMrmhnSvewKAo",
+        "reason": "meteora_dlmm"
+      }
+    ],
+    "onchain_heat": {
+      "buys": 14,
+      "sells": 27,
+      "unique_wallets": 29,
+      "net_flow": -432093.75,
+      "first_time_buyers": 5,
+      "window_hours": null,
+      "partial": false
+    },
+    "x": {
+      "followers": {
+        "usehotbot": 6022,
+        "elijahintek": 25906,
+        "0xWhoismax": 4706,
+        "clawpumptech": 13666
+      },
+      "mentions_1h": 18,
+      "latest_post": null,
+      "cached_from": 1792205142
+    },
+    "conclusion": [
+      "较 10:00：持币地址 5363（-1）；市值约 $4,223,167（约 -0.9%）、流动性约 $247,327（约 -2.0%）——持币基本持平，市值回吐上期反弹、流动性续降",
+      "前20真人：DwJj…6xc3 微加约 451 枚；其余未变；合计 31.20%",
+      "链上近 1h 代币净流出约 432,094 枚（买 14 / 卖 27，partial=false）——卖笔更多且净流由上期净流入翻负",
+      "社交：官推本窗无新帖；elijah 转推并回复 Kyuubi「避 rug」视频；提及回落至约 18（上期 40），晒单质疑与带 CA 推介仍在"
+    ],
+    "sources": {
+      "holders": {
+        "source": "GMGN",
+        "fetched_at": "2026-10-17T11:00+08:00"
+      },
+      "mcap_usd": {
+        "source": "GMGN",
+        "fetched_at": "2026-10-17T11:00+08:00"
+      },
+      "liquidity_usd": {
+        "source": "GMGN",
+        "fetched_at": "2026-10-17T11:00+08:00"
+      },
+      "top20": {
+        "source": "GMGN",
+        "fetched_at": "2026-10-17T11:00+08:00"
+      },
+      "onchain_heat": {
+        "source": "Helius",
+        "fetched_at": "2026-10-17T11:00+08:00"
+      },
+      "x": {
+        "source": "x",
+        "fetched_at": "2026-10-17T11:00+08:00",
         "via": "baseline"
       }
     }
