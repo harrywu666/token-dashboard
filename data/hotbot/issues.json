@@ -19506,12 +19506,12 @@
       }
     ],
     "onchain_heat": {
-      "buys": 11,
-      "sells": 10,
-      "unique_wallets": 16,
-      "net_flow": 33085.21,
-      "first_time_buyers": 3,
-      "window_hours": null,
+      "buys": 16,
+      "sells": 14,
+      "unique_wallets": 24,
+      "net_flow": 116006.85,
+      "first_time_buyers": 4,
+      "window_hours": 1.0,
       "partial": false
     },
     "x": {
@@ -19545,7 +19545,8 @@
       },
       "onchain_heat": {
         "source": "Helius",
-        "fetched_at": "2026-10-17T16:00+08:00"
+        "fetched_at": "2026-10-17T15:00+08:00",
+        "via": "baseline"
       },
       "x": {
         "source": "x",
