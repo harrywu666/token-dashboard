@@ -21178,24 +21178,24 @@
       }
     ],
     "onchain_heat": {
-      "buys": 18,
-      "sells": 30,
-      "unique_wallets": 35,
-      "net_flow": -617458.16,
-      "first_time_buyers": 2,
+      "buys": 62,
+      "sells": 24,
+      "unique_wallets": 46,
+      "net_flow": 1154916.23,
+      "first_time_buyers": 5,
       "window_hours": 1.0,
       "partial": false
     },
     "x": {
       "followers": {
-        "usehotbot": 6069,
-        "elijahintek": 25909,
-        "0xWhoismax": 4706,
-        "clawpumptech": 13714
+        "usehotbot": 6073,
+        "elijahintek": 25910,
+        "0xWhoismax": 4705,
+        "clawpumptech": 13718
       },
-      "mentions_1h": 24,
+      "mentions_1h": 47,
       "latest_post": null,
-      "cached_from": 1792251995
+      "cached_from": 1792256400
     },
     "conclusion": [
       "较 22:00：持币地址 5343（+13）；市值约 $3,681,645（约 +4.1%）、流动性约 $235,416（约 +2.4%）——持币续增，盘面明显反弹",
@@ -21222,7 +21222,8 @@
       },
       "onchain_heat": {
         "source": "Helius",
-        "fetched_at": "2026-10-17T23:45+08:00"
+        "fetched_at": "2026-10-17T23:00+08:00",
+        "via": "baseline"
       },
       "x": {
         "source": "x",
