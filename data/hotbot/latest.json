@@ -166,24 +166,24 @@
     }
   ],
   "onchain_heat": {
-    "buys": 12,
-    "sells": 22,
-    "unique_wallets": 24,
-    "net_flow": -327178.57,
-    "first_time_buyers": 4,
+    "buys": 16,
+    "sells": 32,
+    "unique_wallets": 48,
+    "net_flow": 990061.56,
+    "first_time_buyers": 6,
     "window_hours": null,
     "partial": false
   },
   "x": {
     "followers": {
-      "usehotbot": 6016,
-      "elijahintek": 25904,
+      "usehotbot": 6023,
+      "elijahintek": 25905,
       "0xWhoismax": 4707,
-      "clawpumptech": 13661
+      "clawpumptech": 13662
     },
-    "mentions_1h": 24,
+    "mentions_1h": 40,
     "latest_post": null,
-    "cached_from": 1792198230
+    "cached_from": 1792201800
   },
   "conclusion": [],
   "sources": {
@@ -205,7 +205,7 @@
     },
     "onchain_heat": {
       "source": "Helius",
-      "fetched_at": "2026-10-17T09:00+08:00"
+      "fetched_at": "2026-10-17T10:00+08:00"
     },
     "x": {
       "source": "x",
