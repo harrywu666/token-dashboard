@@ -18022,7 +18022,7 @@
       "unique_wallets": 57,
       "net_flow": -278059.05,
       "first_time_buyers": 4,
-      "window_hours": null,
+      "window_hours": 1.0,
       "partial": false
     },
     "x": {
@@ -18059,11 +18059,228 @@
       },
       "onchain_heat": {
         "source": "Helius",
-        "fetched_at": "2026-10-17T08:00+08:00"
+        "fetched_at": "2026-10-17T08:00+08:00",
+        "via": "baseline"
       },
       "x": {
         "source": "x",
         "fetched_at": "2026-10-17T08:00+08:00",
+        "via": "baseline"
+      }
+    }
+  },
+  {
+    "ts": "2026-10-17T09:00+08:00",
+    "holders": 5371,
+    "holders_delta": -1,
+    "mcap_usd": 4051869,
+    "liquidity_usd": 255777.23,
+    "top20": [
+      {
+        "addr": "2E1g7f7AYSJkUkzMbkwP3QkuawHWDqWbU6Lx39agKsPs",
+        "short": "2E1g…KsPs",
+        "pct": 3.1157,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "jssugBCDGaNW5yRRiZ5A2EQ4z12ntGAx4LyPY57nZ2b",
+        "short": "jssu…nZ2b",
+        "pct": 2.7296,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "42eDBVXEbYxJfaKx5znWi1rwTFWBV69pQ7tCDLLr9ogx",
+        "short": "42eD…9ogx",
+        "pct": 2.5594,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "kHfajAXALAgbBup22egPEjgP135Le4yzM7LZd6oXbtF",
+        "short": "kHfa…XbtF",
+        "pct": 2.0975,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "9WvrTPvViRb9tDrYtEMyt5ohPaLD3gZXbAxbPxz3YRpw",
+        "short": "9Wvr…YRpw",
+        "pct": 2.0543,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "5RnLZorMV5escChAt9igJzmbLAy653HBua7EKVU7nZUC",
+        "short": "5RnL…nZUC",
+        "pct": 1.6281,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "DSq7CLyqAmzp6jPPQ9THx2Y4ctfhFvwtE1MGVqxh8RRK",
+        "short": "DSq7…8RRK",
+        "pct": 1.6223,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "AnCMde5PQzP7hVQmh5TeeCiUgGAqTY8kK9d9o91nEs3Q",
+        "short": "AnCM…Es3Q",
+        "pct": 1.6088,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "9CNyLECt2j8tnDhqxtjYk5HUhZ2b8Nwnyb7sfYN7vND2",
+        "short": "9CNy…vND2",
+        "pct": 1.5319,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "CUsUzbVnmoVcNRW6XDcP6KeZDjfdmMKyyMMLeBh1Rcks",
+        "short": "CUsU…Rcks",
+        "pct": 1.4255,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "5Uuw6GMbUrA5p5XgGEVYeFk4jTWuSMt95Xuf5gL45xK7",
+        "short": "5Uuw…5xK7",
+        "pct": 1.3563,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "DwJjRmVfANGUdZdBiGBj1QrY1MK5ZYs4DsCt7A8o6xc3",
+        "short": "DwJj…6xc3",
+        "pct": 1.1322,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "YW6bofTJXBLxQuyLdZ654M9Ji2zPvZRP4zYT8ojKjPR",
+        "short": "YW6b…KjPR",
+        "pct": 1.1055,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "7YpvTvSt7QDBU3aYDV6PGgsh4JGyHFfwtwngWCjz8NLx",
+        "short": "7Ypv…8NLx",
+        "pct": 1.0976,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "3Wm6BiKcEkG95zeRWT3HtBi3qp7tXiRXBCbg7RydcQj2",
+        "short": "3Wm6…cQj2",
+        "pct": 1.0728,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "GdSmhYHGFjb1QRDJ3dtpbA9TYNJaqEJsZHuUxpksEKNN",
+        "short": "GdSm…EKNN",
+        "pct": 1.0386,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "8LBxhvbNNSBnBdQdRG3dW8wndoSaGLGaKZDPcKEhfT42",
+        "short": "8LBx…fT42",
+        "pct": 1.0386,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "6451zSoUiy4GZeq2vEUHb73LcDJ8eeCHXEaGSqL8K6Fj",
+        "short": "6451…K6Fj",
+        "pct": 1.0035,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "HYZv2JeSHn5NDe5Ev2Nnc2rTNEaC6F9QVrcMLH5v6GYt",
+        "short": "HYZv…6GYt",
+        "pct": 0.9963,
+        "delta_pct": 0.0,
+        "change": "same"
+      },
+      {
+        "addr": "niDQB4CxfdqDcdBWJFe4PkfsZD6njoiHCMfn5VNvRDY",
+        "short": "niDQ…vRDY",
+        "pct": 0.9872,
+        "change": "new",
+        "delta_pct": null
+      },
+      {
+        "addr": "858mUYBxTJcFxGjCzo4Tt3pkaJfYBXRyXsuykj2C1LsZ",
+        "short": "858m…1LsZ",
+        "pct": null,
+        "change": "exited",
+        "delta_pct": null,
+        "prev_pct": 1.007
+      }
+    ],
+    "top20_total_pct": 31.2017,
+    "excluded": [
+      {
+        "addr": "GLL3CzybpSCLZdoACf8QUM5YrKVwyA65kQ2RcTsJxxzV",
+        "reason": "pump_amm"
+      },
+      {
+        "addr": "6D4EWF22HfQamimKhX47tqiu9DVCkcxDMrmhnSvewKAo",
+        "reason": "meteora_dlmm"
+      }
+    ],
+    "onchain_heat": {
+      "buys": 12,
+      "sells": 22,
+      "unique_wallets": 24,
+      "net_flow": -327178.57,
+      "first_time_buyers": 4,
+      "window_hours": null,
+      "partial": false
+    },
+    "x": {
+      "followers": {
+        "usehotbot": 6016,
+        "elijahintek": 25904,
+        "0xWhoismax": 4707,
+        "clawpumptech": 13661
+      },
+      "mentions_1h": 24,
+      "latest_post": null,
+      "cached_from": 1792198230
+    },
+    "conclusion": [],
+    "sources": {
+      "holders": {
+        "source": "GMGN",
+        "fetched_at": "2026-10-17T09:00+08:00"
+      },
+      "mcap_usd": {
+        "source": "GMGN",
+        "fetched_at": "2026-10-17T09:00+08:00"
+      },
+      "liquidity_usd": {
+        "source": "GMGN",
+        "fetched_at": "2026-10-17T09:00+08:00"
+      },
+      "top20": {
+        "source": "GMGN",
+        "fetched_at": "2026-10-17T09:00+08:00"
+      },
+      "onchain_heat": {
+        "source": "Helius",
+        "fetched_at": "2026-10-17T09:00+08:00"
+      },
+      "x": {
+        "source": "x",
+        "fetched_at": "2026-10-17T09:00+08:00",
         "via": "baseline"
       }
     }
